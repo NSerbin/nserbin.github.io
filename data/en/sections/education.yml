@@ -1,0 +1,25 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: Systems Analist
+  icon: fa-university
+  timeframe: March 2020 - August 2021
+  institution:
+    name: IFTS N°18
+- name: Spanish - Native
+  icon: fa-graduation-cap
+  institution:
+    name: Language
+- name: English - Upper Intermediate
+  icon: fa-graduation-cap
+  institution:
+    name: Language

@@ -1,0 +1,65 @@
+# section information
+section:
+  name: Tecnologías
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Ansible
+  logo: /images/sections/skills/ansible.png
+  summary: "Manejo intermedio de Ansible. Utilizado para generar mis configuraciones personales."
+
+- name: AWS
+  logo: /images/sections/skills/cloud.png
+  summary: "Infraestructura Cloud usada a diario en conjunto con Terraform y Kubernetes"
+
+- name: Confluence
+  logo: /images/sections/skills/confluence.png
+  summary: "Usado a diario para generar Documentacion."
+
+- name: Docker
+  logo: /images/sections/skills/docker.svg
+  summary: "La mayoria de mis aplicativos son realizados con Containers de Docker. En proceso de aprendizaje de Multi-Stage Build."
+  url: "https://www.docker.com/"
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "Uso experimentado de Git. Actualmente utilizo mucho Gitlab pero tambien suelo usar GitHub."
+  url: "https://git-scm.com/"
+
+- name: Jira
+  logo: /images/sections/skills/jira.png
+  summary: "Uso a diario Jira Scrum. Tambien use en el pasado Jira como Ticketera de Service Desk."
+  url: "https://git-scm.com/"
+
+- name: Kubernetes
+  logo: /images/sections/skills/kubernetes.png
+  summary: "Capaz de realizar deploys de aplicativos y manejar infraestructura con Kubernetes."
+  url: "https://kubernetes.io/"
+
+- name: Linux
+  logo: /images/sections/skills/linux.png
+  summary: "Lo uso a diario como mi sistema principal. Principalmente uso Manjaro, pero tambien use Kali Linux y Ubuntu."
+
+- name: Postman
+  logo: /images/sections/skills/postman.png
+  summary: "Usado para testeo de APIs y obtener información."
+
+- name: Python
+  logo: /images/sections/skills/python.png
+  summary: "Uso intermedio de Python. Es mi lenguaje principal de programación."
+
+- name: Terraform
+  logo: /images/sections/skills/terraform.png
+  summary: "Lo uso a diario para generar Infraestructura como Codigo en conjunto con AWS. Soy capaz de realiza Módulos."
+  url: "https://www.terraform.io/"  
+
+- name: Shell Scripting
+  logo: /images/sections/skills/shell.png
+  summary: "Uso básico de Shell Scripting. Me considero capaz de realizar scripts."

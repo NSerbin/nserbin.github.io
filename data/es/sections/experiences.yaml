@@ -1,0 +1,61 @@
+# section information
+section:
+  name: Experiencia
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Digital House
+    url: "https://www.digitalhouse.com"
+    location: Buenos Aires, Argentina
+    # company overview
+    overview: Digital House es una reconocida empresa de educación, que ofrece Carreras Premium de IT.
+  positions:
+  - designation: DevOps Engineer
+    start: Septiembre 2021
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Diseñar CI Pipelines en Gitlab CI
+    - Diseñar y Desarrollar IaC con Terraform en AWS.
+    - Diseñar, Desarrollar y Administrar Clusters de Kubernetes.
+    - Generar Documentación.
+    - Migrar ambientes On-Premise a AWS (EC2, ALB, S3, VPC, RDS, IAM)
+
+- company:
+    name: MercadoLibre
+    url: "https://www.mercadolibre.com"
+    location: Buenos Aires, Argentina
+    overview: MercadoLibre es la empresa número 1 de E-Commerce en LATAM.
+  positions:
+  - designation: Soporte de Aplicaciones - SMO 1.5
+    start: Julio 2021
+    end: Agosto 2021
+    responsibilities:
+    - Revisar y generar toda la nueva documentacion de SMO.
+    - Gestionar los equipos de resolución.
+    - Capacitación de los nuevos ingresos.
+
+  - designation: Soporte de Aplicaciones - SMO SPOC
+    start: Marzo 2021
+    end:  Junio 2021
+    responsibilities:
+    - Monitoreo de Métricas.
+    - Normalización de datos en los Tickets de Jira.
+    - Generar Documentación para la célula de SPOC.
+
+  - designation: Soporte de Aplicaciones - SMO 1.0
+    start: Noviembre 2020
+    end: Febrero 2021
+    responsibilities:
+    - Monitoreo de Métricas.
+    - Análisis y resolución de incidentes.
+    - Soporte a clientes internos usando Jira Service Desk.
+    - Liderar los eventos de War-room.

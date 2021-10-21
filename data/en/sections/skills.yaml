@@ -1,0 +1,65 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Ansible
+  logo: /images/sections/skills/ansible.png
+  summary: "Intermediate knowledge with Ansible. Used for personal configuration."
+
+- name: AWS
+  logo: /images/sections/skills/cloud.png
+  summary: "Daily infrastructure. Used with Terraform and Kubernetes"
+
+- name: Confluence
+  logo: /images/sections/skills/confluence.png
+  summary: "Used daily to make Documentation."
+
+- name: Docker
+  logo: /images/sections/skills/docker.svg
+  summary: "Write most of the programs as dockerized container. Learning Multi-Stage Build"
+  url: "https://www.docker.com/"
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "Experienced with git-based development. Mostly, use Gitlab & Github."
+  url: "https://git-scm.com/"
+
+- name: Jira
+  logo: /images/sections/skills/jira.png
+  summary: "Daily use Jira Scrum. Also used Jira Service Desk tickets."
+  url: "https://git-scm.com/"
+
+- name: Kubernetes
+  logo: /images/sections/skills/kubernetes.png
+  summary: "Capable of deploying, managing application on Kubernetes."
+  url: "https://kubernetes.io/"
+
+- name: Linux
+  logo: /images/sections/skills/linux.png
+  summary: "Using as the main operating system. My main O.S is Manjaro but i used Kali Linux and Ubuntu."
+
+- name: Postman
+  logo: /images/sections/skills/postman.png
+  summary: "Used to test APIs and get information from there."
+
+- name: Python
+  logo: /images/sections/skills/python.png
+  summary: "Intermediate Knowledge of Python. It's my main programming language."
+
+- name: Terraform
+  logo: /images/sections/skills/terraform.png
+  summary: "Used to make IaC with AWS. Capable to do Modules"
+  url: "https://www.terraform.io/"  
+
+- name: Shell Scripting
+  logo: /images/sections/skills/shell.png
+  summary: "Capable to do scripts."

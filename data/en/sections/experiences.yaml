@@ -1,0 +1,61 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Digital House
+    url: "https://www.digitalhouse.com"
+    location: Buenos Aires, Argentina
+    # company overview
+    overview: Digital House is a recognized education company who offers premium IT carreers.
+  positions:
+  - designation: DevOps Engineer
+    start: September 2021
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Building CI Pipelines in Gitlab CI.
+    - Designing and developing IaC with Terraform in AWS.
+    - Designing, developing and managing Kubernetes Clusters.
+    - Generate Documentation.
+    - Migrate On-Premise Environments to AWS (EC2, ALB, S3, VPC, RDS, IAM)
+
+- company:
+    name: MercadoLibre
+    url: "https://www.mercadolibre.com"
+    location: Buenos Aires, Argentina
+    overview: MercadoLibre is widely recognized E-Commerce company in LATAM.
+  positions:
+  - designation: Technical Support Application - SMO 1.5
+    start: July 2021
+    end: August 2021
+    responsibilities:
+    - Reviewing and generating all the SMO Documentation.
+    - Management of resolution teams. 
+    - New recruit training.
+
+  - designation: Technical Support Application - SMO SPOC
+    start: March 2021
+    end:  June 2021
+    responsibilities:
+    - Metrics Monitoring.
+    - Data normalization in Jira Tickets.
+    - Generating documentation for SPOC cell.
+
+  - designation: Technical Support Application - SMO 1.0
+    start: November 2020
+    end: February 2021
+    responsibilities:
+    - Metrics Monitoring.
+    - Analysis and resolution of incidents.
+    - Supporting Internal clients with Jira Service Desk.
+    - Leading War-rooms events.
