@@ -18,7 +18,7 @@ company:
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a DevOps Engineer, passionately for technology and automating with 1 year of working experience. My work is build infrastructure and automate processes. I love build things and play with my Raspberry Pi.'
+summary: 'DevOps Engineer, passionately for technology and automating with 1 year of working experience. I mostly work with building Cloud Infrastructure and automating processes. I love build things and play with my Raspberry Pi.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -60,7 +60,7 @@ badges:
   color: "#10FFCB"
 
 - type: soft-skill-indicator
-  name: Team Work
+  name: Team Worker
   percentage: 95
   color: "#08B2E3"
 
@@ -70,12 +70,12 @@ badges:
   color: "#EE6352"
 
 - type: soft-skill-indicator
-  name: Proactive
+  name: Proactivity
   percentage: 75
   color: "#F75590"
 
 - type: soft-skill-indicator
-  name: Creative
+  name: Creativity
   percentage: 75
   color: "#FBD87F"
 # you can also provide color code instead of the color name
