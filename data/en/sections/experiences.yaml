@@ -24,9 +24,9 @@ experiences:
     # give some points about what was your responsibilities at the company.
     responsibilities:
     - Building CI Pipelines in Gitlab CI.
-    - Designing and developing IaC with Terraform in AWS.
+    - Designing & developing IaC with Terraform in AWS.
     - Designing, developing and managing Kubernetes Clusters.
-    - Generate Documentation.
+    - Write Documentation.
     - Migrate On-Premise Environments to AWS (EC2, ALB, S3, VPC, RDS, IAM)
 
 - company:
@@ -41,7 +41,7 @@ experiences:
     responsibilities:
     - Reviewing and generating all the SMO Documentation.
     - Management of resolution teams. 
-    - New recruit training.
+    - New hires training.
 
   - designation: Technical Support Application - SMO SPOC
     start: March 2021
@@ -49,7 +49,7 @@ experiences:
     responsibilities:
     - Metrics Monitoring.
     - Data normalization in Jira Tickets.
-    - Generating documentation for SPOC cell.
+    - Writing documentation for SPOC cell.
 
   - designation: Technical Support Application - SMO 1.0
     start: November 2020
@@ -57,5 +57,5 @@ experiences:
     responsibilities:
     - Metrics Monitoring.
     - Analysis and resolution of incidents.
-    - Supporting Internal clients with Jira Service Desk.
+    - Give internal clients technical support with Jira Service Desk.
     - Leading War-rooms events.
