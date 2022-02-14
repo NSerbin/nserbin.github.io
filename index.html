@@ -1,6 +1,6 @@
 <!doctype html><html lang=en>
 <head>
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.2">
 <title>Nicolas Serbin's Blog</title>
 <meta name=description content="Portfolio y Blog Personal de Nicolás Serbin.">
 <meta charset=utf-8>
@@ -746,24 +746,6 @@ API
 <div class=container>
 <div class=row id=recent-post-cards>
 <div class="col-lg-4 col-md-6 pt-2 post-card">
-<a href=/posts/introduction/ title=Introduction class=post-card-link>
-<div class=card>
-<div class=card-head>
-<img class=card-img-top src=/posts/introduction/hero.svg alt="Card image cap">
-</div>
-<div class=card-body>
-<h5 class=card-title>Introduction</h5>
-<p class="card-text post-summary"> Greeting! This is an introduction post. This post tests the followings:
-Hero image is in the same directory as the post. This post should be at top of the sidebar. Post author should be the same as specified in author.yaml file. </p>
-</div>
-<div class=card-footer>
-<span class=float-left>June 8, 2020</span>
-<a href=/posts/introduction/ title=Read class="float-right btn btn-outline-info btn-sm">Read</a>
-</div>
-</div>
-</a>
-</div>
-<div class="col-lg-4 col-md-6 pt-2 post-card">
 <a href=/search/ title="অনুসন্ধানের ফলাফল" class=post-card-link>
 <div class=card>
 <div class=card-head>
@@ -771,6 +753,27 @@ Hero image is in the same directory as the post. This post should be at top of t
 </div>
 <div class=card-body>
 <h5 class=card-title>অনুসন্ধানের ফলাফল</h5>
+<p class="card-text post-summary"> This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;] ```</p>
+</div>
+<div class=card-footer>
+<span class=float-left>June 8, 2010</span>
+<a href=/search/ title=Read class="float-right btn btn-outline-info btn-sm">Read</a>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 pt-2 post-card">
+<a href=/search/ title="Search Results" class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/images/default-hero.jpg alt="Card image cap">
+</div>
+<div class=card-body>
+<h5 class=card-title>Search Results</h5>
 <p class="card-text post-summary"> This file exists solely to respond to /search URL with the related search layout template.
 No content shown here is rendered, all content is based in the template layouts/page/search.html
 Setting a very low sitemap priority will tell search engines this is not important content.
