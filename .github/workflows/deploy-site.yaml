@@ -31,9 +31,7 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        GOATCOUNTER_CODE: ${{ secrets.GOATCOUNTER_CODE }}
-        MAILCHIMP_SUBSCRIPTION: ${{ secrets.MAILCHIMP_SUBSCRIPTION }}        
+        github_token: ${{ secrets.GITHUB_TOKEN }}     
         publish_branch: main # if your main branch is `master` use that here.
         publish_dir: ./public
         cname: nserbin.com
