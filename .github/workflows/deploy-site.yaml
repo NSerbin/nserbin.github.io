@@ -30,11 +30,10 @@ jobs:
     # push the generated content into the `main` (former `master`) branch.
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
-      env:
-        GOATCOUNTER_CODE: ${{secrets.GOATCOUNTER_CODE}}
-        MAILCHIMP_SUBSCRIPTION: ${{secrets.MAILCHIMP_SUBSCRIPTION}}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        GOATCOUNTER_CODE: ${{ secrets.GOATCOUNTER_CODE }}
+        MAILCHIMP_SUBSCRIPTION: ${{ secrets.MAILCHIMP_SUBSCRIPTION }}        
         publish_branch: main # if your main branch is `master` use that here.
         publish_dir: ./public
         cname: nserbin.com
