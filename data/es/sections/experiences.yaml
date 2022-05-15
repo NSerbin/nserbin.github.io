@@ -23,9 +23,10 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Diseñar CI Pipelines en Gitlab CI
+    - Diseñar CI Pipelines en Gitlab CI.
     - Diseñar y Desarrollar IaC con Terraform en AWS.
     - Diseñar, Desarrollar y Administrar Clusters de Kubernetes.
+    - Diseñar y Administrar la Observabilidad usando Datadog.
     - Generar Documentación.
     - Migrar ambientes On-Premise a AWS (EC2, ALB, S3, VPC, RDS, IAM)
 
