@@ -24,10 +24,11 @@ experiences:
     # give some points about what was your responsibilities at the company.
     responsibilities:
     - Building CI Pipelines in Gitlab CI.
-    - Designing & developing IaC with Terraform in AWS.
-    - Designing, developing and managing Kubernetes Clusters.
+    - Designing & Developing IaC with Terraform in AWS.
+    - Designing, Developing and Managing Kubernetes Clusters.
+    - Designing & Managing infrastructure observability with Datadog.
     - Write Documentation.
-    - Migrate On-Premise Environments to AWS (EC2, ALB, S3, VPC, RDS, IAM)
+    - Migrate On-Premise Environments to AWS (EC2, ALB, S3, VPC, RDS, IAM).
 
 - company:
     name: MercadoLibre
