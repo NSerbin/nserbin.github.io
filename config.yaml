@@ -73,7 +73,7 @@ params:
       analytics:
         enabled: true
         goatCounter:
-          code: ${{env.GOATCOUNTER_CODE}}
+          code: ${{secrets.GOATCOUNTER_CODE}}
 
     # Enable & configure "Notes" features
     notes:
@@ -111,7 +111,7 @@ params:
     newsletter:
       enable: true
       provider: mailchimp
-      mailchimpURL: ${{env.MAILCHIMP_SUBSCRIPTION}}
+      mailchimpURL: ${{secrets.MAILCHIMP_SUBSCRIPTION}}
 
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
