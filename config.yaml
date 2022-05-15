@@ -47,9 +47,9 @@ params:
   background: /images/site/background2.jpg
 
   # GitHub repo of your site
-  gitRepo: https://github.com/NSerbin/nserbin.com
+  gitRepo: https://github.com/NSerbin/nserbin.github.io
   # Default branch of your Git repo
-  gitBranch: sou    rce
+  gitBranch: source
   # Configure various features of this theme
   features:
     # Enable and configure portfolio
@@ -70,6 +70,10 @@ params:
         # pocket: true
         # diaspora: true
         # mastodon: true
+      analytics:
+        enabled: true
+        goatCounter:
+          code: ${{env.GOATCOUNTER_CODE}}
 
     # Enable & configure "Notes" features
     notes:
@@ -107,7 +111,7 @@ params:
     newsletter:
       enable: true
       provider: mailchimp
-      mailchimpURL: https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;id=094a24c76e
+      mailchimpURL: ${{env.MAILCHIMP_SUBSCRIPTION}}
 
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
