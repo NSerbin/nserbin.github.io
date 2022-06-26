@@ -43,6 +43,10 @@ enableEmoji: true
 
 # Site parameters
 params:
+  darkMode:
+    enable: true
+    provider: darkreader
+    default: system
   # Background image of the landing page
   background: /images/site/background2.jpg
 
