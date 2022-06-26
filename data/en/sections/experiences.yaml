@@ -27,6 +27,7 @@ experiences:
     - Designing & Developing IaC with Terraform in AWS.
     - Designing, Developing and Managing Kubernetes Clusters.
     - Designing & Managing infrastructure observability with Datadog.
+    - Write Serverless Framework Templates.
     - Write Documentation.
     - Migrate On-Premise Environments to AWS (EC2, ALB, S3, VPC, RDS, IAM).
 
