@@ -74,10 +74,10 @@ params:
         # pocket: true
         # diaspora: true
         # mastodon: true
-      analytics:
-        enabled: true
-        goatCounter:
-          code: nserbin
+#      analytics:
+#        enabled: true
+#        goatCounter:
+#          code: nserbin
 
     # Enable & configure "Notes" features
     notes:
