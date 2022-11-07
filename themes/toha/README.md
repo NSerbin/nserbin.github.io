@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b1b93b02-f278-440b-ae1b-304e9f4c4ab5/deploy-status)](https://app.netlify.com/sites/toha/deploys)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fhugo-toha%2Ftoha%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/hugo-toha/toha/goto?ref=main)
 ![Repository Size](https://img.shields.io/github/repo-size/hugo-toha/toha)
-![Lines of Codes](https://img.shields.io/tokei/lines/github/hugo-toha/toha)
+![Lines of Codes](https://img.shields.io/tokei/lines/github.com/hugo-toha/toha)
 ![Contributor](https://img.shields.io/github/contributors/hugo-toha/toha)
 ![Latest Release](https://img.shields.io/github/v/release/hugo-toha/toha?include_prereleases)
 ![Last Commit](https://img.shields.io/github/last-commit/hugo-toha/toha)
@@ -30,8 +30,16 @@ A [Hugo](https://gohugo.io/) theme for a personal portfolio with minimalist desi
 - Achievement Gallery
 - Sidebar to Categorize the Posts
 - Short Codes
-- Google Analytics Support
-- Disqus Comment Support
+- Analytics Support
+  - GoatCounter
+  - counter.dev
+  - Google Analytics
+  - Matomo/Piwik
+- Comment Support
+  - [Disqus](https://disqus.com/)
+  - [Valine](https://valine.js.org/)
+  - [Uttarances](https://utteranc.es/)
+  - [Giscus](https://giscus.app/)
 
 For more details about the features please visit [here](https://toha-guides.netlify.app/posts/features/).
 
@@ -49,7 +57,10 @@ For more details about the features please visit [here](https://toha-guides.netl
 - 日本語
 - 한국어
 - русский
+- suomi
 - Tiếng Việt
+- Turkish
+- Arabic (العربية)
 
 To know more about how to translate your site, please visit [here](https://toha-guides.netlify.app/posts/translation/). Follow, the data and post format from this [example site](https://hugo-toha.github.io).
 
@@ -71,7 +82,7 @@ Here are few screenshots from the [example site](https://hugo-toha.github.io).
 
 ## Requirements
 
-- Hugo Version 0.68.0 or higher
+- Hugo Version 0.87.0 or higher
 
 ## Usage
 
@@ -137,6 +148,9 @@ params:
   # specify whether you want to show Table of Contents in reading page
   enableTOC: true
 
+  # specify whether you want the language flags to be displayed. 
+  showFlags: true
+
   # Provide newsletter configuration. 
   # This feature has been implemented for Mailchimp only for now.
   # You can also hide it from the footer.
@@ -165,10 +179,12 @@ When you run your site for first time, it will start with the default parameters
 
 Here, are some handy shortcodes you can use with this theme.
 
-- [Alert](https://toha-guides.netlify.app/posts/short-codes/alert/)
-- [Image](https://toha-guides.netlify.app/posts/short-codes/img/)
-- [Split](https://toha-guides.netlify.app/posts/short-codes/split/)
-- [Vertical Space](https://toha-guides.netlify.app/posts/short-codes/vs/)
+- [Alert](https://toha-guides.netlify.app/posts/shortcodes/#alert)
+- [Image](https://toha-guides.netlify.app/posts/shortcodes/#image)
+- [Split](https://toha-guides.netlify.app/posts/shortcodes/#split)
+- [Vertical Space](https://toha-guides.netlify.app/posts/shortcodes/#vertical-space)
+- [Video](https://toha-guides.netlify.app/posts/shortcodes/#video)
+- [Mermaid](https://hugo-toha.github.io/posts/shortcodes/#mermaid)
 
 ## Project Roadmap
 
@@ -230,13 +246,14 @@ Here is the check list for portfolio mode,
 
 - [ ] **Publications**
 
-  - [ ] Category Filter
-  - [ ] Card
-  - [ ] Abstract
-  - [ ] Authors
-  - [ ] Tags
-  - [ ] Links
-  - [ ] Gallery
+  - [x] Category Filter
+  - [x] Card
+  - [x] Tags
+  - [x] Links
+  - [ ] Dedicated Page
+    - [ ] Abstract
+    - [ ] Authors
+    - [ ] Gallery
 
 - [x] **Accomplishment / Courses**
 
