@@ -11,10 +11,10 @@ section:
 designation: DevOps Engineer
 # your company information
 company:
-  - name: Digital House
-    url: "https://www.digitalhouse.com"
-  - name: Naranja X
-    url: "https://www.naranjax.com"  
+  name: Digital House
+  url: "https://www.digitalhouse.com"
+  name: Naranja X
+  url: "https://www.naranjax.com"  
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/CV Nicolas Serbín.pdf"
