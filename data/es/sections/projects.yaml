@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Proyectos
+  name: Projects
   id: projects
   enable: true
   weight: 5
@@ -19,44 +19,44 @@ buttons:
 
 # your projects
 projects:
-- name: Kubernetes
-  logo: /images/sections/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
-
-- name: Tensorflow
-  logo: /images/sections/projects/tensorflow.png
-  role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
-  #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning"]
-
-- name: A sample academic paper
-  role: Team Lead
-  timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
-
-- name: Nocode
-  logo: /images/sections/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
-  #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
-
-- name: Toha
-  logo: /images/sections/projects/toha.png
+- name: Ansible
+  logo: /images/sections/projects/ansible.png
   role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+  timeline: "December 2020"
+  repo: https://github.com/NSerbin/Ansible
+  summary: Ansible Playbooks i made for my VMs and PCs.
+  tags: ["Configuration","Ansible","Hobby","Yaml"]
+
+- name: Python
+  logo: /images/sections/projects/python.png
+  role: Owner
+  timeline: "October 2020"
+  repo: https://github.com/NSerbin/ReGex # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Regular Expression functions to help me find specific values.
+  tags: ["Hobby", "ReGex", "Python"]
+
+- name: Python
+  logo: /images/sections/projects/python.png
+  role: Owner
+  timeline: "December 2020"
+  repo: https://github.com/NSerbin/SystemInfo
+  #url: ""
+  summary: A Python Script to check System info (CPU, Disk, RAM, IP).
+  tags: ["Hobby", "Python", "OS"]
+
+- name: Python
+  logo: /images/sections/projects/python.png
+  role: Owner
+  timeline: "December 2020"
+  repo: https://github.com/NSerbin/StrongPasswordGenerator
+  summary: A Script to generate strong passwords.
+  tags: ["Hobby","Python", "Security"]
+
+- name: Python
+  logo: /images/sections/projects/python.png
+  role: Owner
+  timeline: "November 2020"
+  repo: https://github.com/NSerbin/MELI-challenge
+  summary: The challenge i made to join MercadoLibre.
+  tags: ["Challenge", "Professional", "Python", "API"]
