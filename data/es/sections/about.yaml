@@ -13,9 +13,11 @@ designation: DevOps Engineer
 company:
   name: Digital House
   url: "https://www.digitalhouse.com"
+  name: Naranja X
+  url: "https://www.naranjax.com"  
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/cv.pdf"
+resume: "files/CV Nicolas Serbín.pdf"
 
 # a summary about you
 summary: 'Soy apasionado por la tecnologia y la automatizacion, con 1 año de experiencia. Mi trabajo es construir Infraestructura y automatizar procesos. Me gusta crear cosas y jugar con mi Raspberry PI.'
