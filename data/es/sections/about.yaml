@@ -10,7 +10,7 @@ section:
 # your designation
 designation: DevOps Engineer
 # your company information
-companies:
+company:
   - name: Digital House
     url: "https://www.digitalhouse.com"
   - name: Naranja X
