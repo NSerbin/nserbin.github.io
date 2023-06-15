@@ -43,7 +43,7 @@ Esto expone los valores en /index.json: por ejemplo, para agregar `categories`
 \```
 
 ### Editar las opciones de fuse.js para buscar
-`assets/scripts/pages/search.js`
+`static/js/search.js`
 \```
 keys: [
   "title",
