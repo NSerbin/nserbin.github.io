@@ -76,7 +76,7 @@ projects:
   summary: Scripts i made with Python & boto3 library to perform s3 api calls in AWS.
   tags: ["Professional", "Python", "API", "AWS"]
 
- - name: Shell
+- name: Shell
   logo: /images/sections/skills/shell.png
   role: Owner
   timeline: "August 2023"
