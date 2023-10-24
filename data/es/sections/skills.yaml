@@ -15,7 +15,7 @@ skills:
   logo: /images/sections/skills/ansible.png
   summary: "Manejo intermedio de Ansible. Utilizado para generar mis configuraciones personales."
 
-- name: ArgoCD
+- name: Argo CD
   logo: /images/sections/skills/argocd.svg
   summary: "Manejo basico de ARGO CD."
 
@@ -50,7 +50,7 @@ skills:
 - name: Jira
   logo: /images/sections/skills/jira.png
   summary: "Uso a diario Jira Scrum. Tambien use en el pasado Jira como Ticketera de Service Desk."
-  url: "https://www.jira.com/"
+  url: "https://git-scm.com/"
 
 - name: Kubernetes
   logo: /images/sections/skills/kubernetes.png
@@ -76,4 +76,4 @@ skills:
 
 - name: Shell Scripting
   logo: /images/sections/skills/shell.png
-  summary: "Uso Avanzado de Shell Scripting."  
+  summary: "Uso Avanzado de Shell Scripting."
