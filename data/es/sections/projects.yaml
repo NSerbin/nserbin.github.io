@@ -20,7 +20,7 @@ buttons:
 # your projects
 projects:
 - name: Ansible
-  logo: /images/sections/projects/ansible.png
+  logo: /images/sections/skills/ansible.png
   role: Owner
   timeline: "December 2020"
   repo: https://github.com/NSerbin/Ansible
@@ -28,7 +28,7 @@ projects:
   tags: ["Configuration","Ansible","Hobby","Yaml"]
 
 - name: Python
-  logo: /images/sections/projects/python.png
+  logo: /images/sections/skills/python.png
   role: Owner
   timeline: "October 2020"
   repo: https://github.com/NSerbin/ReGex # If your project is a public repo on GitHub, then provide this link. it will show star count.
@@ -37,7 +37,7 @@ projects:
   tags: ["Hobby", "ReGex", "Python"]
 
 - name: Python
-  logo: /images/sections/projects/python.png
+  logo: /images/sections/skills/python.png
   role: Owner
   timeline: "December 2020"
   repo: https://github.com/NSerbin/SystemInfo
@@ -46,7 +46,7 @@ projects:
   tags: ["Hobby", "Python", "OS"]
 
 - name: Python
-  logo: /images/sections/projects/python.png
+  logo: /images/sections/skills/python.png
   role: Owner
   timeline: "December 2020"
   repo: https://github.com/NSerbin/StrongPasswordGenerator
@@ -54,7 +54,7 @@ projects:
   tags: ["Hobby","Python", "Security"]
 
 - name: Python
-  logo: /images/sections/projects/python.png
+  logo: /images/sections/skills/python.png
   role: Owner
   timeline: "November 2020"
   repo: https://github.com/NSerbin/MELI-challenge
@@ -62,7 +62,7 @@ projects:
   tags: ["Challenge", "Professional", "Python", "API"]
 
 - name: Python
-  logo: /images/sections/projects/python.png
+  logo: /images/sections/skills/python.png
   role: Owner
   timeline: "August 2023"
   repo: https://github.com/NSerbin/Github-Scripts
@@ -70,7 +70,7 @@ projects:
   tags: ["Professional", "Python", "API", "Github"]
 
 - name: Python
-  logo: /images/sections/projects/python.png
+  logo: /images/sections/skills/python.png
   role: Owner
   timeline: "August 2023"
   repo: https://github.com/NSerbin/aws-scripts
