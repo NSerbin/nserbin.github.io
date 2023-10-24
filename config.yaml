@@ -70,10 +70,6 @@ params:
         reddit: true
         whatsapp: true
         email: true
-        # tumblr: true
-        # pocket: true
-        # diaspora: true
-        # mastodon: true
 #      analytics:
 #        enabled: true
 #        goatCounter:

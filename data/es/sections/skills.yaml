@@ -40,8 +40,8 @@ skills:
 - name: Helm
   logo: /images/sections/skills/helm.svg
   summary: "Uso Helm para simplificar y estandarizar la implementación de aplicaciones en clústeres de Kubernetes."
-  url: "https://www.docker.com/"  
-
+  url: "https://www.helm.com/"
+  
 - name: Git
   logo: /images/sections/skills/git.png
   summary: "Uso experimentado de Git. Actualmente utilizo mucho Gitlab pero tambien suelo usar GitHub."
@@ -50,7 +50,7 @@ skills:
 - name: Jira
   logo: /images/sections/skills/jira.png
   summary: "Uso a diario Jira Scrum. Tambien use en el pasado Jira como Ticketera de Service Desk."
-  url: "https://git-scm.com/"
+  url: "https://www.jira.com/"
 
 - name: Kubernetes
   logo: /images/sections/skills/kubernetes.png

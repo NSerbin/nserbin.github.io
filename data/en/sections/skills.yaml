@@ -40,7 +40,7 @@ skills:
 - name: Helm
   logo: /images/sections/skills/helm.svg
   summary: "Use Helm Charts for simplifying and standardizing the deployment of applications on Kubernetes clusters."
-  url: "https://www.docker.com/"  
+  url: "https://www.helm.com/"  
 
 - name: Git
   logo: /images/sections/skills/git.png
