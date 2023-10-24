@@ -74,7 +74,7 @@ projects:
   timeline: "August 2023"
   repo: https://github.com/NSerbin/aws-scripts
   summary: Scripts i made with Python & boto3 library to perform s3 api calls in AWS.
-  tags: ["Professional", "Python", "API", "AWS"] 
+  tags: ["Professional", "Python", "API", "AWS"]
 
  - name: Shell
   logo: /images/sections/skills/shell.png
