@@ -15,24 +15,23 @@ experiences:
     url: "https://www.naranjax.com/"
     location: Buenos Aires, Argentina
     # company overview
-    overview: Naranja X is a recognized fintech company, that offers financial inclusion to many people within the Argentine territory.
+    overview: Naranja X is a recognized fintech company, that offers financial inclusion to many people within the Argentine territory. I am involved in the "WIRU Pipeline" project. It's hosted on Gitlab and predominantly written in Bash and Python.
   positions:
   - designation: CloudOps Engineer
     start: Febrero 2023
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Created Helm templates capable of supporting multiple versions of Kubernetes clusters.
-    - Streamlined and standardized the testing jobs.
-    - Developed Python scripts using the boto3 library to perform batch deletion of specific files using regex patterns in the company's S3 buckets.
-    - Implemented a Gitlab-CI Self Hosted instance on an EC2 instance as part of our RDP strategy.
+    - Create & Maintain the Jobs made in Python & Bash.
+    - Creation of Helm Templates that can support multiple versions of Kubernetes clusters. 
+    - I also optimized the testing jobs to streamline and standardize the process. 
+    - I developed Python scripts employing the boto3 library to perform batch deletion of specific files using regex patterns in the company's S3 buckets. 
+    - Furthermore, as part of our RDP strategy, I implemented a Gitlab-CI Self-Hosted instance on an EKS Cluster.
+
 - company:
     name: Digital House
     url: "https://www.digitalhouse.com"
     location: Buenos Aires, Argentina
     # company overview
-    overview: Digital House is a recognized education company who offers premium IT carreers.
+    overview: Digital House is a recognized education company who offers premium IT carreers. I am involved in the DevOps Team
   positions:
   - designation: DevOps Engineer
     start: September 2021
