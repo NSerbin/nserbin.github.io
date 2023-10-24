@@ -16,7 +16,7 @@ skills:
   summary: "Intermediate knowledge with Ansible. Used for personal configuration."
 
 - name: ARGO CD
-  logo: /images/sections/skills/argo.png
+  logo: /images/sections/skills/ArgoCD.svg
   summary: "Basic knowledge of ARGO CD."
 
 - name: AWS
@@ -28,7 +28,7 @@ skills:
   summary: "Used daily to make Documentation."
 
 - name: Datadog
-  logo: /images/sections/skills/docker.svg
+  logo: /images/sections/skills/datadog.svg
   summary: "Use Datadog for monitoring Serverless Applications in AWS."
   url: "https://www.datadog.com/"
 
@@ -38,7 +38,7 @@ skills:
   url: "https://www.docker.com/"
 
 - name: Helm
-  logo: /images/sections/skills/docker.svg
+  logo: /images/sections/skills/helm.svg
   summary: "Use Helm Charts for simplifying and standardizing the deployment of applications on Kubernetes clusters."
   url: "https://www.docker.com/"  
 

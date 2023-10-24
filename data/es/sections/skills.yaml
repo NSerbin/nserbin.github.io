@@ -16,7 +16,7 @@ skills:
   summary: "Manejo intermedio de Ansible. Utilizado para generar mis configuraciones personales."
 
 - name: ARGO CD
-  logo: /images/sections/skills/argo.png
+  logo: /images/sections/skills/ArgoCD.svg
   summary: "Manejo basico de ARGO CD."
 
 - name: AWS
