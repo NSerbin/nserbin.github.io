@@ -20,7 +20,7 @@ skills:
   summary: "Manejo basico de ARGO CD."
 
 - name: AWS
-  logo: "/images/sections/skills/cloud.png"
+  logo: "/images/sections/skills/aws.png"
   summary: "Infraestructura Cloud usada a diario en conjunto con Terraform y Kubernetes"
 
 - name: Confluence
