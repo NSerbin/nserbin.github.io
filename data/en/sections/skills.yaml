@@ -40,7 +40,7 @@ skills:
 - name: Helm
   logo: /images/sections/skills/helm.svg
   summary: "Use Helm Charts for simplifying and standardizing the deployment of applications on Kubernetes clusters."
-  url: "https://www.helm.com/"  
+  url: "https://www.helm.com/"
 
 - name: Git
   logo: /images/sections/skills/git.png
@@ -72,7 +72,7 @@ skills:
 - name: Terraform
   logo: /images/sections/skills/terraform.png
   summary: "Used to make IaC with AWS. Capable to do Modules"
-  url: "https://www.terraform.io/"  
+  url: "https://www.terraform.io/"
 
 - name: Shell Scripting
   logo: /images/sections/skills/shell.png

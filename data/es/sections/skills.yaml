@@ -72,7 +72,7 @@ skills:
 - name: Terraform
   logo: /images/sections/skills/terraform.png
   summary: "Lo uso a diario para generar Infraestructura como Codigo en conjunto con AWS. Soy capaz de realiza Módulos."
-  url: "https://www.terraform.io/"  
+  url: "https://www.terraform.io/"
 
 - name: Shell Scripting
   logo: /images/sections/skills/shell.png
