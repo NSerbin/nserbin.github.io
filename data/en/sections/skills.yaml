@@ -15,7 +15,7 @@ skills:
   logo: /images/sections/skills/ansible.png
   summary: "Intermediate knowledge with Ansible. Used for personal configuration."
 
-- name: ARGO CD
+- name: ArgoCD
   logo: /images/sections/skills/ArgoCD.svg
   summary: "Basic knowledge of ARGO CD."
 
