@@ -16,20 +16,16 @@ skills:
   summary: "Manejo intermedio de Ansible. Utilizado para generar mis configuraciones personales."
 
 - name: ArgoCD
-  logo: /images/sections/skills/ArgoCD.svg
+  logo: /images/sections/skills/argocd.svg
   summary: "Manejo basico de ARGO CD."
 
 - name: AWS
   logo: /images/sections/skills/cloud.png
   summary: "Infraestructura Cloud usada a diario en conjunto con Terraform y Kubernetes"
 
-- name: Bash
-  logo: /images/sections/skills/shell.png
-  summary: "Uso Avanzado de Shell Scripting."
-
-# - name: Confluence
-#   logo: /images/sections/skills/confluence.png
-#   summary: "Usado a diario para generar Documentacion."
+- name: Confluence
+  logo: /images/sections/skills/confluence.png
+  summary: "Usado a diario para generar Documentacion."
 
 - name: Datadog
   logo: /images/sections/skills/datadog.svg
@@ -51,10 +47,10 @@ skills:
   summary: "Uso experimentado de Git. Actualmente utilizo mucho Gitlab pero tambien suelo usar GitHub."
   url: "https://git-scm.com/"
 
-# - name: Jira
-#   logo: /images/sections/skills/jira.png
-#   summary: "Uso a diario Jira Scrum. Tambien use en el pasado Jira como Ticketera de Service Desk."
-#   url: "https://www.jira.com/"
+- name: Jira
+  logo: /images/sections/skills/jira.png
+  summary: "Uso a diario Jira Scrum. Tambien use en el pasado Jira como Ticketera de Service Desk."
+  url: "https://www.jira.com/"
 
 - name: Kubernetes
   logo: /images/sections/skills/kubernetes.png
@@ -77,3 +73,7 @@ skills:
   logo: /images/sections/skills/terraform.png
   summary: "Lo uso a diario para generar Infraestructura como Codigo en conjunto con AWS. Soy capaz de realiza Módulos."
   url: "https://www.terraform.io/"
+
+- name: Shell Scripting
+  logo: /images/sections/skills/shell.png
+  summary: "Uso Avanzado de Shell Scripting."  

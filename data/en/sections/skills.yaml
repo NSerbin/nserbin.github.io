@@ -16,20 +16,16 @@ skills:
   summary: "Intermediate knowledge with Ansible. Used for personal configuration."
 
 - name: ArgoCD
-  logo: /images/sections/skills/ArgoCD.svg
+  logo: /images/sections/skills/argocd.svg
   summary: "Basic knowledge of ARGO CD."
 
 - name: AWS
   logo: /images/sections/skills/cloud.png
   summary: "Daily infrastructure. Used with Terraform and Kubernetes"
 
-- name: Bash
-  logo: /images/sections/skills/shell.png
-  summary: "Advanced Knowledge on shell scripts."
-
-# - name: Confluence
-#   logo: /images/sections/skills/confluence.png
-#   summary: "Used daily to make Documentation."
+- name: Confluence
+  logo: /images/sections/skills/confluence.png
+  summary: "Used daily to make Documentation."
 
 - name: Datadog
   logo: /images/sections/skills/datadog.svg
@@ -51,10 +47,10 @@ skills:
   summary: "Experienced with git-based development. Mostly using Gitlab & Github."
   url: "https://git-scm.com/"
 
-# - name: Jira
-#   logo: /images/sections/skills/jira.png
-#   summary: "Daily use of Jira Scrum. Also used Jira Service Desk tickets."
-#   url: "https://www.jira.com/"
+- name: Jira
+  logo: /images/sections/skills/jira.png
+  summary: "Daily use of Jira Scrum. Also used Jira Service Desk tickets."
+  url: "https://www.jira.com/"
 
 - name: Kubernetes
   logo: /images/sections/skills/kubernetes.png
@@ -77,3 +73,7 @@ skills:
   logo: /images/sections/skills/terraform.png
   summary: "Used to make IaC with AWS. Capable to do Modules"
   url: "https://www.terraform.io/"
+
+- name: Shell Scripting
+  logo: /images/sections/skills/shell.png
+  summary: "Advanced Knowledge on shell scripts."
