@@ -23,6 +23,10 @@ skills:
   logo: /images/sections/skills/cloud.png
   summary: "Daily infrastructure. Used with Terraform and Kubernetes"
 
+- name: Bash
+  logo: /images/sections/skills/shell.png
+  summary: "Advanced Knowledge on shell scripts."
+
 - name: Confluence
   logo: /images/sections/skills/confluence.png
   summary: "Used daily to make Documentation."
@@ -73,7 +77,3 @@ skills:
   logo: /images/sections/skills/terraform.png
   summary: "Used to make IaC with AWS. Capable to do Modules"
   url: "https://www.terraform.io/"
-
-- name: Shell Scripting
-  logo: /images/sections/skills/shell.png
-  summary: "Advanced Knowledge on shell scripts."
