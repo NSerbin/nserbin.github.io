@@ -44,6 +44,11 @@ badges:
   url: "https://www.credly.com/badges/6ad2732a-f98e-479e-8c16-5d37cbb3e756/public_url"
   badge: "https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
 
+- type: certification
+  name: AWS Certified Developer – Associate
+  url: "https://www.credly.com/badges/dfdd54fc-8848-4a15-b03f-5e3cad1068e1/public_url"
+  badge: "https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png"
+
 - type: soft-skill-indicator
   name: Leadership
   percentage: 85
