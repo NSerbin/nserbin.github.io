@@ -11,6 +11,23 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Naranja X
+    url: "https://www.naranjax.com/"
+    location: Buenos Aires, Argentina
+    # company overview
+    overview: Naranja X es una reconocida fintech, que ofrece inclusion financiera a muchas personas dentro del territorio argentino.
+  positions:
+  - designation: DevOps Engineer
+    start: Febrero 2023
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Created Helm templates capable of supporting multiple versions of Kubernetes clusters.
+    - Streamlined and standardized the testing jobs.
+    - Developed Python scripts using the boto3 library to perform batch deletion of specific files using regex patterns in the company's S3 buckets.
+    - Implemented a Gitlab-CI Self Hosted instance on an EC2 instance as part of our RDP strategy.
+- company:
     name: Digital House
     url: "https://www.digitalhouse.com"
     location: Buenos Aires, Argentina
@@ -23,13 +40,19 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Building CI Pipelines in Gitlab CI.
-    - Designing & Developing IaC with Terraform in AWS.
-    - Designing, Developing and Managing Kubernetes Clusters.
-    - Designing & Managing infrastructure observability with Datadog.
-    - Write Serverless Framework Templates.
-    - Write Documentation.
     - Migrate On-Premise Environments to AWS (EC2, ALB, S3, VPC, RDS, IAM).
+    - Designed and implemented comprehensive monitoring for AWS Lambdas in Datadog.
+    - Implemented monitoring for AWS RDS in Grafana.
+    - Created Python scripts using the boto3 library for various tasks, such as bulk file deletion in S3 and generating VPC Peerings.
+    - Developed scripts to streamline the onboarding process by installing all DevOps team tools.
+    - Conducted analysis of EC2 and RDS instances, optimizing costs and performance through resizing when necessary.
+    - Upgraded AWS provider in Terraform to Version 5x, including the associated modules.
+    - Led the migration from Gitlab CI to Github.
+    - Developed scripts for making large-scale changes in both Gitlab and Github repositories.
+    - Designed and developed Infrastructure as Code (IaC) using Terraform in AWS.
+    - Designed, developed, and managed Kubernetes clusters.
+    - Generated documentation for various projects and processes.
+    - Developed Serverless Framework Templates.    
 
 - company:
     name: MercadoLibre

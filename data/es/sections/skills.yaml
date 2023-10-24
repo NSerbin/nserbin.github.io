@@ -15,6 +15,10 @@ skills:
   logo: /images/sections/skills/ansible.png
   summary: "Manejo intermedio de Ansible. Utilizado para generar mis configuraciones personales."
 
+- name: ARGO CD
+  logo: /images/sections/skills/argo.png
+  summary: "Manejo basico de ARGO CD."
+
 - name: AWS
   logo: /images/sections/skills/cloud.png
   summary: "Infraestructura Cloud usada a diario en conjunto con Terraform y Kubernetes"
@@ -23,10 +27,20 @@ skills:
   logo: /images/sections/skills/confluence.png
   summary: "Usado a diario para generar Documentacion."
 
+- name: Datadog
+  logo: /images/sections/skills/datadog.svg
+  summary: "Uso Datadog para monitorear aplicaciones Serverless en AWS."
+  url: "https://www.datadog.com/"
+
 - name: Docker
   logo: /images/sections/skills/docker.svg
   summary: "La mayoria de mis aplicativos son realizados con Containers de Docker. En proceso de aprendizaje de Multi-Stage Build."
   url: "https://www.docker.com/"
+
+- name: Helm
+  logo: /images/sections/skills/helm.svg
+  summary: "Uso Helm para simplificar y estandarizar la implementación de aplicaciones en clústeres de Kubernetes."
+  url: "https://www.docker.com/"  
 
 - name: Git
   logo: /images/sections/skills/git.png
@@ -62,4 +76,4 @@ skills:
 
 - name: Shell Scripting
   logo: /images/sections/skills/shell.png
-  summary: "Uso básico de Shell Scripting. Me considero capaz de realizar scripts."
+  summary: "Uso Avanzado de Shell Scripting."

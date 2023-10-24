@@ -23,10 +23,11 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Diseñar Pipelines en Gitlab.
-    - Scripting en Python y Shell
-    - Diseñar templates para Helm
-    - Generar Documentación.
+    - Creé plantillas Helm capaces de admitir múltiples versiones de clústeres de Kubernetes.
+    - Optimicé y estandaricé los jobs de tests.
+    - Desarrollé scripts en Python utilizando la biblioteca boto3 para realizar eliminaciones por lotes de archivos específicos mediante patrones regex en los buckets de S3 de la empresa.
+    - Implementé una instancia autohospedada de Gitlab-CI en una instancia EC2 como parte de nuestra estrategia de RDP.
+    - Desarrollo de jobs en Python y Bash para el Pipeline de Gitlab CI.
 - company:
     name: Digital House
     url: "https://www.digitalhouse.com"
@@ -40,16 +41,19 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Diseñar Pipelines en Gitlab.
-    - Diseñar Pipelines en Github.
-    - Scripting en Python y Shell
-    - Diseñar templates para Helm.    
-    - Diseñar y Desarrollar IaC con Terraform en AWS.
-    - Diseñar, Desarrollar y Administrar Clusters de Kubernetes.
-    - Diseñar y Administrar la Observabilidad usando Datadog.
-    - Generar Templates para Serverless Framework.
-    - Generar Documentación.
-    - Migrar ambientes On-Premise a AWS (EC2, ALB, S3, VPC, RDS, IAM)
+    - Migración  ambientes On-Premise a AWS (EC2, ALB, S3, VPC, RDS, IAM).
+    - Diseñé e implementé un monitoreo integral para AWS Lambdas en Datadog.
+    - Implementé monitoreo para AWS RDS en Grafana.
+    - Creé scripts en Python utilizando la biblioteca boto3 para diversas tareas, como la eliminación masiva de archivos en S3 y la generación de Peerings de VPC.
+    - Desarrollé scripts para agilizar el proceso de incorporación instalando todas las herramientas del equipo de DevOps.
+    - Realicé análisis de instancias EC2 y RDS, optimizando costos y rendimiento mediante cambios de tamaño cuando fue necesario.
+    - Actualicé el proveedor de AWS en Terraform a la Versión 5x, incluyendo los módulos asociados.
+    - Lideré la migración de Gitlab CI a Github.
+    - Desarrollé scripts para realizar cambios a gran escala en los repositorios de Gitlab y Github.
+    - Diseñé y desarrollé Infraestructura como Código (IaC) utilizando Terraform en AWS.
+    - Diseñé, desarrollé y gestioné clústeres de Kubernetes.
+    - Generé documentación para diversos proyectos y procesos.
+    - Desarrollé plantillas del Framework Serverless.    
 
 - company:
     name: MercadoLibre

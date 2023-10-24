@@ -60,3 +60,27 @@ projects:
   repo: https://github.com/NSerbin/MELI-challenge
   summary: The challenge i made to join MercadoLibre.
   tags: ["Challenge", "Professional", "Python", "API"]
+
+- name: Python
+  logo: /images/sections/projects/python.png
+  role: Owner
+  timeline: "August 2023"
+  repo: https://github.com/NSerbin/Github-Scripts
+  summary: Scripts i made to change massively repos & other stuff in github.
+  tags: ["Professional", "Python", "API", "Github"]
+
+- name: Python
+  logo: /images/sections/projects/python.png
+  role: Owner
+  timeline: "August 2023"
+  repo: https://github.com/NSerbin/aws-scripts
+  summary: Scripts i made with Python & boto3 library to perform s3 api calls in AWS.
+  tags: ["Professional", "Python", "API", "AWS"] 
+
+ - name: Shell
+  logo: /images/sections/skills/shell.png
+  role: Owner
+  timeline: "August 2023"
+  repo: https://github.com/NSerbin/aws-scripts
+  summary: Scripts i made with Shell to perform s3 api calls in AWS.
+  tags: ["Professional", "Shell", "API", "AWS"] 
