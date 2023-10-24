@@ -7,6 +7,10 @@ image: "images/author/perfil.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "contact@nserbin.com"
+  GitHub:
+    icon: github
+    url: "https://www.github.com/NSerbin"
+    text: "NSerbin"
 
 # some summary about what you do
 summary:

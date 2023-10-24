@@ -17,7 +17,7 @@ experiences:
     # company overview
     overview: Naranja X es una reconocida fintech, que ofrece inclusion financiera a muchas personas dentro del territorio argentino.
   positions:
-  - designation: DevOps Engineer
+  - designation: CloudOps Engineer
     start: Febrero 2023
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
