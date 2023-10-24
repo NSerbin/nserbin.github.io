@@ -27,9 +27,9 @@ skills:
   logo: /images/sections/skills/shell.png
   summary: "Advanced Knowledge on shell scripts."
 
-- name: Confluence
-  logo: /images/sections/skills/confluence.png
-  summary: "Used daily to make Documentation."
+# - name: Confluence
+#   logo: /images/sections/skills/confluence.png
+#   summary: "Used daily to make Documentation."
 
 - name: Datadog
   logo: /images/sections/skills/datadog.svg
@@ -51,10 +51,10 @@ skills:
   summary: "Experienced with git-based development. Mostly using Gitlab & Github."
   url: "https://git-scm.com/"
 
-- name: Jira
-  logo: /images/sections/skills/jira.png
-  summary: "Daily use of Jira Scrum. Also used Jira Service Desk tickets."
-  url: "https://www.jira.com/"
+# - name: Jira
+#   logo: /images/sections/skills/jira.png
+#   summary: "Daily use of Jira Scrum. Also used Jira Service Desk tickets."
+#   url: "https://www.jira.com/"
 
 - name: Kubernetes
   logo: /images/sections/skills/kubernetes.png
