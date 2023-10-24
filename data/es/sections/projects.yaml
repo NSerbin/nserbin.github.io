@@ -31,8 +31,7 @@ projects:
   logo: /images/sections/skills/python.png
   role: Owner
   timeline: "October 2020"
-  repo: https://github.com/NSerbin/ReGex # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  repo: https://github.com/NSerbin/ReGex
   summary: Regular Expression functions to help me find specific values.
   tags: ["Hobby", "ReGex", "Python"]
 
