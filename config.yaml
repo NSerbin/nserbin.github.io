@@ -48,7 +48,7 @@ params:
     provider: darkreader
     default: system
   # Background image of the landing page
-  background: /images/site/background3.jpg
+  background: /images/site/background1.jpg
 
   # GitHub repo of your site
   gitRepo: https://github.com/NSerbin/nserbin.github.io
