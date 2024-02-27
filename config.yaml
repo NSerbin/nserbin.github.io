@@ -64,11 +64,14 @@ params:
   gitBranch: source
   # Configure various features of this theme
   features:
+    # Enable and configure dark mode
     darkMode:
       enable: true
+
     # Enable and configure portfolio
     portfolio:
       enable: true
+
     # Enable and configure blog posts
     blog:
       enable: true
@@ -97,12 +100,14 @@ params:
   tags:
     enable: true
     on_card: true
+
   flags:
     enable: true
+    flagOverwrites:
+      - languageCode: es
+        countryCode: ar
   # If you want to use different country flag for a language, specify them here.
-  flagOverwrites:
-   - languageCode: es
-     countryCode: ar
+
 
   # Provide footer configuration.
   footer:
@@ -113,6 +118,7 @@ params:
     # Show/hide navigation in the footer. Default is "true".
     navigation:
       enable: true
+      customMenus: true
     # Show/hide "Contact Me" section in the footer. Default is "true".
     contactMe:
       enable: true
