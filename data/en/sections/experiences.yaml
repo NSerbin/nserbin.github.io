@@ -18,7 +18,8 @@ experiences:
     overview: Naranja X is a recognized fintech company, that offers financial inclusion to many people within the Argentine territory. I am involved in the "WIRU Pipeline" project. It's hosted on Gitlab and predominantly written in Bash and Python.
   positions:
   - designation: CloudOps Engineer
-    start: Febrero 2023
+    start: February 2023
+    end: January 2024
     responsibilities:
     - Create & Maintain the Jobs made in Python & Bash.
     - Creation of Helm Templates that can support multiple versions of Kubernetes clusters. 
