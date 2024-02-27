@@ -20,8 +20,7 @@ jobs:
         extended: true
 
     - name: Update Hugo Modules
-      run: |
-        hugo mod get -u
+      run: hugo mod tidy
 
     - name: Setup Node
       uses: actions/setup-node@v4
@@ -31,11 +30,10 @@ jobs:
     - name: Install node modules
       run: |
         hugo mod npm pack
-        npm install
-        hugo mod tidy        
+        npm install     
 
     - name: Build
-      run: hugo server -w
+      run: hugo --minify
 
     # push the generated content into the `gh-pages` branch.
     - name: Deploy
