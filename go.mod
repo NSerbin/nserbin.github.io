@@ -1,4 +1,4 @@
-module github.com/NSerbin/nserbin.github.io
+module https://github.com/NSerbin/nserbin.github.io
 
 go 1.22
 
