@@ -68,6 +68,7 @@ params:
     maxVisibleSections: 5
 
   features:
+
     # Enable and configure dark mode
     darkMode:
       enable: true
@@ -79,6 +80,7 @@ params:
     # Enable and configure blog posts
     blog:
       enable: true
+      showAuthor: true
       # Share post on different social media
       shareButtons:
         facebook: true
@@ -138,4 +140,4 @@ params:
 
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
-      enable: false
+      enable: true

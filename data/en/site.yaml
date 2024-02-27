@@ -16,9 +16,9 @@ description: Portfolio y Blog Personal de Nicolás Serbin.
 #  url: https://toha-guides.netlify.app/posts/
 
 # # Specify OpenGraph Headers
-# openGraph:
-#   title: Nicolás Serbin Blog
-#   type: website
-#   description: Nicolás Serbin Portfolio & Blog.
-#   image: images/author/perfil.png
-#   url: https://nserbin.github.io/
+openGraph:
+  title: Nicolás Serbin Blog
+  type: website
+  description: Nicolás Serbin Portfolio & Blog.
+  image: images/author/perfil.png
+  url: https://nserbin.github.io/
