@@ -35,7 +35,7 @@ jobs:
         hugo mod tidy        
 
     - name: Build
-      run: hugo --minify
+      run: hugo server -w
 
     # push the generated content into the `gh-pages` branch.
     - name: Deploy
