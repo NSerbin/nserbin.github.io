@@ -92,21 +92,21 @@ params:
     notes:
       enable: true
 
-  # specify whether you want to show Table of Contents in reading page
-  toc:
-    enable: true  
-  
-  # Show tags under the post title
-  tags:
-    enable: true
-    on_card: true
+    # specify whether you want to show Table of Contents in reading page
+    toc:
+      enable: true  
+    
+    # Show tags under the post title
+    tags:
+      enable: true
+      on_card: true
 
-  flags:
-    enable: true
-    flagOverwrites:
-      - languageCode: es
-        countryCode: ar
-  # If you want to use different country flag for a language, specify them here.
+    flags:
+      enable: true
+      flagOverwrites:
+        - languageCode: es
+          countryCode: ar
+    # If you want to use different country flag for a language, specify them here.
 
 
   # Provide footer configuration.
