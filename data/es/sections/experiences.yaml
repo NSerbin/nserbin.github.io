@@ -11,6 +11,20 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: OLX
+    url: "https://www.olx.com.pt/"
+    location: Lisboa, Portugal
+    # company overview
+    overview: OLX opera como un sofisticado mercado digital global, especializado en el comercio localizado de una amplia variedad de productos y servicios, desde electrónica hasta bienes raíces, empoderando a millones para comprar, vender y conectar dentro de sus comunidades de manera fácil.
+  positions:
+  - designation: Cloud Engineer
+    start: Abrilsa 2024
+    responsibilities:
+    - Diseñé y desarrollé Infraestructura como Código (IaC) utilizando Terraform en AWS.
+    - Crear y administrar Instancias SAP
+    - Desarrollé scripts en Python utilizando la biblioteca boto3 para realizar distintas tareas de administracion dentro de las cuentas de la organizacion.
+    - Administrar la instancia de Gitlab Self Hosted.
+- company:
     name: Naranja X
     url: "https://www.naranjax.com/"
     location: Buenos Aires, Argentina
@@ -42,7 +56,7 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Migración  ambientes On-Premise a AWS (EC2, ALB, S3, VPC, RDS, IAM).
+    - Migración ambientes On-Premise a AWS (EC2, ALB, S3, VPC, RDS, IAM).
     - Diseñé e implementé un monitoreo integral para AWS Lambdas en Datadog.
     - Implementé monitoreo para AWS RDS en Grafana.
     - Creé scripts en Python utilizando la biblioteca boto3 para diversas tareas, como la eliminación masiva de archivos en S3 y la generación de Peerings de VPC.

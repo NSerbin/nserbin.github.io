@@ -11,6 +11,19 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: OLX
+    url: "https://www.olx.com.pt/"
+    location: Lisbon, Portugal
+    # company overview
+    overview: OLX operates as a sophisticated global digital marketplace, specializing in localized trading of a diverse array of products and services, ranging from electronics to real estate, empowering millions to buy, sell, and connect within their communities effortlessly.
+  positions:
+  - designation: Cloud Engineer
+    start: April 2024
+    responsibilities:
+      - Create & Administrate SAP Instances
+      - I developed Python scripts employing the boto3 library to perform different admin tasks inside the accounts
+      - Admin Gitlab Selfhosted Instance
+- company:
     name: Naranja X
     url: "https://www.naranjax.com/"
     location: Buenos Aires, Argentina
