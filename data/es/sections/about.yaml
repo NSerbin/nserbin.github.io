@@ -8,11 +8,11 @@ section:
   template: sections/about.html
 
 # your designation
-designation: DevOps Engineer
+designation: Cloud Engineer
 # your company information
 company:
-  name: Digital House
-  url: "https://www.digitalhouse.com"
+  name: OLX
+  url: "https://www.olx.com"
 
 # your resume. this file path should be relative to you "static" directory
 resourceLinks:
