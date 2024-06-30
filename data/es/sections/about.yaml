@@ -16,7 +16,7 @@ company:
 
 # your resume. this file path should be relative to you "static" directory
 resourceLinks:
-- title: "My Resume"
+- title: "My CV"
   url: "files/curriculum.pdf"
 
 # a summary about you
