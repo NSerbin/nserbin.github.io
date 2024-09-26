@@ -1,6 +1,7 @@
 baseURL: https://nserbin.github.io
 
 languageCode: en-us
+
 title: "Nicolas Serbin's Blog"
 
 module:
