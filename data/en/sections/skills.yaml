@@ -8,72 +8,120 @@ section:
   # Can optionally hide the title in sections
   # hideTitle: true
 
+buttons:
+- name: All
+  filter: "all"
+- name: Language
+  filter: "language"
+- name: Container
+  filter: "container"
+- name: CI-CD
+  filter: "ci-cd"
+- name: IAC
+  filter: "iac"  
+- name: Observability
+  filter: "observability"
+- name: Others
+  filter: "others"
+
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
 - name: Ansible
   logo: "/images/sections/skills/ansible.png"
   summary: "Intermediate knowledge with Ansible. Used for personal configuration."
+  categories: ["others"]      
 
 - name: ArgoCD
   logo: "/images/sections/skills/argocd.svg"
   summary: "Basic knowledge of ARGO CD."
+  categories: ["ci-cd"]
 
 - name: AWS
   logo: "/images/sections/skills/cloud.png"
   summary: "Daily infrastructure. Used with Terraform and Kubernetes"
+  categories: ["others"]     
 
 - name: Confluence
   logo: "/images/sections/skills/confluence.png"
   summary: "Used daily to make Documentation."
+  categories: ["others"]  
 
 - name: Datadog
   logo: "/images/sections/skills/datadog.svg"
   summary: "Use Datadog for monitoring Serverless Applications in AWS."
+  categories: ["observability"]  
   url: "https://www.datadog.com/"
 
 - name: Docker
   logo: "/images/sections/skills/docker.svg"
   summary: "Most of my programs are written as dockerized containers. As well as Learning Multi-Stage Build"
+  categories: ["containers"]
   url: "https://www.docker.com/"
-
-- name: Helm
-  logo: "/images/sections/skills/helm.svg"
-  summary: "Use Helm Charts for simplifying and standardizing the deployment of applications on Kubernetes clusters."
-  url: "https://www.helm.com/"
 
 - name: Git
   logo: "/images/sections/skills/git.png"
   summary: "Experienced with git-based development. Mostly using Gitlab & Github."
   url: "https://git-scm.com/"
 
+- name: GitHub
+  logo: "/images/sections/skills/git.png"
+  summary: "Experienced with Github Actions."
+  categories: ["ci-cd"]    
+  url: "https://www.github.com/"
+
+- name: GitLab
+  logo: "/images/sections/skills/git.png"
+  summary: "Experienced with gitlab pipelines."
+  categories: ["ci-cd"]    
+  url: "https://www.gitlab.com/"
+
+- name: Grafana
+  logo: "/images/sections/skills/datadog.svg"
+  summary: "Use Grafana for monitoring Serverless Applications in AWS."
+  categories: ["observability"]  
+  url: "https://www.grafana.com/"
+
+- name: Helm
+  logo: "/images/sections/skills/helm.svg"
+  summary: "Use Helm Charts for simplifying and standardizing the deployment of applications on Kubernetes clusters."
+  categories: ["others"]    
+  url: "https://www.helm.com/" 
+
 - name: Jira
   logo: "/images/sections/skills/jira.png"
   summary: "Daily use of Jira Scrum. Also used Jira Service Desk tickets."
+  categories: ["others"]    
   url: "https://www.jira.com/"
 
 - name: Kubernetes
   logo: "/images/sections/skills/kubernetes.png"
   summary: "Capable of deploying & managing applications on Kubernetes."
+  categories: ["containers"]
   url: "https://kubernetes.io/"
 
 - name: Linux
   logo: "/images/sections/skills/linux.png"
   summary: "Using as my main operating system. My main distribution is Manjaro anyhow I used Kali Linux and Ubuntu."
+  categories: ["others"]      
 
 - name: Postman
   logo: "/images/sections/skills/postman.png"
   summary: "Used to test APIs and get information."
+  categories: ["others"]      
 
 - name: Python
   logo: "/images/sections/skills/python.png"
   summary: "Intermediate Knowledge of Python. It's my main programming language."
+  categories: ["language"]
 
 - name: Terraform
   logo: "/images/sections/skills/terraform.png"
   summary: "Used to make IaC with AWS. Capable to do Modules"
+  categories: ["iac"]
   url: "https://www.terraform.io/"
 
 - name: Shell Scripting
   logo: "/images/sections/skills/shell.png"
   summary: "Advanced Knowledge on shell scripts."
+  categories: ["language"]  

@@ -67,9 +67,13 @@ params:
 
   features:
 
-    # Enable and configure dark mode
-    darkMode:
-      enable: true
+    theme:
+      # enable light theme. default "true"
+      light: true
+      # enable dark theme. default "true"
+      dark: true
+      # can be either light, dark or system. default "system"
+      defaultTheme: true 
 
     # Enable and configure portfolio
     portfolio:
