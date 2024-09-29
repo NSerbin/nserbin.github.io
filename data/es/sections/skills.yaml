@@ -13,9 +13,9 @@ buttons:
 - name: All
   filter: "all"
 - name: Lenguajes
-  filter: "Lenguajes"
-- name: Container
-  filter: "container"
+  filter: "lenguajes"
+- name: Containers
+  filter: "containers"
 - name: CI-CD
   filter: "ci-cd"
 - name: IAC
@@ -67,19 +67,19 @@ skills:
   url: "https://git-scm.com/"
 
 - name: GitHub
-  logo: "/images/sections/skills/git.png"
+  #logo: "/images/sections/skills/git.png"
   summary: "Experienced with Github Actions."
   categories: ["ci-cd"]    
   url: "https://www.github.com/"
 
 - name: GitLab
-  logo: "/images/sections/skills/git.png"
+  #logo: "/images/sections/skills/git.png"
   summary: "Experienced with gitlab pipelines."
   categories: ["ci-cd"]    
   url: "https://www.gitlab.com/"
 
 - name: Grafana
-  logo: "/images/sections/skills/datadog.svg"
+  #logo: "/images/sections/skills/datadog.svg"
   summary: "Use Grafana for monitoring Serverless Applications in AWS."
   categories: ["monitoreo"]
   url: "https://www.grafana.com/"

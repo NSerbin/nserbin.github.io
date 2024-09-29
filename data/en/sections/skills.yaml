@@ -14,8 +14,8 @@ buttons:
   filter: "all"
 - name: Language
   filter: "language"
-- name: Container
-  filter: "container"
+- name: Containers
+  filter: "containers"
 - name: CI-CD
   filter: "ci-cd"
 - name: IAC
@@ -78,7 +78,7 @@ skills:
   url: "https://www.gitlab.com/"
 
 - name: Grafana
-  logo: "/images/sections/skills/datadog.svg"
+  #logo: "/images/sections/skills/datadog.svg"
   summary: "Use Grafana for monitoring Serverless Applications in AWS."
   categories: ["observability"]  
   url: "https://www.grafana.com/"
