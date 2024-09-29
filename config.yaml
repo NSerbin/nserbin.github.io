@@ -55,7 +55,7 @@ enableEmoji: true
 
 services:
   googleAnalytics:
-    id: G-GVDYVWJLRH
+    id: G-PPELARGENTO
 
 # Site parameters
 params:
@@ -111,6 +111,20 @@ params:
 
     analytics:
       enabled: false
+      services:
+        # Google Analytics
+        google:
+          id: G-PPELARGENTO
+        # # CounterDev
+        # counterDev:
+        #   id: <your counterdev id>
+        # # GoatCounter
+        # goatCounter:
+        #   code: <your goat counter code>
+        # # Matomo / Piwik
+        # matomo:
+        #   instance: matomo.example.com
+        #   siteId: 1 # Or any other number
 
     # Enable Support
     support:
