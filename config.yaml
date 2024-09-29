@@ -53,14 +53,9 @@ outputs:
 # Enable global emoji support
 enableEmoji: true
 
-# services:
-#   googleAnalytics:
-#     id: G-PPELARGENTO
-
-privacy:
+services:
   googleAnalytics:
-    disable: false
-    respectDoNotTrack: false
+    id: G-KKTMP7TCHN
 
 # Site parameters
 params:
@@ -114,22 +109,13 @@ params:
     notes:
       enable: true
 
-    # analytics:
-    #   enabled: false
-    #   services:
-    #     # Google Analytics
-    #     google:
-    #       id: G-PPELARGENTO
-    #     # # CounterDev
-    #     # counterDev:
-    #     #   id: <your counterdev id>
-    #     # # GoatCounter
-    #     # goatCounter:
-    #     #   code: <your goat counter code>
-    #     # # Matomo / Piwik
-    #     # matomo:
-    #     #   instance: matomo.example.com
-    #     #   siteId: 1 # Or any other number
+    analytics:
+      enabled: false
+      services:
+        # Google Analytics
+        google:
+          id: G-KKTMP7TCHN
+
 
     # Enable Support
     support:
