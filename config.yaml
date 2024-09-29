@@ -54,7 +54,6 @@ outputs:
 enableEmoji: true
 
 services:
-  enabled: false  
   googleAnalytics:
     id: G-GVDYVWJLRH
 
@@ -109,6 +108,9 @@ params:
     # Enable & configure "Notes" features
     notes:
       enable: true
+
+    analytics:
+      enabled: false
 
     # Enable Support
     support:
