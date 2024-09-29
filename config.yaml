@@ -57,6 +57,11 @@ enableEmoji: true
 #   googleAnalytics:
 #     id: G-PPELARGENTO
 
+privacy:
+  googleAnalytics:
+    disable: false
+    respectDoNotTrack: false
+
 # Site parameters
 params:
   # Background image of the landing page
