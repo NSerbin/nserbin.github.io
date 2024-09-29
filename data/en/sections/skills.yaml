@@ -5,6 +5,7 @@ section:
   enable: true
   weight: 2
   showOnNavbar: true
+  filter: true
   # Can optionally hide the title in sections
   # hideTitle: true
 
@@ -85,7 +86,7 @@ skills:
 - name: Helm
   logo: "/images/sections/skills/helm.svg"
   summary: "Use Helm Charts for simplifying and standardizing the deployment of applications on Kubernetes clusters."
-  categories: ["others"]    
+  categories: ["containers"]
   url: "https://www.helm.com/" 
 
 - name: Jira
@@ -103,12 +104,12 @@ skills:
 - name: Linux
   logo: "/images/sections/skills/linux.png"
   summary: "Using as my main operating system. My main distribution is Manjaro anyhow I used Kali Linux and Ubuntu."
-  categories: ["others"]      
+  categories: ["others"]
 
 - name: Postman
   logo: "/images/sections/skills/postman.png"
   summary: "Used to test APIs and get information."
-  categories: ["others"]      
+  categories: ["others"]
 
 - name: Python
   logo: "/images/sections/skills/python.png"
