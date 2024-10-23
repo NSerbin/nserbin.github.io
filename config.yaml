@@ -25,11 +25,12 @@ languages:
     languageCode: en
     languageName: English
     weight: 1
+    title: "Nicolas Serbin's Blog"
   es:
     languageCode: es
     languageName: Spanish
     weight: 2
-
+    title: "Nicolas Serbin's Blog"
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
 # DefaultContentLanguage: bn
 
@@ -87,7 +88,7 @@ params:
       # enable dark theme. default "true"
       dark: true
       # can be either light, dark or system. default "system"
-      defaultTheme: true 
+      defaultTheme: dark
 
     # Enable and configure portfolio
     portfolio:
@@ -124,7 +125,7 @@ params:
 
     # specify whether you want to show Table of Contents in reading page
     toc:
-      enable: true  
+      enable: true
     
     # Show tags under the post title
     tags:
@@ -166,4 +167,4 @@ params:
 
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
-      enable: true
+      enable: false
