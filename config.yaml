@@ -84,7 +84,7 @@ params:
 
     theme:
       # enable light theme. default "true"
-      light: true
+      light: false
       # enable dark theme. default "true"
       dark: true
       # can be either light, dark or system. default "system"
