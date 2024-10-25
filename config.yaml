@@ -78,7 +78,7 @@ params:
   # Configure various features of this theme
 
   topNavbar:
-    maxVisibleSections: 5
+    maxVisibleSections: 6
 
   features:
 
@@ -88,7 +88,7 @@ params:
       # enable dark theme. default "true"
       dark: true
       # can be either light, dark or system. default "system"
-      defaultTheme: dark
+      defaultTheme: system
 
     # Enable and configure portfolio
     portfolio:
