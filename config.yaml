@@ -25,12 +25,11 @@ languages:
     languageCode: en
     languageName: English
     weight: 1
-    title: "Nicolas Serbin's Blog"
   es:
     languageCode: es
     languageName: Spanish
     weight: 2
-    title: "Nicolas Serbin's Blog"
+
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
 # DefaultContentLanguage: bn
 
@@ -78,13 +77,19 @@ params:
   # Configure various features of this theme
 
   topNavbar:
-    maxVisibleSections: 6
+    maxVisibleSections: 7
 
   features:
+
     theme:
-      light: true # enable light theme. default "true"
-      dark: true # enable dark theme. default "true"
-      defaultTheme: system # can be either light, dark or system. default "system"
+      enable: true
+      # enable light theme. default "true"
+      light: true
+      # enable dark theme. default "true"
+      dark: true
+      # can be either light, dark or system. default "system"
+      defaultTheme: dark
+
     # Enable and configure portfolio
     portfolio:
       enable: true
@@ -120,7 +125,7 @@ params:
 
     # specify whether you want to show Table of Contents in reading page
     toc:
-      enable: true
+      enable: true  
     
     # Show tags under the post title
     tags:
@@ -162,4 +167,4 @@ params:
 
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
-      enable: false
+      enable: true
