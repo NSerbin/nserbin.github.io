@@ -17,13 +17,18 @@ experiences:
     # company overview
     overview: OLX opera como un sofisticado mercado digital global, especializado en el comercio localizado de una amplia variedad de productos y servicios, desde electrónica hasta bienes raíces, empoderando a millones para comprar, vender y conectar dentro de sus comunidades de manera fácil.
   positions:
-  - designation: Cloud Engineer
+  - designation: Mid-Senior Cloud Engineer
     start: Abril 2024
     responsibilities:
-    - Diseñé y desarrollé Infraestructura como Código (IaC) utilizando Terraform en AWS.
-    - Crear y administrar Instancias SAP
-    - Desarrollé scripts en Python utilizando la biblioteca boto3 para realizar distintas tareas de administracion dentro de las cuentas de la organizacion.
-    - Administrar la instancia de Gitlab Self Hosted.
+    - Automatización de tareas operativas usando AWS Lambda y Python (por ejemplo, chequeo de DNS y gestión de usuarios en GitLab).
+    - Aprovisionamiento y administración de instancias SAP e infraestructura autogestionada.
+    - Diseño e implementación de estrategias de backup en AWS para garantizar la integridad y disponibilidad de datos.
+    - Refactorización del código Terraform para mejorar la estabilidad, seguridad y eficiencia de costos (FinOps).
+    - Redacción de documentación técnica para facilitar la transmisión de conocimiento y la consistencia de procesos.
+    - Tutoría y acompañamiento de un colega como buddy durante todo el 2024, incluyendo onboarding, objetivos y soporte en diversos proyectos.
+    - Liderazgo en la actualización completa de la infraestructura de SAP durante 2024.
+    - Dirección de una auditoría integral de ransomware, evaluando la resiliencia y preparación ante incidentes.
+
 - company:
     name: Naranja X
     url: "https://www.naranjax.com/"
@@ -31,7 +36,7 @@ experiences:
     # company overview
     overview: Naranja X es una reconocida fintech, que ofrece inclusion financiera a muchas personas dentro del territorio argentino.
   positions:
-  - designation: CloudOps Engineer
+  - designation: SR. CloudOps Engineer
     start: Febrero 2023
     end: Enero 2024
     # don't provide end date if you are currently working there. It will be replaced by "Present"
@@ -50,25 +55,35 @@ experiences:
     # company overview
     overview: Digital House es una reconocida empresa de educación, que ofrece Carreras Premium de IT.
   positions:
-  - designation: DevOps Engineer
-    start: Septiembre 2021
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
+  - designation: Technical Lead DevOps Engineer
+    start: January 2024
     responsibilities:
-    - Migración ambientes On-Premise a AWS (EC2, ALB, S3, VPC, RDS, IAM).
-    - Diseñé e implementé un monitoreo integral para AWS Lambdas en Datadog.
-    - Implementé monitoreo para AWS RDS en Grafana.
-    - Creé scripts en Python utilizando la biblioteca boto3 para diversas tareas, como la eliminación masiva de archivos en S3 y la generación de Peerings de VPC.
-    - Desarrollé scripts para agilizar el proceso de incorporación instalando todas las herramientas del equipo de DevOps.
-    - Realicé análisis de instancias EC2 y RDS, optimizando costos y rendimiento mediante cambios de tamaño cuando fue necesario.
-    - Actualicé el proveedor de AWS en Terraform a la Versión 5x, incluyendo los módulos asociados.
-    - Lideré la migración de Gitlab CI a Github.
-    - Desarrollé scripts para realizar cambios a gran escala en los repositorios de Gitlab y Github.
-    - Diseñé y desarrollé Infraestructura como Código (IaC) utilizando Terraform en AWS.
-    - Diseñé, desarrollé y gestioné clústeres de Kubernetes.
-    - Generé documentación para diversos proyectos y procesos.
-    - Desarrollé plantillas del Framework Serverless.    
+      - Lideré el análisis y optimización de instancias EC2 y RDS, logrando importantes ahorros mediante ajustes y baja de servicios innecesarios.
+      - Actualicé el provider de AWS en Terraform a la versión 5.x, asegurando compatibilidad en todos los módulos.
+      - Supervisé la arquitectura e infraestructura core, alineándola con los objetivos del negocio y las buenas prácticas de DevOps.
+      - Gestioné un equipo de 2 ingenieros DevOps, fomentando una cultura de automatización y responsabilidad.
+
+  - designation: Mid-Senior DevOps Engineer
+    start: January 2022
+    end: January 2024
+    responsibilities:
+      - Lideré la migración de GitLab CI a GitHub Actions.
+      - Automatización de cambios masivos en repositorios GitLab y GitHub.
+      - Construcción y mantenimiento de infraestructura como código con Terraform en AWS.
+      - Diseño, despliegue y operación de clústeres Kubernetes.
+      - Implementación de monitoreo de RDS en Grafana.
+      - Scripts en Python con boto3 para limpieza de buckets S3 y creación de VPC peerings.
+      - Automatización del onboarding DevOps con scripts que instalan herramientas necesarias.
+      - Formación y mentoría de 2 miembros junior del equipo.
+
+  - designation: Jr. DevOps Engineer
+    start: September 2021
+    end: January 2022
+    responsibilities:
+      - Migración de entornos on-premise a AWS (EC2, ALB, S3, VPC, RDS, IAM).
+      - Diseño e implementación de monitoreo de AWS Lambda con Datadog.
+      - Desarrollo de plantillas Serverless Framework para despliegues estandarizados.
+      - Documentación de múltiples proyectos y procesos.
 
 - company:
     name: MercadoLibre

@@ -15,14 +15,20 @@ experiences:
     url: "https://www.olx.com.pt/"
     location: Lisbon, Portugal
     # company overview
-    overview: OLX operates as a sophisticated global digital marketplace, specializing in localized trading of a diverse array of products and services, ranging from electronics to real estate, empowering millions to buy, sell, and connect within their communities effortlessly.
+    overview: OLX operates as a sophisticated global digital marketplace, specializing in localized trading of a diverse array of products and services, ranging from electronics to real estate, empowering millions to buy, sell, and connect within their communities effortlessly. As part of the Business IT team, I manage critical infrastructure components such as SAP, Boomi, and GitLab.
   positions:
-  - designation: Cloud Engineer
+  - designation: Mid-Senior Cloud Engineer
     start: April 2024
     responsibilities:
-      - Create & Administrate SAP Instances
-      - I developed Python scripts employing the boto3 library to perform different admin tasks inside the accounts
-      - Admin Gitlab Selfhosted Instance
+      - Automated operational tasks using AWS Lambda and Python (e.g., DNS checks, GitLab user management).
+      - Provisioned and administered SAP instances and self-hosted infrastructure.
+      - Designed and implemented AWS backup strategies to ensure data integrity and availability.
+      - Refactored Terraform codebase to improve stability, security, and cost efficiency (FinOps).
+      - Authored technical documentation to support knowledge sharing and process consistency.
+      - Guided a colleague as a buddy throughout 2024, supporting onboarding, growth, goals and project delivery.
+      - Led the upgrade of the entire SAP infrastructure landscape during 2024.
+      - Directed a comprehensive ransomware audit, assessing infrastructure resilience and recovery readiness.
+
 - company:
     name: Naranja X
     url: "https://www.naranjax.com/"
@@ -30,7 +36,7 @@ experiences:
     # company overview
     overview: Naranja X is a recognized fintech company, that offers financial inclusion to many people within the Argentine territory. I am involved in the "WIRU Pipeline" project. It's hosted on Gitlab and predominantly written in Bash and Python.
   positions:
-  - designation: CloudOps Engineer
+  - designation: SR. CloudOps Engineer
     start: February 2023
     end: January 2024
     responsibilities:
@@ -44,28 +50,37 @@ experiences:
     name: Digital House
     url: "https://www.digitalhouse.com"
     location: Buenos Aires, Argentina
-    # company overview
-    overview: Digital House is a recognized education company who offers premium IT carreers. I am involved in the DevOps Team
+    overview: Digital House is a leading EdTech company in Latin America, offering premium IT career paths and training programs. I’ve been part of the DevOps team, contributing across different seniority levels from execution to leadership.
   positions:
-  - designation: DevOps Engineer
-    start: September 2021
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
+  - designation: Technical Lead DevOps Engineer
+    start: January 2024
     responsibilities:
-    - Migrate On-Premise Environments to AWS (EC2, ALB, S3, VPC, RDS, IAM).
-    - Designed and implemented comprehensive monitoring for AWS Lambdas in Datadog.
-    - Implemented monitoring for AWS RDS in Grafana.
-    - Created Python scripts using the boto3 library for various tasks, such as bulk file deletion in S3 and generating VPC Peerings.
-    - Developed scripts to streamline the onboarding process by installing all DevOps team tools.
-    - Conducted analysis of EC2 and RDS instances, optimizing costs and performance through resizing when necessary.
-    - Upgraded AWS provider in Terraform to Version 5x, including the associated modules.
-    - Led the migration from Gitlab CI to Github.
-    - Developed scripts for making large-scale changes in both Gitlab and Github repositories.
-    - Designed and developed Infrastructure as Code (IaC) using Terraform in AWS.
-    - Designed, developed, and managed Kubernetes clusters.
-    - Generated documentation for various projects and processes.
-    - Developed Serverless Framework Templates.    
+    - Led the analysis and optimization of EC2 and RDS resources, achieving significant cost savings through resizing and decommissioning underused services.
+    - Upgraded the Terraform AWS provider to version 5.x, ensuring compatibility across all modules.
+    - Oversaw the architecture and evolution of core infrastructure, aligning with business needs and DevOps principles.
+    - Managed and guided a team of 2 DevOps engineers, fostering a culture of automation and ownership.  
+
+  - designation: Mid-Senior DevOps Engineer
+    start: January 2022
+    end: January 2024
+    responsibilities:
+    - Led the migration from GitLab CI to GitHub Actions.
+    - Created automation scripts to apply large-scale changes across GitLab and GitHub repositories.
+    - Built and maintained Infrastructure as Code using Terraform in AWS.
+    - Designed, deployed, and operated Kubernetes clusters.
+    - Implemented RDS monitoring in Grafana for improved observability.
+    - Developed Python scripts with boto3 for tasks like S3 cleanup and VPC peering creation.
+    - Automated DevOps onboarding by scripting the installation of all required tooling.
+    - Mentored and trained 2 junior team members, helping them onboard into DevOps best practices.
+
+  - designation: Jr. DevOps Engineer
+    start: September 2021
+    end: January 2022
+    responsibilities:
+    - Migrated on-premise environments to AWS (EC2, ALB, S3, VPC, RDS, IAM).
+    - Designed and implemented monitoring for AWS Lambdas using Datadog.
+    - Developed Serverless Framework templates for standardized deployments.
+    - Generated documentation for multiple projects and processes.
 
 - company:
     name: MercadoLibre
