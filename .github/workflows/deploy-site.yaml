@@ -23,14 +23,14 @@ jobs:
       run: hugo mod tidy
 
     - name: Setup Node
-      uses: actions/setup-node@v4.1.0
+      uses: actions/setup-node@v4.4.0
       with:
-        node-version: 18
+        node-version: 22
 
     - name: Install node modules
       run: |
         hugo mod npm pack
-        npm install     
+        npm install
 
     - name: Build
       run: hugo --minify
