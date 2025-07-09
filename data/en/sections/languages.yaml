@@ -1,0 +1,14 @@
+name: Languages
+description: Languages I speak and my level of proficiency.
+enable: true
+weight: 5
+items:
+  - language: Spanish
+    level: Native
+    icon: fa-graduation-cap
+  - language: English
+    level: Upper Intermediate
+    icon: fa-graduation-cap
+  - language: Portuguese
+    level: Basic
+    icon: fa-graduation-cap
