@@ -1,14 +1,19 @@
-name: Lenguajes
-description: Idiomas que hablo y mi nivel de competencia.
-enable: true
-weight: 5
-items:
-  - language: Español
-    level: Nativo
-    icon: fa-graduation-cap
-  - language: Inglés
-    level: Intermedio alto
-    icon: fa-graduation-cap
-  - language: Portugués
-    level: Básico
-    icon: fa-graduation-cap
+# section information
+section:
+  name: Lenguajes
+  id: languages
+  template: sections/languages.html
+  enable: true
+  weight: 5
+  showOnNavbar: true
+
+  items:
+    - language: Español
+      level: Nativo
+      icon: fa-graduation-cap
+    - language: Inglés
+      level: Intermedio alto
+      icon: fa-graduation-cap
+    - language: Portugués
+      level: Básico
+      icon: fa-graduation-cap

@@ -1,14 +1,19 @@
-name: Languages
-description: Languages I speak and my level of proficiency.
-enable: true
-weight: 5
-items:
-  - language: Spanish
-    level: Native
-    icon: fa-graduation-cap
-  - language: English
-    level: Upper Intermediate
-    icon: fa-graduation-cap
-  - language: Portuguese
-    level: Basic
-    icon: fa-graduation-cap
+# section information
+section:
+  name: Languages
+  id: languages
+  template: sections/languages.html
+  enable: true
+  weight: 5
+  showOnNavbar: true
+
+  items:
+    - language: Spanish
+      level: Native
+      icon: fa-graduation-cap
+    - language: English
+      level: Upper Intermediate
+      icon: fa-graduation-cap
+    - language: Portuguese
+      level: Basic
+      icon: fa-graduation-cap

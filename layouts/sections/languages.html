@@ -1,14 +1,15 @@
 {{ define "main" }}
-{{ $sectionID := "languages" }}
+{{ $sectionID := .Params.section.id | default "languages" }}
+
 <section id="{{ $sectionID }}" class="section">
   <div class="container">
     <div class="section-title text-center">
-      <h2>{{ .Title }}</h2>
-      <p>{{ .Params.description }}</p>
+      <h2>{{ .Params.section.name }}</h2>
+      <p>{{ .Params.section.description }}</p>
     </div>
 
     <div class="row justify-content-center mt-4">
-      {{ range .Params.items }}
+      {{ range .Params.section.items }}
         <div class="col-md-4 mb-4">
           <div class="card h-100 shadow-sm text-center p-3">
             <div class="mb-3">
