@@ -2,7 +2,7 @@
 section:
   name: Languages
   id: languages
-  template: languages
+  template: sections/languages
   enable: true
   weight: 5
   showOnNavbar: true
