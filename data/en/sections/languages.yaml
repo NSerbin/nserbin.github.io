@@ -8,13 +8,13 @@ section:
 
 languages:
   - name: Spanish
-    icon: fa-graduation-cap
     level: Native
+    icon: fa-solid fa-graduation-cap
 
   - name: English
-    icon: fa-graduation-cap
     level: Upper Intermediate
+    icon: fa-solid fa-graduation-cap
 
   - name: Portuguese
-    icon: fa-graduation-cap
     level: Basic
+    icon: fa-solid fa-graduation-cap

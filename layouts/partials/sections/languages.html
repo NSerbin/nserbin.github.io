@@ -10,20 +10,18 @@
     </h1>
   {{ end }}
 
-  <div class="container filtr-projects">
-    <div class="row justify-content-center" id="language-card-holder">
+  <div class="container">
+    <div class="row justify-content-center">
       {{ range .languages }}
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex">
           <div class="card w-100 h-100 shadow-sm text-white bg-dark text-center d-flex flex-column justify-content-center align-items-center p-4">
-            <div class="mb-3">
+            <div class="icon-holder mb-3">
               {{ if .icon }}
                 <i class="{{ .icon }} fa-3x text-info"></i>
               {{ end }}
             </div>
-            <div>
-              <h5 class="mb-1">{{ .name }}</h5>
-              <small class="text-muted">Nivel: {{ .level }}</small>
-            </div>
+            <h5 class="mb-1">{{ .name }}</h5>
+            <small class="text-muted">Level: {{ .level }}</small>
           </div>
         </div>
       {{ end }}
