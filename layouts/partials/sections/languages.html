@@ -11,20 +11,18 @@
   {{ end }}
 
   <div class="container filtr-projects">
-    <div class="row" id="language-card-holder">
+    <div class="row justify-content-center" id="language-card-holder">
       {{ range .languages }}
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex">
-          <div class="card w-100 h-100 shadow-sm p-3 bg-dark text-white text-start">
-            <div class="d-flex align-items-center">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex">
+          <div class="card w-100 h-100 shadow-sm text-white bg-dark text-center d-flex flex-column justify-content-center align-items-center p-4">
+            <div class="mb-3">
               {{ if .icon }}
-                <img src="{{ .icon }}" alt="{{ .name }}" class="me-3" style="width: 48px; height: 48px;" />
-              {{ else }}
-                <i class="fa fa-language fa-2x text-info me-3"></i>
+                <i class="{{ .icon }} fa-3x text-info"></i>
               {{ end }}
-              <div>
-                <h5 class="mb-1">{{ .name }}</h5>
-                <small class="text-muted">Level: {{ .level }}</small>
-              </div>
+            </div>
+            <div>
+              <h5 class="mb-1">{{ .name }}</h5>
+              <small class="text-muted">Nivel: {{ .level }}</small>
             </div>
           </div>
         </div>
