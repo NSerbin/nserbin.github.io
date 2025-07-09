@@ -1,21 +1,20 @@
-# section information
 section:
   name: Languages
   id: languages
-  template: sections/languages
   enable: true
   weight: 5
   showOnNavbar: true
+  template: sections/languages
 
-  items:
-    - language: Spanish
-      level: Native
-      icon: fa-graduation-cap
-    - language: English
-      level: Upper Intermediate
-      icon: fa-graduation-cap
-    - language: Portuguese
-      level: Basic
-      icon: fa-graduation-cap
+languages:
+  - name: Spanish
+    icon: /images/icons/spanish.png
+    level: Native
 
+  - name: English
+    icon: /images/icons/english.png
+    level: Upper Intermediate
 
+  - name: Portuguese
+    icon: /images/icons/portuguese.png
+    level: Basic
