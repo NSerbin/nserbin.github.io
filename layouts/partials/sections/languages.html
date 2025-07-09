@@ -1,24 +1,18 @@
 <section id="{{ .section.id | default "languages" }}" class="section">
   <div class="container">
-    <div class="section-title text-center">
+    <div class="section-title text-center mb-4">
       <h2>{{ .section.name }}</h2>
       <p>{{ .section.description }}</p>
     </div>
 
-    <div class="row justify-content-center mt-4">
+    <div class="row justify-content-center">
       {{ range .section.items }}
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm text-center p-3">
-            <div class="mb-3">
-              <i class="fa {{ .icon }} fa-2x text-primary"></i>
-            </div>
-            <h5 class="card-title">{{ .language }}</h5>
-            <p class="card-text"><strong>Level:</strong> {{ .level }}</p>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="text-center p-3 border rounded bg-dark text-white h-100">
+            <i class="fa {{ .icon }} fa-2x mb-2 text-info"></i>
+            <h5 class="mt-2">{{ .language }}</h5>
+            <small class="text-muted">Level: {{ .level }}</small>
           </div>
-        </div>
-      {{ else }}
-        <div class="col-12 text-center text-muted">
-          <p>No language items found (from section.items).</p>
         </div>
       {{ end }}
     </div>
