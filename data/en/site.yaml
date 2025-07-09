@@ -17,7 +17,7 @@ description: Portfolio y Blog Personal de Nicolás Serbin.
 
 # # Specify OpenGraph Headers
 openGraph:
-  title: Nicolás Serbin Blog
+  title: Nicolás Serbin Website
   type: website
   description: Nicolás Serbin Portfolio & Blog.
   image: images/author/perfil.png
