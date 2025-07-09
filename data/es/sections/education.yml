@@ -15,11 +15,3 @@ degrees:
   timeframe: March 2020 - August 2021
   institution:
     name: IFTS N°18
-- name: Español - Nativo
-  icon: fa-graduation-cap
-  institution:
-    name: Lenguajes
-- name: Ingles - Intermedio Avanzado
-  icon: fa-graduation-cap
-  institution:
-    name: Lenguajes
