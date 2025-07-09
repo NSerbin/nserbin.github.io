@@ -1,26 +1,28 @@
 <section id="{{ .section.id | default "languages" }}" class="section">
   <div class="container">
-    <div class="section-title text-center mb-4">
-      <h2>{{ .section.name }}</h2>
-      {{ with .section.description }}
-        <p>{{ . }}</p>
-      {{ end }}
-    </div>
-
     <div class="row justify-content-center">
-      {{ range .section.items }}
-        <div class="col-md-3 col-sm-6 col-10 mb-4">
-          <div class="card bg-dark text-white text-center h-100 p-3 shadow-sm">
-            <div class="mb-2">
-              <i class="fa {{ .icon }} fa-2x text-info"></i>
-            </div>
-            <div>
-              <h5 class="mb-1">{{ .language }}</h5>
-              <small class="text-muted">Level: {{ .level }}</small>
-            </div>
-          </div>
+      <div class="col-lg-10">
+        <div class="section-title text-center mb-4">
+          <h2>{{ .section.name }}</h2>
+          {{ with .section.description }}
+            <p>{{ . }}</p>
+          {{ end }}
         </div>
-      {{ end }}
+
+        <div class="row justify-content-center">
+          {{ range .section.items }}
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card bg-dark text-white text-center h-100 p-3 shadow-sm">
+                <div class="mb-2">
+                  <i class="fa {{ .icon }} fa-2x text-info"></i>
+                </div>
+                <h5 class="mb-1">{{ .language }}</h5>
+                <small class="text-muted">Level: {{ .level }}</small>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
     </div>
   </div>
 </section>
