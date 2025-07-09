@@ -1,12 +1,12 @@
-<section id="{{ .Params.section.id | default "languages" }}" class="section">
+<section id="{{ .id | default "languages" }}" class="section">
   <div class="container">
     <div class="section-title text-center">
-      <h2>{{ .Params.section.name }}</h2>
-      <p>{{ .Params.section.description }}</p>
+      <h2>{{ .name }}</h2>
+      <p>{{ .description }}</p>
     </div>
 
     <div class="row justify-content-center mt-4">
-      {{ range .Params.section.items }}
+      {{ range .items }}
         <div class="col-md-4 mb-4">
           <div class="card h-100 shadow-sm text-center p-3">
             <div class="mb-3">
