@@ -1,20 +1,24 @@
 <section id="{{ .section.id | default "languages" }}" class="section">
   <div class="container">
-    <div class="section-title text-center mb-4">
-      <h2>{{ .section.name }}</h2>
-      {{ with .section.description }}
-        <p>{{ . }}</p>
-      {{ end }}
-    </div>
-
-    <div class="d-flex justify-content-center flex-wrap gap-4">
-      {{ range .section.items }}
-        <div class="bg-dark text-white text-center rounded shadow-sm px-4 py-3" style="min-width: 160px;">
-          <i class="fa {{ .icon }} fa-2x text-info mb-2"></i>
-          <h6 class="mb-1">{{ .language }}</h6>
-          <small class="text-muted">Level: {{ .level }}</small>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="section-title text-center mb-5">
+          <h2>{{ .section.name }}</h2>
+          {{ with .section.description }}
+            <p>{{ . }}</p>
+          {{ end }}
         </div>
-      {{ end }}
+
+        <div class="d-flex justify-content-center flex-wrap gap-4">
+          {{ range .section.items }}
+            <div class="bg-dark text-white text-center rounded shadow-sm px-4 py-3" style="min-width: 160px;">
+              <i class="fa {{ .icon }} fa-2x text-info mb-2"></i>
+              <h6 class="mb-1">{{ .language }}</h6>
+              <small class="text-muted">Level: {{ .level }}</small>
+            </div>
+          {{ end }}
+        </div>
+      </div>
     </div>
   </div>
 </section>
