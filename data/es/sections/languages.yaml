@@ -1,5 +1,5 @@
 section:
-  name: Lenguajes
+  name: Idiomas
   id: languages
   enable: true
   weight: 5
@@ -8,13 +8,13 @@ section:
 
 languages:
   - name: Español
-    icon: fa-solid fa-graduation-cap
+    flag: ar
     level: Nativo
 
   - name: Inglés
-    icon: fa-solid fa-graduation-cap
+    flag: gb
     level: Intermedio alto
 
   - name: Portugués
-    icon: fa-solid fa-graduation-cap
+    flag: pt
     level: Básico

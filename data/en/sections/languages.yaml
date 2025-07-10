@@ -9,12 +9,12 @@ section:
 languages:
   - name: Spanish
     level: Native
-    icon: fa-solid fa-graduation-cap
+    flag: ar
 
   - name: English
     level: Upper Intermediate
-    icon: fa-solid fa-graduation-cap
+    flag: gb
 
   - name: Portuguese
     level: Basic
-    icon: fa-solid fa-graduation-cap
+    flag: pt

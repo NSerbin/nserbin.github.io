@@ -1,9 +1,7 @@
 {{ $sectionID := replace (lower .section.name) " " "-" }}
-{{ if .section.id }}
-  {{ $sectionID = .section.id }}
-{{ end }}
+{{ if .section.id }}{{ $sectionID = .section.id }}{{ end }}
 
-<div class="container-fluid anchor pb-5" id="{{ $sectionID }}">
+<div class="container-fluid anchor pb-5 languages-section" id="{{ $sectionID }}">
   {{ if not (.section.hideTitle) }}
     <h1 class="text-center">
       <span id="{{ $sectionID }}"></span>{{ .section.name }}
@@ -14,15 +12,20 @@
     <div class="row justify-content-center">
       {{ range .languages }}
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex">
-          <div class="card w-100 h-100 shadow-sm text-center d-flex flex-column justify-content-center align-items-center p-4 
-                      {{ if eq site.Params.theme.mode "dark" }}bg-secondary text-light{{ else }}bg-light text-dark{{ end }}">
+          <div class="card w-100 h-100 shadow-sm text-center d-flex flex-column justify-content-center align-items-center p-4
+                      bg-theme-light text-theme-dark dark:bg-theme-dark dark:text-theme-light">
             <div class="icon-holder mb-3">
-              {{ if .icon }}
+              {{ if .flag }}
+                <span class="fi fi-{{ .flag }} fa-3x"></span>
+              {{ else if .icon }}
                 <i class="{{ .icon }} fa-3x text-info"></i>
               {{ end }}
             </div>
-            <h5 class="mb-1">{{ .name }}</h5>
-            <small>Level: {{ .level }}</small>
+            <h5 class="mb-2">{{ .name }}</h5>
+            <div>
+              <span class="text-muted dark:text-gray-400">{{ i18n "level" }}:</span>
+              <span class="text-info fw-semibold ms-1">{{ .level }}</span>
+            </div>
           </div>
         </div>
       {{ end }}
