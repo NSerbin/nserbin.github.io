@@ -13,6 +13,7 @@ experiences:
 - company:
     name: OLX
     url: "https://www.olx.com.pt/"
+    logo: /images/sections/experiences/olx.svg      
     location: Lisboa, Portugal
     # company overview
     overview: OLX opera como un sofisticado mercado digital global, especializado en el comercio localizado de una amplia variedad de productos y servicios, desde electrónica hasta bienes raíces, empoderando a millones para comprar, vender y conectar dentro de sus comunidades de manera fácil.
@@ -32,6 +33,7 @@ experiences:
 - company:
     name: Naranja X
     url: "https://www.naranjax.com/"
+    logo: /images/sections/experiences/nx.png    
     location: Buenos Aires, Argentina
     # company overview
     overview: Naranja X es una reconocida fintech, que ofrece inclusion financiera a muchas personas dentro del territorio argentino.
@@ -51,6 +53,7 @@ experiences:
 - company:
     name: Digital House
     url: "https://www.digitalhouse.com"
+    logo: /images/sections/experiences/dh.png    
     location: Buenos Aires, Argentina
     # company overview
     overview: Digital House es una reconocida empresa de educación, que ofrece Carreras Premium de IT.
@@ -88,6 +91,7 @@ experiences:
 - company:
     name: MercadoLibre
     url: "https://www.mercadolibre.com"
+    logo: /images/sections/experiences/meli.svg
     location: Buenos Aires, Argentina
     overview: MercadoLibre es la empresa número 1 de E-Commerce en LATAM.
   positions:

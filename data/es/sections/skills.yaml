@@ -1,129 +1,121 @@
-# section information
 section:
-  name: Tecnologías
+  name: Habilidades
   id: skills
   enable: true
   weight: 2
   showOnNavbar: true
-  filter: true  
-  # Can optionally hide the title in sections
-  # hideTitle: true
+  filter: true
 
 buttons:
-- name: All
-  filter: "all"
-- name: Lenguajes
-  filter: "lenguajes"
-- name: Containers
-  filter: "containers"
-- name: CI-CD
-  filter: "ci-cd"
-- name: IAC
-  filter: "iac"  
-- name: Monitoreo
-  filter: "monitoreo"
-- name: Otros
-  filter: "otros"
+  - name: Todas
+    filter: "all"
+  - name: Programación
+    filter: "coding"
+  - name: Cloud Provider
+    filter: "cloud"    
+  - name: Containers
+    filter: "containers"
+  - name: CI-CD
+    filter: "ci-cd"
+  - name: IaC
+    filter: "iac"
+  - name: Observabilidad
+    filter: "observability"
+  - name: Otros
+    filter: "others"
 
-
-# Your Skills.
-# Give a summary of you each skill in the summary section.
 skills:
-- name: Ansible
-  logo: "/images/sections/skills/ansible.png"
-  summary: "Manejo intermedio de Ansible. Utilizado para generar mis configuraciones personales."
-  categories: ["otros"]    
+  - name: Ansible
+    logo: "/images/sections/skills/ansible.png"
+    summary: "Automatización de tareas de aprovisionamiento y configuración mediante playbooks."
+    categories: ["iac"]
 
-- name: Argo CD
-  logo: "/images/sections/skills/argocd.svg"
-  summary: "Manejo basico de ARGO CD."
-  categories: ["ci-cd"]
+  - name: ArgoCD
+    logo: "/images/sections/skills/argo-color.svg"
+    summary: "Herramienta GitOps declarativa para entrega continua en Kubernetes."
+    categories: ["ci-cd"]
 
-- name: AWS
-  logo: "/images/sections/skills/cloud.png"
-  summary: "Infraestructura Cloud usada a diario en conjunto con Terraform y Kubernetes"
-  categories: ["otros"]
+  - name: AWS
+    logo: "/images/sections/skills/aws-color.svg"
+    summary: "Aprovisionamiento, escalado y gestión de infraestructura en la nube (EC2, S3, Lambda, etc.)."
+    categories: ["cloud"]
 
-- name: Confluence
-  logo: "/images/sections/skills/confluence.png"
-  summary: "Usado a diario para generar Documentacion."
-  categories: ["otros"]
+  - name: Cloudflare
+    logo: "/images/sections/skills/cloudflare-color.svg"
+    summary: "DNS, CDN, ruteo de correo, Zero Trust, túneles y automatización vía APIs."
+    categories: ["others"]
 
-- name: Datadog
-  logo: "/images/sections/skills/datadog.svg"
-  summary: "Uso Datadog para monitorear aplicaciones Serverless en AWS."
-  url: "https://www.datadog.com/"
-  categories: ["monitoreo"]
+  - name: Confluence
+    logo: "/images/sections/skills/confluence-color.svg"
+    summary: "Documentación colaborativa, decisiones de arquitectura y base de conocimiento."
+    categories: ["others"]
 
-- name: Docker
-  logo: "/images/sections/skills/docker.svg"
-  summary: "La mayoria de mis aplicativos son realizados con Containers de Docker. En proceso de aprendizaje de Multi-Stage Build."
-  categories: ["containers"]
-  url: "https://www.docker.com/"
-  
-- name: Git
-  logo: "/images/sections/skills/git.png"
-  summary: "Uso experimentado de Git. Actualmente utilizo mucho Gitlab pero tambien suelo usar GitHub."
-  url: "https://git-scm.com/"
+  - name: Datadog
+    logo: "/images/sections/skills/datadog-color.svg"
+    summary: "Observabilidad y monitoreo cloud-native de entornos serverless y contenerizados."
+    categories: ["observability"]
 
-- name: GitHub
-  #logo: "/images/sections/skills/git.png"
-  summary: "Experienced with Github Actions."
-  categories: ["ci-cd"]    
-  url: "https://www.github.com/"
+  - name: Docker
+    logo: "/images/sections/skills/docker-color.svg"
+    summary: "Construcción y gestión de aplicaciones contenerizadas con multi-stage builds."
+    categories: ["containers"]
 
-- name: GitLab
-  #logo: "/images/sections/skills/git.png"
-  summary: "Experienced with gitlab pipelines."
-  categories: ["ci-cd"]    
-  url: "https://www.gitlab.com/"
+  - name: Git
+    logo: "/images/sections/skills/git-color.png"
+    summary: "Control de versiones, estrategias de ramas y flujos de trabajo colaborativos."
+    categories: ["others"]
 
-- name: Grafana
-  #logo: "/images/sections/skills/datadog.svg"
-  summary: "Use Grafana for monitoring Serverless Applications in AWS."
-  categories: ["monitoreo"]
-  url: "https://www.grafana.com/"
+  - name: GitHub
+    logo: "/images/sections/skills/github.svg"
+    summary: "Automatización CI/CD e integraciones usando GitHub Actions."
+    categories: ["ci-cd"]
 
-- name: Helm
-  logo: "/images/sections/skills/helm.svg"
-  summary: "Uso Helm para simplificar y estandarizar la implementación de aplicaciones en clústeres de Kubernetes."
-  categories: ["containers"]
-  url: "https://www.helm.com/"
+  - name: GitLab
+    logo: "/images/sections/skills/gitlab-color.svg"
+    summary: "Pipelines CI/CD, configuración de entornos y runners autogestionados."
+    categories: ["ci-cd"]
 
-- name: Jira
-  logo: "/images/sections/skills/jira.png"
-  summary: "Uso a diario Jira Scrum. Tambien use en el pasado Jira como Ticketera de Service Desk."
-  url: "https://git-scm.com/"
-  categories: ["otros"]
+  - name: Grafana
+    logo: "/images/sections/skills/grafana-color.svg"  
+    summary: "Dashboards de métricas y logs con Prometheus, Loki y CloudWatch."
+    categories: ["observability"]
 
-- name: Kubernetes
-  logo: "/images/sections/skills/kubernetes.png"
-  summary: "Capaz de realizar deploys de aplicativos y manejar infraestructura con Kubernetes."
-  categories: ["containers"]
-  url: "https://kubernetes.io/"
+  - name: Helm
+    logo: "/images/sections/skills/helm-color.svg"
+    summary: "Creación de Helm Charts personalizados para estandarizar despliegues en Kubernetes."
+    categories: ["containers"]
 
-- name: Linux
-  logo: "/images/sections/skills/linux.png"
-  summary: "Lo uso a diario como mi sistema principal. Principalmente uso Manjaro, pero tambien use Kali Linux y Ubuntu."
-  categories: ["otros"]
+  - name: Jira
+    logo: "/images/sections/skills/jira-color.svg"
+    summary: "Gestión ágil de proyectos mediante tableros Scrum y Service Desk."
+    categories: ["others"]
 
-- name: Postman
-  logo: "/images/sections/skills/postman.png"
-  summary: "Usado para testeo de APIs y obtener información."
-  categories: ["otros"]
+  - name: Kubernetes
+    logo: "/images/sections/skills/kubernetes-color.png"
+    summary: "Despliegue, escalado y resolución de problemas en clústers productivos."
+    categories: ["containers"]
 
-- name: Python
-  logo: "/images/sections/skills/python.png"
-  summary: "Uso intermedio de Python. Es mi lenguaje principal de programación."
-  categories: ["lenguajes"]
+  - name: Linux
+    logo: "/images/sections/skills/linux-color.png"
+    summary: "Uso previo de Manjaro, SUSE y Ubuntu. Actualmente trabajando en macOS con uso intensivo de CLI."
+    categories: ["others"]
 
-- name: Terraform
-  logo: "/images/sections/skills/terraform.png"
-  summary: "Lo uso a diario para generar Infraestructura como Codigo en conjunto con AWS. Soy capaz de realiza Módulos."
-  categories: ["iac"]  
-  url: "https://www.terraform.io/"
+  - name: Postman
+    logo: "/images/sections/skills/postman-color.svg"
+    summary: "Testing de APIs y automatización de flujos para integración backend."
+    categories: ["others"]
 
-- name: Shell Scripting
-  logo: "/images/sections/skills/shell.png"
-  summary: "Uso Avanzado de Shell Scripting."
-  categories: ["lenguajes"]
+  - name: Python
+    logo: "/images/sections/skills/python-color.png"
+    summary: "Lenguaje principal. Usado para automatización, integraciones y herramientas internas."
+    categories: ["coding"]
+
+  - name: Shell Scripting
+    logo: "/images/sections/skills/shell-color.png"
+    summary: "Experiencia avanzada en Bash para automatización, logging, provisión y tareas de integración."
+    categories: ["coding"]
+
+  - name: Terraform
+    logo: "/images/sections/skills/terraform-color.svg"
+    summary: "Infraestructura como código en AWS, Cloudflare entre otros, mediante módulos reutilizables y orientados a entornos."
+    categories: ["iac"]

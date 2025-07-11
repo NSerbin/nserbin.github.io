@@ -1,33 +1,28 @@
 {{ $sectionID := replace (lower .section.name) " " "-" }}
 {{ if .section.id }}{{ $sectionID = .section.id }}{{ end }}
 
-<div class="container-fluid anchor pb-5 languages-section" id="{{ $sectionID }}">
+<div class="container-fluid anchor pb-5" id="{{ $sectionID }}">
   {{ if not (.section.hideTitle) }}
-    <h1 class="text-center">
-      <span id="{{ $sectionID }}"></span>{{ .section.name }}
-    </h1>
+    <h2 class="text-center mb-4">{{ .section.name }}</h2>
   {{ end }}
 
   <div class="container">
     <div class="row justify-content-center">
       {{ range .languages }}
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex">
-          <div class="card w-100 h-100 shadow-sm text-center d-flex flex-column justify-content-center align-items-center p-4
-                      bg-theme-light text-theme-dark dark:bg-theme-dark dark:text-theme-light">
-            <div class="icon-holder mb-3">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 d-flex align-items-stretch">
+          <div class="card w-100 h-100 border-0 text-center p-3 bg-theme-light dark:bg-theme-dark text-theme-dark dark:text-theme-light d-flex flex-column justify-content-center align-items-center">
+            <div class="mb-3">
               {{ if .flag }}
-                <span class="fi fi-{{ .flag }} fa-3x"></span>
+                <span class="fi fi-{{ .flag }} fa-2x"></span>
               {{ else if .icon }}
-                <i class="{{ .icon }} fa-3x text-info"></i>
+                <i class="{{ .icon }} fa-2x text-primary"></i>
               {{ end }}
             </div>
-            <h5 class="mb-2">{{ .name }}</h5>
-            <div>
+            <h6 class="mb-1">{{ .name }}</h6>
+            <p class="mb-0 text-sm text-center">
               <span class="text-muted dark:text-gray-400">Level:</span>
-              <span class="fw-semibold ms-1 text-theme-dark dark:text-theme-light">
-                {{ .level }}
-              </span>
-            </div>
+              <span class="fw-semibold ms-1 text-theme-dark dark:text-theme-light" style="white-space: nowrap;">{{ .level }}</span>
+            </p>
           </div>
         </div>
       {{ end }}

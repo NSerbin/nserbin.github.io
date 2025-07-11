@@ -1,4 +1,3 @@
-# section information
 section:
   name: Skills
   id: skills
@@ -6,123 +5,117 @@ section:
   weight: 2
   showOnNavbar: true
   filter: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
 
 buttons:
-- name: All
-  filter: "all"
-- name: Language
-  filter: "language"
-- name: Containers
-  filter: "containers"
-- name: CI-CD
-  filter: "ci-cd"
-- name: IAC
-  filter: "iac"  
-- name: Observability
-  filter: "observability"
-- name: Others
-  filter: "others"
+  - name: All
+    filter: "all"
+  - name: Coding
+    filter: "coding"
+  - name: Cloud Provider
+    filter: "cloud"    
+  - name: Containers
+    filter: "containers"
+  - name: CI-CD
+    filter: "ci-cd"
+  - name: IAC
+    filter: "iac"
+  - name: Observability
+    filter: "observability"
+  - name: Others
+    filter: "others"
 
-# Your Skills.
-# Give a summary of you each skill in the summary section.
 skills:
-- name: Ansible
-  logo: "/images/sections/skills/ansible.png"
-  summary: "Intermediate knowledge with Ansible. Used for personal configuration."
-  categories: ["others"]      
+  - name: Ansible
+    logo: "/images/sections/skills/ansible.png"
+    summary: "Automation of provisioning and configuration tasks through playbooks."
+    categories: ["iac"]
 
-- name: ArgoCD
-  logo: "/images/sections/skills/argocd.svg"
-  summary: "Basic knowledge of ARGO CD."
-  categories: ["ci-cd"]
+  - name: ArgoCD
+    logo: "/images/sections/skills/argo-color.svg"
+    summary: "Declarative GitOps tool for Kubernetes continuous delivery."
+    categories: ["ci-cd"]
 
-- name: AWS
-  logo: "/images/sections/skills/cloud.png"
-  summary: "Daily infrastructure. Used with Terraform and Kubernetes"
-  categories: ["others"]     
+  - name: AWS
+    logo: "/images/sections/skills/aws-color.svg"
+    summary: "Provisioning, scaling, and managing cloud infrastructure (EC2, S3, Lambda, etc)."
+    categories: ["cloud"]
 
-- name: Confluence
-  logo: "/images/sections/skills/confluence.png"
-  summary: "Used daily to make Documentation."
-  categories: ["others"]  
+  - name: Cloudflare
+    logo: "/images/sections/skills/cloudflare-color.svg"
+    summary: "DNS, CDN, email routing, Zero Trust, tunnels, and API-based automation."
+    categories: ["others"]
 
-- name: Datadog
-  logo: "/images/sections/skills/datadog.svg"
-  summary: "Use Datadog for monitoring Serverless Applications in AWS."
-  categories: ["observability"]  
-  url: "https://www.datadog.com/"
+  - name: Confluence
+    logo: "/images/sections/skills/confluence-color.svg"
+    summary: "Collaborative documentation, architecture records, and knowledge base."
+    categories: ["others"]
 
-- name: Docker
-  logo: "/images/sections/skills/docker.svg"
-  summary: "Most of my programs are written as dockerized containers. As well as Learning Multi-Stage Build"
-  categories: ["containers"]
-  url: "https://www.docker.com/"
+  - name: Datadog
+    logo: "/images/sections/skills/datadog-color.svg"
+    summary: "Cloud-native observability and monitoring of serverless and containerized stacks."
+    categories: ["observability"]
 
-- name: Git
-  logo: "/images/sections/skills/git.png"
-  summary: "Experienced with git-based development. Mostly using Gitlab & Github."
-  url: "https://git-scm.com/"
+  - name: Docker
+    logo: "/images/sections/skills/docker-color.svg"
+    summary: "Building and managing containerized applications with multi-stage builds."
+    categories: ["containers"]
 
-- name: GitHub
-  logo: "/images/sections/skills/git.png"
-  summary: "Experienced with Github Actions."
-  categories: ["ci-cd"]    
-  url: "https://www.github.com/"
+  - name: Git
+    logo: "/images/sections/skills/git-color.png"
+    summary: "Source control, branching strategies, and collaborative development workflows."
+    categories: ["others"]
 
-- name: GitLab
-  logo: "/images/sections/skills/git.png"
-  summary: "Experienced with gitlab pipelines."
-  categories: ["ci-cd"]    
-  url: "https://www.gitlab.com/"
+  - name: GitHub
+    logo: "/images/sections/skills/github.svg"
+    summary: "CI/CD automation and integrations using GitHub Actions."
+    categories: ["ci-cd"]
 
-- name: Grafana
-  #logo: "/images/sections/skills/datadog.svg"
-  summary: "Use Grafana for monitoring Serverless Applications in AWS."
-  categories: ["observability"]  
-  url: "https://www.grafana.com/"
+  - name: GitLab
+    logo: "/images/sections/skills/gitlab-color.svg"
+    summary: "CI/CD pipelines, environment configs, and self-hosted runners."
+    categories: ["ci-cd"]
 
-- name: Helm
-  logo: "/images/sections/skills/helm.svg"
-  summary: "Use Helm Charts for simplifying and standardizing the deployment of applications on Kubernetes clusters."
-  categories: ["containers"]
-  url: "https://www.helm.com/" 
+  - name: Grafana
+    logo: "/images/sections/skills/grafana-color.svg"  
+    summary: "Dashboards for metrics and logs via Prometheus, Loki, and CloudWatch."
+    categories: ["observability"]
 
-- name: Jira
-  logo: "/images/sections/skills/jira.png"
-  summary: "Daily use of Jira Scrum. Also used Jira Service Desk tickets."
-  categories: ["others"]    
-  url: "https://www.jira.com/"
+  - name: Helm
+    logo: "/images/sections/skills/helm-color.svg"
+    summary: "Authoring custom Helm charts to standardize Kubernetes deployments across environments."
+    categories: ["containers"]
 
-- name: Kubernetes
-  logo: "/images/sections/skills/kubernetes.png"
-  summary: "Capable of deploying & managing applications on Kubernetes."
-  categories: ["containers"]
-  url: "https://kubernetes.io/"
+  - name: Jira
+    logo: "/images/sections/skills/jira-color.svg"
+    summary: "Agile project management using Scrum boards and Service Desk."
+    categories: ["others"]
 
-- name: Linux
-  logo: "/images/sections/skills/linux.png"
-  summary: "Using as my main operating system. My main distribution is Manjaro anyhow I used Kali Linux and Ubuntu."
-  categories: ["others"]
+  - name: Kubernetes
+    logo: "/images/sections/skills/kubernetes-color.png"
+    summary: "Deploying, scaling, and troubleshooting workloads in production clusters."
+    categories: ["containers"]
 
-- name: Postman
-  logo: "/images/sections/skills/postman.png"
-  summary: "Used to test APIs and get information."
-  categories: ["others"]
+  - name: Linux
+    logo: "/images/sections/skills/linux-color.png"
+    summary: "Used Manjaro, SUSE, and Ubuntu in the past. Currently on macOS with regular CLI usage."
+    categories: ["others"]
 
-- name: Python
-  logo: "/images/sections/skills/python.png"
-  summary: "Intermediate Knowledge of Python. It's my main programming language."
-  categories: ["language"]
+  - name: Postman
+    logo: "/images/sections/skills/postman-color.svg"
+    summary: "API testing and automation of workflows for backend integration."
+    categories: ["others"]
 
-- name: Terraform
-  logo: "/images/sections/skills/terraform.png"
-  summary: "Used to make IaC with AWS. Capable to do Modules"
-  categories: ["iac"]
-  url: "https://www.terraform.io/"
+  - name: Python
+    logo: "/images/sections/skills/python-color.png"
+    summary: "Main programming language. Used for automation, integrations, and tooling."
+    categories: ["coding"]
 
-- name: Shell Scripting
-  logo: "/images/sections/skills/shell.png"
-  summary: "Advanced Knowledge on shell scripts."
-  categories: ["language"]  
+  - name: Shell Scripting
+    logo: "/images/sections/skills/shell-color.png"
+    summary: "Expertise in Bash scripting for automation, logging, provisioning tasks, and system integrations."
+    categories: ["coding"]
+
+  - name: Terraform
+    logo: "/images/sections/skills/terraform-color.svg"
+    summary: "IaC on AWS, Cloudflare among others with modular, reusable, and environment-specific codebases."
+    categories: ["iac"]

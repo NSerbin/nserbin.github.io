@@ -13,6 +13,7 @@ experiences:
 - company:
     name: OLX
     url: "https://www.olx.com.pt/"
+    logo: /images/sections/experiences/olx.svg    
     location: Lisbon, Portugal
     # company overview
     overview: OLX operates as a sophisticated global digital marketplace, specializing in localized trading of a diverse array of products and services, ranging from electronics to real estate, empowering millions to buy, sell, and connect within their communities effortlessly. As part of the Business IT team, I manage critical infrastructure components such as SAP, Boomi, and GitLab.
@@ -32,6 +33,7 @@ experiences:
 - company:
     name: Naranja X
     url: "https://www.naranjax.com/"
+    logo: /images/sections/experiences/nx.png
     location: Buenos Aires, Argentina
     # company overview
     overview: Naranja X is a recognized fintech company, that offers financial inclusion to many people within the Argentine territory. I am involved in the "WIRU Pipeline" project. It's hosted on Gitlab and predominantly written in Bash and Python.
@@ -49,6 +51,7 @@ experiences:
 - company:
     name: Digital House
     url: "https://www.digitalhouse.com"
+    logo: /images/sections/experiences/dh.png
     location: Buenos Aires, Argentina
     overview: Digital House is a leading EdTech company in Latin America, offering premium IT career paths and training programs. I’ve been part of the DevOps team, contributing across different seniority levels from execution to leadership.
   positions:
@@ -85,6 +88,7 @@ experiences:
 - company:
     name: MercadoLibre
     url: "https://www.mercadolibre.com"
+    logo: /images/sections/experiences/meli.svg
     location: Buenos Aires, Argentina
     overview: MercadoLibre is widely recognized E-Commerce company in LATAM.
   positions:
