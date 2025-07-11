@@ -12,9 +12,9 @@ languages:
     flag: ar
 
   - name: English
-    level: Upper Intermediate
+    level: C1
     flag: gb
 
   - name: Portuguese
-    level: Basic
+    level: A1
     flag: pt

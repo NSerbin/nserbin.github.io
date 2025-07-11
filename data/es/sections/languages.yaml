@@ -13,8 +13,8 @@ languages:
 
   - name: Inglés
     flag: gb
-    level: Intermedio alto
+    level: C1
 
   - name: Portugués
     flag: pt
-    level: Básico
+    level: A1
