@@ -23,8 +23,10 @@
             </div>
             <h5 class="mb-2">{{ .name }}</h5>
             <div>
-              <span class="text-muted dark:text-gray-400">{{ i18n "level" }}:</span>
-              <span class="text-info fw-semibold ms-1">{{ .level }}</span>
+              <span class="text-muted dark:text-gray-400">Level:</span>
+              <span class="fw-semibold ms-1 text-theme-dark dark:text-theme-light">
+                {{ .level }}
+              </span>
             </div>
           </div>
         </div>
