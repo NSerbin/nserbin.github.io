@@ -17,7 +17,7 @@ company:
 # your resume. this file path should be relative to you "static" directory
 resourceLinks:
 - title: "My CV"
-  url: "files/curriculum.pdf"
+  url: "files/Curriculum-25.pdf"
 
 # a summary about you
 summary: "Apasionado por la tecnología y la automatización, con más de 5 años de experiencia práctica en la construcción de infraestructura en la nube y la optimización de procesos operativos. Disfruto crear sistemas confiables, escribir código limpio de automatización y explorar constantemente nuevas herramientas, especialmente cuando experimento con mi Raspberry Pi en casa."

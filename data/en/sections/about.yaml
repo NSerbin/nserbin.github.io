@@ -17,7 +17,7 @@ company:
 # your resume. this file path should be relative to you "static" directory
 resourceLinks:
 - title: "My Resume"
-  url: "files/Resume.pdf"
+  url: "files/Resume-25.pdf"
 
 # a summary about you
 summary: "Passionate about technology and automation, with over 5 years of hands-on experience in building cloud infrastructure and streamlining operational processes. I enjoy creating reliable systems, writing clean automation code, and continuously exploring new tools — especially when experimenting with my Raspberry Pi at home."
