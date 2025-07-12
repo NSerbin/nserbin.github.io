@@ -13,7 +13,7 @@ experiences:
 - company:
     name: OLX
     url: "https://www.olx.com.pt/"
-    logo: /images/sections/experiences/olx.svg    
+    logo: /images/sections/experiences/olx.png    
     location: Lisbon, Portugal
     # company overview
     overview: OLX operates as a sophisticated global digital marketplace, specializing in localized trading of a diverse array of products and services, ranging from electronics to real estate, empowering millions to buy, sell, and connect within their communities effortlessly. As part of the Business IT team, I manage critical infrastructure components such as SAP, Boomi, and GitLab.
