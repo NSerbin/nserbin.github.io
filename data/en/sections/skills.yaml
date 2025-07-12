@@ -36,7 +36,7 @@ skills:
     categories: ["ci-cd"]
 
   - name: AWS
-    logo: "/images/sections/skills/aws-color.svg"
+    logo: "/images/sections/skills/aws.png"
     summary: "Provisioning, scaling, and managing cloud infrastructure (EC2, S3, Lambda, etc)."
     categories: ["cloud"]
 
