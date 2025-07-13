@@ -4,5 +4,5 @@ menu:
   sidebar:
     name: AWS
     identifier: aws
-    weight: 100
+    weight: 1
 ---
