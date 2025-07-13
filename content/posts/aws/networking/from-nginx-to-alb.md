@@ -5,7 +5,7 @@ hero: /images/posts/redirects-with-alb/alb-redirects-cover.png
 description: Discover how we simplified and automated dozens of HTTP redirects using AWS ALB, ACM and Terraform. Zero servers, automatic SSL, and full scalability.
 author:
   name: Nicolas Serbin
-  image: /images/authors/nserbin.jpg
+  image: /images/authors/perfil.png
 menu:
   sidebar:
     name: Migrating from NGINX to ALB
