@@ -65,7 +65,7 @@ Once we made the switch, we wanted the entire solution to be automated, secure, 
 
 Sometimes it's easier to understand this type of infrastructure visually. Here's a high-level diagram that shows how user requests travel through Route 53, the ALB, and how redirect behavior is handled:
 
-{{< img src="/images/posts/redirects-with-alb/redirect-flow.png" align="center" title="How Route 53 and ALB process incoming requests" >}}
+{{< img src="/images/posts/redirects-with-alb/redirect-flow.png" align="center" title="How Route 53 and ALB process incoming requests" alt="Diagram showing how Route 53 and ALB process incoming requests, including redirect behavior." >}}
 
 
 This shows:
