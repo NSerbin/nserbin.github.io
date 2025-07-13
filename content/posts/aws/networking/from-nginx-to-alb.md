@@ -12,7 +12,11 @@ menu:
     identifier: alb-nginx-migration
     parent: aws-networking
     weight: 1
-theme: Toha
+tags:
+- Load Balancer
+- Redirects
+- NGINX
+- EC2
 ---
 
 ## 🧭 We replaced an NGINX server with AWS ALB for 70+ redirects — and cut costs by 70%
