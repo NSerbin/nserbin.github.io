@@ -1,7 +1,7 @@
 ---
 title: "We replaced an NGINX server with AWS ALB for 50+ redirects — and cut costs by 70%"
 date: 2025-07-14T10:00:00+01:00
-hero: /images/posts/redirects-with-alb/alb-redirects-cover.png
+hero: /images/posts/hero-redirect-alb.png
 description: Discover how we simplified and automated dozens of HTTP redirects using AWS ALB, ACM and Terraform. Zero servers, automatic SSL, and full scalability.
 author:
   name: Nicolas Serbin
@@ -69,7 +69,7 @@ Once we made the switch, we wanted the entire solution to be automated, secure, 
 
 Sometimes it's easier to understand this type of infrastructure visually. Here's a high-level diagram that shows how user requests travel through Route 53, the ALB, and how redirect behavior is handled:
 
-{{< img src="/images/posts/redirects-with-alb/redirect-flow.png" align="center" title="How Route 53 and ALB process incoming requests" alt="Diagram showing how Route 53 and ALB process incoming requests, including redirect behavior." >}}
+{{< img src="/images/posts/diagram-redirect-alb.png" align="center" title="How Route 53 and ALB process incoming requests" alt="Diagram showing how Route 53 and ALB process incoming requests, including redirect behavior." >}}
 
 
 This shows:
