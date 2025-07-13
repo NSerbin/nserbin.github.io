@@ -1,15 +1,15 @@
 ---
-title: "We replaced an NGINX server with AWS ALB for 50+ redirects — and cut costs by 70%"
-date: 2025-07-14T10:00:00+01:00
+title: "From NGINX EC2 to AWS ALB for 70+ redirects - and cut costs by 70%"
+date: 2025-07-13T22:00:00+01:00
 hero: /images/posts/hero-redirect-alb.png
 description: Discover how we simplified and automated dozens of HTTP redirects using AWS ALB, ACM and Terraform. Zero servers, automatic SSL, and full scalability.
-theme: toha
+theme: Toha
 menu:
   sidebar:
     name: Migrating from NGINX to ALB
-    identifier: alb-nginx-migration
+    identifier: from-nginx-to-alb
     parent: aws-networking
-    weight: 1
+    weight: 100
 tags:
 - Load Balancer
 - Redirects
@@ -17,80 +17,79 @@ tags:
 - EC2
 ---
 
-## 🧭 We replaced an NGINX server with AWS ALB for 70+ redirects — and cut costs by 70%
-
-### Why we left EC2 + NGINX behind (and how much it saved us)
+## Why we left EC2 + NGINX behind (and how much it saved us)
 
 In one of my previous jobs, we needed to maintain over **70 domain redirects**. Our initial solution was simple: an **EC2 instance running NGINX** with a bunch of `301` and `302` rules.
 
+{{< vs 3 >}}
+
 And while that worked at first, things started to fall apart:
 
-- Any new redirect meant SSH access and manual file editing
-- Restarting NGINX came with downtime risks
-- A single typo could break everything
+- Any new redirect meant SSH access and manual file editing  
+- Restarting NGINX came with downtime risks  
+- A single typo could break everything  
 - Most importantly: we were maintaining a full server just to handle redirects
 
----
+{{< vs 4 >}}
 
 ### 💰 EC2 vs ALB: The Cost of Simplicity
 
-{{< split 6 6 >}}
+|                 | ❌ EC2 + NGINX                   | ✅ ALB + Terraform               |
+|-----------------|----------------------------------|----------------------------------|
+| **Cost**        | ~$73/mo                         | ~$22.50/mo                      |
+| **Access**      | SSH required                    | No SSH ever                     |
+| **SSL**         | Manual setup                    | Auto SSL (ACM)                  |
+| **Maintenance** | Manual file editing             | Fully versioned in Terraform    |
+| **Scalability** | Single point of failure         | Fully scalable rules            |
+| **Downtime**    | NGINX restarts cause downtime   | Zero downtime on rule changes   |
 
-##### ❌ EC2 + NGINX
-
-- ~$73/mo
-- Manual file editing
-- NGINX restarts = downtime
-- Single point of failure
-
----
-
-##### ✅ ALB + Terraform
-
-- ~$22.50/mo
-- No SSH ever
-- Auto SSL (ACM)
-- Fully scalable rules
-
-{{< /split >}}
-
+{{< vs 2 >}}
 
 That’s a **~70% reduction**, with zero servers to maintain and full scalability.
 
----
+{{< vs 4 >}}
 
 ## 🛠 The New Setup: ALB + Terraform + SSL + Logs
 
 Once we made the switch, we wanted the entire solution to be automated, secure, and easy to maintain. Here’s what we built:
 
+{{< vs 4 >}}
+
 ### 🗺️ Visual Overview: How the Flow Works
 
 Sometimes it's easier to understand this type of infrastructure visually. Here's a high-level diagram that shows how user requests travel through Route 53, the ALB, and how redirect behavior is handled:
 
+{{< vs 2 >}}
+
 {{< img src="/images/posts/diagram-redirect-alb.png" align="center" title="How Route 53 and ALB process incoming requests" alt="Diagram showing how Route 53 and ALB process incoming requests, including redirect behavior." >}}
 
+{{< vs 2 >}}
 
-This shows:
-- What happens when someone accesses a random or known domain
-- How Route 53 routes requests to the ALB
-- The difference between traffic arriving on port 80 and port 443
+This shows:  
+- What happens when someone accesses a random or known domain  
+- How Route 53 routes requests to the ALB  
+- The difference between traffic arriving on port 80 and port 443  
 - What the ALB does when no matching redirect rule is found (default 404)
+
+{{< vs 4 >}}
 
 ### 🔧 Components Used
 
-- **ALB (Application Load Balancer)**: Handles all HTTP/HTTPS requests
-- **Redirect Listener Rules**: Define what gets redirected and where
-- **Route 53**: Hosted Zones already managed all our domain DNS
-- **AWS ACM**: For issuing and auto-renewing SSL certificates
-- **Access Logs**: Enabled and pushed to S3 for auditing
-- **Terraform**: Used to define everything as code
+- **ALB (Application Load Balancer)**: Handles all HTTP/HTTPS requests  
+- **Redirect Listener Rules**: Define what gets redirected and where  
+- **Route 53**: Hosted Zones already managed all our domain DNS  
+- **AWS ACM**: For issuing and auto-renewing SSL certificates  
+- **Access Logs**: Enabled and pushed to S3 for auditing  
+- **Terraform**: Used to define everything as code  
 - **Modules**: We used Anton Babenko’s modules for [`alb`](https://github.com/terraform-aws-modules/terraform-aws-alb) and [`acm`](https://github.com/terraform-aws-modules/terraform-aws-acm)
 
----
+{{< vs 4 >}}
 
 ### 🔐 Managing SSL Certificates with ACM
 
 We used **ACM (AWS Certificate Manager)** to request certificates per domain, with auto-renewal enabled. Since we had all domains in Route 53, validation was done automatically via DNS — no manual setup needed.
+
+{{< vs 2 >}}
 
 Example:
 
@@ -106,13 +105,14 @@ module "acm" {
 }
 ```
 
+{{< vs 4 >}}
 ### 🌐 ALB Listener Rules + Redirects
 We implemented two listeners:
 
-- Port 80 (HTTP): Redirects everything to HTTPS
+- Port `80` (HTTP): Redirects everything to HTTPS
 
-- Port 443 (HTTPS): Processes redirect rules (up to 100 max), default action is 404
-
+- Port `443` (HTTPS): Processes redirect rules (up to 100 max), default action is `404`
+{{< vs 2 >}}
 ```hcl
 module "redirect_alb" {
   source  = "terraform-aws-modules/alb/aws"
@@ -216,7 +216,10 @@ module "redirect_alb" {
 }
 ```
 
+{{< vs 4 >}}
+
 ### ✨ Why This Worked for Us
+{{< vs 2 >}}
 - ✅ No EC2 servers to maintain
 
 - ✅ ~70% cost savings
@@ -233,14 +236,20 @@ module "redirect_alb" {
 
 - ✅ Ready to integrate with WAF or CloudWatch in the future
 
-{{< alert type="info" >}}
-**Scaling Tip**: ALB supports up to 100 listener rules per listener. If your redirect needs grow beyond that, you can:
-- Use multiple listeners (e.g., different ports or multiple ALBs)
-- Consider moving to CloudFront Functions or Lambda@Edge for ultra-scale scenarios
-- Group common redirects by wildcard domains or path patterns
-{{< /alert >}}
+{{< vs 3 >}}
 
-Planning this from the start will save you from having to refactor your rules later.
+> 📌 **Scaling Tip**  
+> AWS ALB supports up to **100 listener rules per listener**.  
+>  
+> If you need more, consider:  
+> • 🧩 Use multiple listeners (e.g., different ports or multiple ALBs)  
+> • 🚀 Move to CloudFront Functions or Lambda@Edge for large-scale redirects  
+> • 🗂️ Group redirects using wildcard domains or path patterns  
+
+{{< vs 1 >}}  
+_Plan your redirect strategy early to avoid scaling bottlenecks later._
+
+{{< vs 4 >}}
 
 ### 💡 Lessons Learned
 
@@ -248,3 +257,4 @@ Planning this from the start will save you from having to refactor your rules la
 - ALB rules are powerful, but don’t scale infinitely. Plan limits early.
 - Terraform made experimentation and rollback safe and auditable.
 - Relying on managed services like ACM for SSL removed 90% of the ops burden.
+{{< vs 2 >}}
