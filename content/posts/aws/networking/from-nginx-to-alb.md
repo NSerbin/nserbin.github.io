@@ -111,9 +111,10 @@ module "acm" {
 ### 🌐 ALB Listener Rules + Redirects
 We implemented two listeners:
 
-Port 80 (HTTP): Redirects everything to HTTPS
+- Port 80 (HTTP): Redirects everything to HTTPS
 
-Port 443 (HTTPS): Processes redirect rules (up to 100 max), default action is 404
+- Port 443 (HTTPS): Processes redirect rules (up to 100 max), default action is 404
+
 ```hcl
 module "redirect_alb" {
   source  = "terraform-aws-modules/alb/aws"
@@ -148,7 +149,7 @@ module "redirect_alb" {
     }
   }
 
-  http_tcp_listeners = [
+  http_listeners = [
     {
       port     = 80
       protocol = "HTTP"
