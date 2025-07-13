@@ -5,5 +5,5 @@ menu:
     name: Networking
     identifier: aws-networking
     parent: aws    
-    weight: 2
+    weight: 5
 ---
