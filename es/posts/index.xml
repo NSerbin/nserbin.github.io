@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posteos on Nicolas Serbin's</title><link>https://nserbin.github.io/es/posts/</link><description>Recent content in Posteos on Nicolas Serbin's</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 14 Jul 2025 22:00:00 +0100</lastBuildDate><atom:link href="https://nserbin.github.io/es/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>NGINX Out, ALB In - 70% Cheaper Redirects with Zero Servers</title><link>https://nserbin.github.io/es/posts/aws/aws-networking/from-nginx-to-alb/</link><pubDate>Mon, 14 Jul 2025 22:00:00 +0100</pubDate><guid>https://nserbin.github.io/es/posts/aws/aws-networking/from-nginx-to-alb/</guid><description>&lt;p>Antes de entrar en el por qué y el cómo, esto es lo que logramos:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>✅ Reemplazamos un punto único de falla con componentes nativos de AWS&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>💸 Reducimos los costos mensuales en un 70%&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🧑‍💻 No más SSH, servidores ni reinicios de NGINX&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🔐 SSL totalmente gestionado con ACM&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🛠️ Todo codificado y versionado con Terraform&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="alert success">
+&lt;span>&lt;i data-feather="check-circle">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Todo esto — sin un solo servidor EC2 ni archivo de configuración NGINX.&lt;/strong>&lt;/span>
+&lt;/div>
+&lt;div style="margin-top: 3rem;">&lt;/div>
+&lt;h2 id="por-qué-dejamos-ec2--nginx-y-cuánto-nos-ahorramos">Por qué dejamos EC2 + NGINX (y cuánto nos ahorramos)&lt;/h2>
+&lt;p>&lt;div style="margin-top: 1rem;">&lt;/div>
+Teníamos un objetivo simple: redirigir tráfico de más de 70 dominios diferentes.Primero lo resolvimos con lo que conocíamos — una instancia EC2 corriendo NGINX con reglas 301 y 302 hardcodeadas. Funcionó… hasta que dejó de funcionar.&lt;/p></description></item></channel></rss>

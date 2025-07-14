@@ -1,55 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicolas Serbin's</title><link>https://nserbin.github.io/</link><description>Recent content on Nicolas Serbin's</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 13 Jul 2025 22:00:00 +0100</lastBuildDate><atom:link href="https://nserbin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>From NGINX EC2 to AWS ALB for 70+ redirects - and cut costs by 70%</title><link>https://nserbin.github.io/posts/aws/aws-networking/from-nginx-to-alb/</link><pubDate>Sun, 13 Jul 2025 22:00:00 +0100</pubDate><guid>https://nserbin.github.io/posts/aws/aws-networking/from-nginx-to-alb/</guid><description>&lt;h2 id="why-we-left-ec2--nginx-behind-and-how-much-it-saved-us">Why we left EC2 + NGINX behind (and how much it saved us)&lt;/h2>
-&lt;p>In one of my previous jobs, we needed to maintain over &lt;strong>70 domain redirects&lt;/strong>. Our initial solution was simple: an &lt;strong>EC2 instance running NGINX&lt;/strong> with a bunch of &lt;code>301&lt;/code> and &lt;code>302&lt;/code> rules.&lt;/p>
-&lt;div style="margin-top: 3rem;">&lt;/div>
-&lt;p>And while that worked at first, things started to fall apart:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicolas Serbin's</title><link>https://nserbin.github.io/</link><description>Recent content on Nicolas Serbin's</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 14 Jul 2025 22:00:00 +0100</lastBuildDate><atom:link href="https://nserbin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>NGINX Out, ALB In - 70% Cheaper Redirects with Zero Servers</title><link>https://nserbin.github.io/posts/aws/aws-networking/from-nginx-to-alb/</link><pubDate>Mon, 14 Jul 2025 22:00:00 +0100</pubDate><guid>https://nserbin.github.io/posts/aws/aws-networking/from-nginx-to-alb/</guid><description>&lt;p>Before jumping into the why and how, here&amp;rsquo;s what we achieved:&lt;/p>
 &lt;ul>
-&lt;li>Any new redirect meant SSH access and manual file editing&lt;/li>
-&lt;li>Restarting NGINX came with downtime risks&lt;/li>
-&lt;li>A single typo could break everything&lt;/li>
-&lt;li>Most importantly: we were maintaining a full server just to handle redirects&lt;/li>
+&lt;li>
+&lt;p>✅ Replaced a single point of failure with AWS-native components&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>💸 Reduced monthly costs by 70%&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🧑‍💻 No more SSH, servers, or NGINX restarts&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🔐 Fully managed SSL with ACM&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🛠️ Everything codified and versioned via Terraform&lt;/p>
+&lt;/li>
 &lt;/ul>
-&lt;div style="margin-top: 4rem;">&lt;/div>
-&lt;h3 id="-ec2-vs-alb-the-cost-of-simplicity">💰 EC2 vs ALB: The Cost of Simplicity&lt;/h3>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>&lt;/th>
-&lt;th>❌ EC2 + NGINX&lt;/th>
-&lt;th>✅ ALB + Terraform&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;strong>Cost&lt;/strong>&lt;/td>
-&lt;td>~$73/mo&lt;/td>
-&lt;td>~$22.50/mo&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;strong>Access&lt;/strong>&lt;/td>
-&lt;td>SSH required&lt;/td>
-&lt;td>No SSH ever&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;strong>SSL&lt;/strong>&lt;/td>
-&lt;td>Manual setup&lt;/td>
-&lt;td>Auto SSL (ACM)&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;strong>Maintenance&lt;/strong>&lt;/td>
-&lt;td>Manual file editing&lt;/td>
-&lt;td>Fully versioned in Terraform&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;strong>Scalability&lt;/strong>&lt;/td>
-&lt;td>Single point of failure&lt;/td>
-&lt;td>Fully scalable rules&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;strong>Downtime&lt;/strong>&lt;/td>
-&lt;td>NGINX restarts cause downtime&lt;/td>
-&lt;td>Zero downtime on rule changes&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;div style="margin-top: 2rem;">&lt;/div>
-&lt;p>That’s a &lt;strong>~70% reduction&lt;/strong>, with zero servers to maintain and full scalability.&lt;/p></description></item><item><title>AWS</title><link>https://nserbin.github.io/posts/aws/_index.sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nserbin.github.io/posts/aws/_index.sp/</guid><description/></item><item><title>Networking</title><link>https://nserbin.github.io/posts/aws/aws-networking/_index.sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nserbin.github.io/posts/aws/aws-networking/_index.sp/</guid><description/></item></channel></rss>
+&lt;div class="alert success">
+&lt;span>&lt;i data-feather="check-circle">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>All of this — without a single EC2 server or NGINX config file.&lt;/strong>&lt;/span>
+&lt;/div>
+&lt;div style="margin-top: 3rem;">&lt;/div>
+&lt;h2 id="why-we-left-ec2--nginx-behind-and-how-much-it-saved-us">Why we left EC2 + NGINX behind (and how much it saved us)&lt;/h2>
+&lt;p>&lt;div style="margin-top: 1rem;">&lt;/div>
+We had a simple goal: redirect traffic for over &lt;strong>70 different domains&lt;/strong>.&lt;br>
+At first, we solved it with what we knew — an &lt;strong>EC2 instance running NGINX&lt;/strong> with hardcoded &lt;code>301&lt;/code> and &lt;code>302&lt;/code> rules. It worked… until it didn’t.&lt;/p></description></item></channel></rss>
