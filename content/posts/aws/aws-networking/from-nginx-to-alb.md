@@ -1,8 +1,8 @@
 ---
-title: "From NGINX EC2 to AWS ALB for 70+ redirects - and cut costs by 70%"
-date: 2025-07-13T22:00:00+01:00
-hero: /images/posts/hero-redirect-alb.png
-description: Discover how we simplified and automated dozens of HTTP redirects using AWS ALB, ACM and Terraform. Zero servers, automatic SSL, and full scalability.
+title: "NGINX Out, ALB In - 70% Cheaper Redirects with Zero Servers"
+date: 2025-07-14T22:00:00+01:00
+hero: /images/posts/hero.webp
+description: Learn how we replaced EC2 + NGINX with AWS ALB and Terraform to handle 70+ serverless redirects — with zero servers, zero downtime, and 70% lower costs.
 theme: Toha
 menu:
   sidebar:
@@ -15,33 +15,98 @@ tags:
 - Redirects
 - NGINX
 - EC2
+categories:
+- AWS
 ---
 
-## Why we left EC2 + NGINX behind (and how much it saved us)
+Before jumping into the why and how, here's what we achieved:
 
-In one of my previous jobs, we needed to maintain over **70 domain redirects**. Our initial solution was simple: an **EC2 instance running NGINX** with a bunch of `301` and `302` rules.
+- ✅ Replaced a single point of failure with AWS-native components
+
+- 💸 Reduced monthly costs by 70%
+
+- 🧑‍💻 No more SSH, servers, or NGINX restarts
+
+- 🔐 Fully managed SSL with ACM
+
+- 🛠️ Everything codified and versioned via Terraform
+
+{{< alert type="success" >}}
+All of this — without a single EC2 server or NGINX config file.
+{{< /alert >}}
 
 {{< vs 3 >}}
 
-And while that worked at first, things started to fall apart:
+## Why we left EC2 + NGINX behind (and how much it saved us)
+{{< vs 1 >}}
+We had a simple goal: redirect traffic for over **70 different domains**.  
+At first, we solved it with what we knew — an **EC2 instance running NGINX** with hardcoded `301` and `302` rules. It worked… until it didn’t.
+
+{{< vs 3 >}}
+
+What started as a quick fix became an operational headache:
 
 - Any new redirect meant SSH access and manual file editing  
 - Restarting NGINX came with downtime risks  
 - A single typo could break everything  
 - Most importantly: we were maintaining a full server just to handle redirects
 
+{{< vs 2 >}}
+
+Eventually, we asked ourselves: _isn’t this just a glorified spreadsheet with SSL and uptime issues?_  
+That question led us to redesign the whole setup using **ALB, Terraform, ACM**, and nothing else.
+
+And it worked — spectacularly.
 {{< vs 4 >}}
 
-### 💰 EC2 vs ALB: The Cost of Simplicity
+## 💰 EC2 vs ALB: The Cost of Simplicity
+{{< vs 2 >}}
+<div style="display: flex; justify-content: center;">
 
-|                 | ❌ EC2 + NGINX                   | ✅ ALB + Terraform               |
-|-----------------|----------------------------------|----------------------------------|
-| **Cost**        | ~$73/mo                         | ~$22.50/mo                      |
-| **Access**      | SSH required                    | No SSH ever                     |
-| **SSL**         | Manual setup                    | Auto SSL (ACM)                  |
-| **Maintenance** | Manual file editing             | Fully versioned in Terraform    |
-| **Scalability** | Single point of failure         | Fully scalable rules            |
-| **Downtime**    | NGINX restarts cause downtime   | Zero downtime on rule changes   |
+<table>
+<thead>
+<tr>
+<th></th>
+<th>❌ EC2 + NGINX</th>
+<th>✅ ALB + Terraform</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cost</strong></td>
+<td>~$73/mo</td>
+<td>~$22.50/mo</td>
+</tr>
+<tr>
+<td><strong>Access</strong></td>
+<td>SSH/SSM required</td>
+<td>No SSH/SSM ever</td>
+</tr>
+<tr>
+<td><strong>SSL</strong></td>
+<td>Manual setup</td>
+<td>Auto SSL (ACM)</td>
+</tr>
+<tr>
+<td><strong>Maintenance</strong></td>
+<td>Manual file editing</td>
+<td>Fully versioned in Terraform</td>
+</tr>
+<tr>
+<td><strong>Scalability</strong></td>
+<td>Single point of failure</td>
+<td>Fully scalable rules</td>
+</tr>
+<tr>
+<td><strong>Downtime</strong></td>
+<td>NGINX restarts cause downtime</td>
+<td>Zero downtime on rule changes</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
 
 {{< vs 2 >}}
 
@@ -55,13 +120,13 @@ Once we made the switch, we wanted the entire solution to be automated, secure, 
 
 {{< vs 4 >}}
 
-### 🗺️ Visual Overview: How the Flow Works
+### 📊 Visual Overview: How the Flow Works
 
 Sometimes it's easier to understand this type of infrastructure visually. Here's a high-level diagram that shows how user requests travel through Route 53, the ALB, and how redirect behavior is handled:
 
 {{< vs 2 >}}
 
-{{< img src="/images/posts/diagram-redirect-alb.png" align="center" title="How Route 53 and ALB process incoming requests" alt="Diagram showing how Route 53 and ALB process incoming requests, including redirect behavior." >}}
+{{< img src="/posts/aws/aws-networking/images/diagram-redirect-alb.png" align="center" title="How Route 53 and ALB process incoming requests" >}}
 
 {{< vs 2 >}}
 
@@ -91,7 +156,7 @@ We used **ACM (AWS Certificate Manager)** to request certificates per domain, wi
 
 {{< vs 2 >}}
 
-Example:
+Code:
 
 ```hcl
 module "acm" {
@@ -113,6 +178,8 @@ We implemented two listeners:
 
 - Port `443` (HTTPS): Processes redirect rules (up to 100 max), default action is `404`
 {{< vs 2 >}}
+
+Code:
 ```hcl
 module "redirect_alb" {
   source  = "terraform-aws-modules/alb/aws"
@@ -220,25 +287,38 @@ module "redirect_alb" {
 
 ### ✨ Why This Worked for Us
 {{< vs 2 >}}
-- ✅ No EC2 servers to maintain
+✅ Fully serverless — no EC2 to maintain
 
-- ✅ ~70% cost savings
+✅ ~70% cost savings
 
-- ✅ All redirects are version-controlled in Terraform
+✅ All redirects are version-controlled in Terraform
 
-- ✅ SSL certificates managed automatically (with renewals) via ACM
+✅ SSL certificates managed automatically (with renewals) via ACM
 
-- ✅ Access logs enabled for auditing
+✅ Access logs enabled for auditing
 
-- ✅ Default rule returns 404 to avoid exposing internal details
+✅ Default rule returns 404 to avoid exposing internal details
 
-- ✅ Port 80 cleanly redirects to HTTPS (443)
+✅ Port 80 cleanly redirects to HTTPS (443)
 
-- ✅ Ready to integrate with WAF or CloudWatch in the future
+✅ Ready to integrate with WAF or CloudWatch in the future
+
+✅ Everything is Infrastructure-as-Code, ready for CI/CD pipelines
+
 
 {{< vs 3 >}}
 
-> 📌 **Scaling Tip**  
+### ❌ What We Didn't Use (And Why)
+{{< vs 2 >}}
+- **Lambda@Edge** – great for complex logic at scale, but overkill for simple 301s.  
+- **CloudFront Functions** – less Terraform support, more limits.  
+- **S3 Static Hosting** – no built-in SSL unless fronted by CloudFront.  
+
+_In the end, simplicity won. ALB covered 100% of our use case — no Lambda, no CloudFront needed._
+
+
+{{< vs 3 >}}
+## 📌 Scaling Tip 
 > AWS ALB supports up to **100 listener rules per listener**.  
 >  
 > If you need more, consider:  
@@ -251,10 +331,22 @@ _Plan your redirect strategy early to avoid scaling bottlenecks later._
 
 {{< vs 4 >}}
 
-### 💡 Lessons Learned
+## 💡 Lessons Learned
 
-- Keep infrastructure as simple as the problem requires — NGINX was overkill for redirects.
-- ALB rules are powerful, but don’t scale infinitely. Plan limits early.
-- Terraform made experimentation and rollback safe and auditable.
+- Keep infrastructure as simple as the problem requires — NGINX was overkill for redirects.  
+- ALB rules are powerful, but don’t scale infinitely. Plan limits early.  
+- Terraform made experimentation and rollback safe and auditable.  
 - Relying on managed services like ACM for SSL removed 90% of the ops burden.
-{{< vs 2 >}}
+
+_In short, we turned a fragile EC2 setup into a robust serverless system — saving money, effort, and future headaches._
+
+{{< vs 4 >}}
+
+## 🙋‍♂️ Need Help With This?
+
+Considering a similar migration or want to simplify your redirect setup?
+
+We've migrated this same pattern across multiple AWS accounts — and the ops team never looked back.
+
+💬 [Let’s chat on LinkedIn](https://linkedin.com/in/NSerbin) — happy to help or exchange ideas.
+{{< vs 4 >}}
