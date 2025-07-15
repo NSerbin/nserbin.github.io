@@ -7,5 +7,7 @@ section:
   showOnNavbar: true
   # Can optionally hide the title in sections
   hideTitle: true
+  numShow: 4
+  showMoreButton: false
 
 # no additional configuration is required
