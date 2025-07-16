@@ -1,0 +1,123 @@
+# section information
+section:
+  name: Coursos
+  id: accomplishments
+  enable: true
+  weight: 8
+  showOnNavbar: true
+
+# Your accomplishments
+accomplishments:
+- name: Introducción a la Ciberseguridad
+  timeline: "Agosto 2019"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Curso introductorio que brinda una visión general sobre amenazas, ataques comunes y buenas prácticas de seguridad.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/34755"
+
+- name: Introducción a Bases de Datos y SQL
+  timeline: "Agosto 2019"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Fundamentos de bases de datos relacionales y lenguaje SQL para consultar, insertar y administrar datos eficazmente.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/34855"
+
+- name: Introducción a Linux
+  timeline: "Septiembre 2019"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Fundamentos del sistema operativo Linux, incluyendo comandos básicos, estructura de archivos y navegación.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/36742"
+
+- name: Introducción a Redes
+  timeline: "Septiembre 2019 - Octubre 2019"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Conceptos básicos de redes, incluyendo protocolos, topologías, direccionamiento IP y modelos OSI/TCP-IP.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/35976"
+
+- name: Python para No Programadores
+  timeline: "Septiembre 2019 - Octubre 2019"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Fundamentos de Python explicados desde cero para personas sin experiencia previa en programación.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/36085"
+
+- name: Programación en Python
+  timeline: "Octubre 2019 - Noviembre 2019"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Programación intermedia en Python, cubriendo funciones, manejo de errores, estructuras de datos y desarrollo modular.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/37948"
+
+- name: Criptografía y Blockchain
+  timeline: "Octubre 2019 - Noviembre 2019"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Introducción a la criptografía simétrica y asimétrica, principios de cifrado y aplicaciones de blockchain.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/34775"
+
+- name: Linux SysAdmin
+  timeline: "Marzo 2020 - Abril 2020"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Administración avanzada de sistemas Linux: servicios, usuarios, procesos, seguridad y tareas de configuración.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/36739"
+
+- name: Operador Linux
+  timeline: "Abril 2020"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Curso de administración Linux con foco en usuarios, archivos, procesos, redes y servicios básicos.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/40382"
+
+- name: Seguridad en Linux: Server Hardening
+  timeline: "Mayo 2020 - Junio 2020"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Curso centrado en asegurar entornos Linux mediante prácticas de hardening, permisos, auditoría y configuración.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/40399"
+
+- name: Protocolo HTTPS
+  timeline: "Junio 2020"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Curso breve sobre el protocolo HTTPS y su rol en la ciberseguridad y transmisión cifrada de datos.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/30344"
+
+- name: Seguridad en Redes: Network Hacking
+  timeline: "Junio 2020 - Julio 2020"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Curso práctico de seguridad en redes, incluyendo sniffing, MITM, escaneo y técnicas de explotación.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/40413"
+
+- name: Ethical Hacking
+  timeline: "Julio 2020 - Agosto 2020"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Fundamentos del hacking ético: reconocimiento, evaluación de vulnerabilidades y fases de explotación.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/41786"
+
+- name: Informática Forense
+  timeline: "Julio 2020 - Agosto 2020"
+  organization:
+    name: EducaciónIT
+    url: https://www.educacionit.com
+  courseOverview: Curso de análisis forense digital enfocado en recolección de evidencia, técnicas de investigación y documentación.
+  certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/45335"
+
+
