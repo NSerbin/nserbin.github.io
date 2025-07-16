@@ -31,7 +31,7 @@ languages:
     weight: 2
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
-# DefaultContentLanguage: bn
+# DefaultContentLanguage: en
 
 # Allow raw html in markdown file
 markup:
@@ -40,7 +40,7 @@ markup:
       unsafe: true
   tableOfContents:
     startLevel: 2
-    endLevel: 7
+    endLevel: 10
     ordered: false
 
 # At least HTML and JSON are required for the main HTML content and
