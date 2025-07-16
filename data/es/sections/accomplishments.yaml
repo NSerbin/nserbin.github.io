@@ -69,7 +69,7 @@ accomplishments:
   organization:
     name: EducaciónIT
     url: https://www.educacionit.com
-  courseOverview: Administración avanzada de sistemas Linux: servicios, usuarios, procesos, seguridad y tareas de configuración.
+  courseOverview: Administración avanzada de sistemas Linux servicios, usuarios, procesos, seguridad y tareas de configuración.
   certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/36739"
 
 - name: Operador Linux
@@ -80,7 +80,7 @@ accomplishments:
   courseOverview: Curso de administración Linux con foco en usuarios, archivos, procesos, redes y servicios básicos.
   certificateURL: "https://www.educacionit.com/perfil/nicolas-serbin-351901/certificado/40382"
 
-- name: Seguridad en Linux: Server Hardening
+- name: Seguridad en Linux -  Server Hardening
   timeline: "Mayo 2020 - Junio 2020"
   organization:
     name: EducaciónIT
