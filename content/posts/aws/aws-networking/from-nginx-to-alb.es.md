@@ -1,5 +1,5 @@
 ---
-title: "NGINX Out, ALB In - 70% Cheaper Redirects with Zero Servers"
+title: "NGINX Out, ALB In - Redirects 70% más baratos y SIN servidores !"
 date: 2025-07-14T22:00:00+01:00
 hero: /images/posts/nginx-to-alb.webp
 description: Descubrí cómo reemplazamos EC2 + NGINX con AWS ALB y Terraform para manejar más de 70 redirecciones serverless — sin servidores, sin downtime y con un 70% menos de costos.
