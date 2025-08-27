@@ -2,7 +2,7 @@
 title: "RDS Snapshot → S3: Diagnose and Fix a Disabled Export"
 date: 2025-08-27T07:00:00+01:00
 hero: /images/posts/rds-to-s3.webp
-description: "When the Export to S3 button is greyed out, stop guessing. Confirm the cause in 60 seconds, restore into a temporary gp3 instance, re-snapshot, and export with the right IAM/KMS wiring."
+description: When the Export to S3 button is greyed out, stop guessing. Confirm the cause in 60 seconds, restore into a temporary gp3 instance, re-snapshot, and export with the right IAM/KMS wiring.
 theme: Toha
 menu:
   sidebar:

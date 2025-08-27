@@ -2,13 +2,13 @@
 title: "RDS Snapshot → S3: Diagnosticar y resolver un Export deshabilitado"
 date: 2025-08-27T07:00:00+01:00
 hero: /images/posts/rds-to-s3.webp
-description: "Desbloqueá un Export to S3 deshabilitado para RDS Snapshot con un flujo claro y sin consola: diagnóstico rápido 🕵️, restore temporal en gp3 🧱, nuevo Snapshot 📸 y export con el wiring correcto de IAM/KMS 🔐."
+description: Desbloqueá un Export to S3 deshabilitado para RDS Snapshot con un flujo claro y sin consola. Diagnóstico rápido 🕵️, restore temporal en gp3 🧱, nuevo Snapshot 📸 y export con el wiring correcto de IAM/KMS 🔐.
 theme: Toha
 menu:
   sidebar:
     name: RDS Snapshot → S3 (Fix Disabled Export)
     identifier: rds-export-to-s3
-    parent: aws-databases
+    parent: aws-rds
     weight: 100
 tags:
 - S3
