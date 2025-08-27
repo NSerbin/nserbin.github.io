@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Storage Type on Nicolas Serbin's</title><link>https://nserbin.github.io/es/tags/storage-type/</link><description>Recent content in Storage Type on Nicolas Serbin's</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Wed, 27 Aug 2025 07:00:00 +0100</lastBuildDate><atom:link href="https://nserbin.github.io/es/tags/storage-type/index.xml" rel="self" type="application/rss+xml"/><item><title>RDS Snapshot → S3: Diagnosticar y resolver un Export deshabilitado</title><link>https://nserbin.github.io/es/posts/aws/aws-rds/export-to-s3/</link><pubDate>Wed, 27 Aug 2025 07:00:00 +0100</pubDate><guid>https://nserbin.github.io/es/posts/aws/aws-rds/export-to-s3/</guid><description>&lt;p>Antes de entrar en el por qué y el cómo, esto es lo que entregamos:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>⏱️ Diagnóstico claro en menos de un minuto (sin adivinar en la consola)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🫥 Camino no intrusivo: solo instancia &lt;strong>temporal&lt;/strong> (no tocamos tu RDS actual)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🔐 Export que funciona, con la forma correcta de &lt;strong>IAM/KMS&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🧩 Comandos copy-paste para tu runbook o CI&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div style="margin-top: 2rem;">&lt;/div>
+&lt;div class="alert success">
+&lt;span>&lt;i data-feather="check-circle">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Todo esto sin modificar tu instancia actual: restaurás el Snapshot en una instancia &lt;strong>gp3&lt;/strong> temporal 🚀, creás un Snapshot nuevo 📸 y exportás ese 📦.&lt;/strong>&lt;/span>
+&lt;/div>
+&lt;div style="margin-top: 4rem;">&lt;/div>
+&lt;h2 id="por-qué-el-export-está-deshabilitado-">Por qué el Export está deshabilitado 🔒&lt;/h2>
+&lt;p>&lt;div style="margin-top: 1rem;">&lt;/div>
+El bloqueo más frecuente es simple: el Snapshot fue tomado desde una instancia con almacenamiento &lt;strong>magnético (&lt;code>standard&lt;/code>)&lt;/strong> 🧲. Los Snapshots con ese linaje &lt;strong>no&lt;/strong> son elegibles para Export. La consola es ambigua; el &lt;strong>CLI&lt;/strong> te muestra exactamente qué pasa 🧪.&lt;/p></description></item></channel></rss>
