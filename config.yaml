@@ -126,7 +126,7 @@ params:
     support:
       enable: false
 
-    # specify whether you want to show Table of Contents in reading page
+    # s cify whether you want to show Table of Contents in reading page
     toc:
       enable: true  
     
