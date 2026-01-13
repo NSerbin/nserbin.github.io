@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Storage Type on Nicolas Serbin's</title><link>https://nserbin.github.io/tags/storage-type/</link><description>Recent content in Storage Type on Nicolas Serbin's</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Aug 2025 07:00:00 +0100</lastBuildDate><atom:link href="https://nserbin.github.io/tags/storage-type/index.xml" rel="self" type="application/rss+xml"/><item><title>RDS Snapshot → S3: Diagnose and Fix a Disabled Export</title><link>https://nserbin.github.io/posts/aws/aws-rds/export-to-s3/</link><pubDate>Wed, 27 Aug 2025 07:00:00 +0100</pubDate><guid>https://nserbin.github.io/posts/aws/aws-rds/export-to-s3/</guid><description>&lt;p>Before diving into the why and how, here’s what we deliver:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>⏱️ Clear diagnosis in under a minute (no console guesswork)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🫥 Non-intrusive path: &lt;strong>temporary&lt;/strong> instance only (we don’t touch your current RDS)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🔐 Export that works, with the correct &lt;strong>IAM/KMS&lt;/strong> shape&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>✅ Copy-paste commands for your runbook or CI&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;div style="margin-top: 2rem;">&lt;/div>
-&lt;div class="alert success">
-&lt;span>&lt;i data-feather="check-circle">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>All of this without modifying your existing DB instance — restore the snapshot into a temporary &lt;strong>gp3&lt;/strong> instance 🚀, create a new snapshot 📸, and export that one 📦.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;div style="margin-top: 4rem;">&lt;/div>
-&lt;h2 id="-why-the-export-is-disabled">🔒 Why the export is disabled&lt;/h2>
-&lt;p>&lt;div style="margin-top: 1rem;">&lt;/div>
-The most frequent blocker is simple: the snapshot was taken from an instance on &lt;strong>magnetic storage&lt;/strong>. Snapshots with that lineage aren’t eligible for export. The console is vague; the CLI tells you exactly what’s going on.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Storage Type on Nicolas Serbin's</title><link>https://nserbin.github.io/tags/storage-type/</link><description>Recent content in Storage Type on Nicolas Serbin's</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Aug 2025 07:00:00 +0100</lastBuildDate><atom:link href="https://nserbin.github.io/tags/storage-type/index.xml" rel="self" type="application/rss+xml"/><item><title>RDS Snapshot → S3: Diagnose and Fix a Disabled Export</title><link>https://nserbin.github.io/posts/aws/aws-rds/export-to-s3/</link><pubDate>Wed, 27 Aug 2025 07:00:00 +0100</pubDate><guid>https://nserbin.github.io/posts/aws/aws-rds/export-to-s3/</guid><description>&lt;p&gt;Before diving into the why and how, here’s what we deliver:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;⏱️ Clear diagnosis in under a minute (no console guesswork)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🫥 Non-intrusive path: &lt;strong&gt;temporary&lt;/strong&gt; instance only (we don’t touch your current RDS)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔐 Export that works, with the correct &lt;strong&gt;IAM/KMS&lt;/strong&gt; shape&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;✅ Copy-paste commands for your runbook or CI&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style="margin-top: 2rem;"&gt;&lt;/div&gt;
+&lt;div class="alert success"&gt;
+&lt;span&gt;&lt;i data-feather="check-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;All of this without modifying your existing DB instance — restore the snapshot into a temporary &lt;strong&gt;gp3&lt;/strong&gt; instance 🚀, create a new snapshot 📸, and export that one 📦.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style="margin-top: 4rem;"&gt;&lt;/div&gt;
+&lt;h2 id="-why-the-export-is-disabled"&gt;🔒 Why the export is disabled&lt;/h2&gt;
+&lt;p&gt;&lt;div style="margin-top: 1rem;"&gt;&lt;/div&gt;
+The most frequent blocker is simple: the snapshot was taken from an instance on &lt;strong&gt;magnetic storage&lt;/strong&gt;. Snapshots with that lineage aren’t eligible for export. The console is vague; the CLI tells you exactly what’s going on.&lt;/p&gt;</description></item></channel></rss>

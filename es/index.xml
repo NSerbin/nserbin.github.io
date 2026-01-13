@@ -1,59 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicolas Serbin's</title><link>https://nserbin.github.io/es/</link><description>Recent content on Nicolas Serbin's</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Wed, 27 Aug 2025 07:00:00 +0100</lastBuildDate><atom:link href="https://nserbin.github.io/es/index.xml" rel="self" type="application/rss+xml"/><item><title>RDS Snapshot → S3: Diagnosticar y resolver un Export deshabilitado</title><link>https://nserbin.github.io/es/posts/aws/aws-rds/export-to-s3/</link><pubDate>Wed, 27 Aug 2025 07:00:00 +0100</pubDate><guid>https://nserbin.github.io/es/posts/aws/aws-rds/export-to-s3/</guid><description>&lt;p>Antes de entrar en el por qué y el cómo, esto es lo que entregamos:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>⏱️ Diagnóstico claro en menos de un minuto (sin adivinar en la consola)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🫥 Camino no intrusivo: solo instancia &lt;strong>temporal&lt;/strong> (no tocamos tu RDS actual)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🔐 Export que funciona, con la forma correcta de &lt;strong>IAM/KMS&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🧩 Comandos copy-paste para tu runbook o CI&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;div style="margin-top: 2rem;">&lt;/div>
-&lt;div class="alert success">
-&lt;span>&lt;i data-feather="check-circle">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>Todo esto sin modificar tu instancia actual: restaurás el Snapshot en una instancia &lt;strong>gp3&lt;/strong> temporal 🚀, creás un Snapshot nuevo 📸 y exportás ese 📦.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;div style="margin-top: 4rem;">&lt;/div>
-&lt;h2 id="por-qué-el-export-está-deshabilitado-">Por qué el Export está deshabilitado 🔒&lt;/h2>
-&lt;p>&lt;div style="margin-top: 1rem;">&lt;/div>
-El bloqueo más frecuente es simple: el Snapshot fue tomado desde una instancia con almacenamiento &lt;strong>magnético (&lt;code>standard&lt;/code>)&lt;/strong> 🧲. Los Snapshots con ese linaje &lt;strong>no&lt;/strong> son elegibles para Export. La consola es ambigua; el &lt;strong>CLI&lt;/strong> te muestra exactamente qué pasa 🧪.&lt;/p></description></item><item><title>NGINX Out, ALB In - Redirects 70% más baratos y SIN servidores !</title><link>https://nserbin.github.io/es/posts/aws/aws-networking/from-nginx-to-alb/</link><pubDate>Mon, 14 Jul 2025 22:00:00 +0100</pubDate><guid>https://nserbin.github.io/es/posts/aws/aws-networking/from-nginx-to-alb/</guid><description>&lt;p>Antes de entrar en el por qué y el cómo, esto es lo que logramos:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>✅ Reemplazamos un punto único de falla con componentes nativos de AWS&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>💸 Reducimos los costos mensuales en un 70%&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🧑‍💻 No más SSH, servidores ni reinicios de NGINX&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🔐 SSL totalmente gestionado con ACM&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🛠️ Todo codificado y versionado con Terraform&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;div class="alert success">
-&lt;span>&lt;i data-feather="check-circle">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>Todo esto — sin un solo servidor EC2 ni archivo de configuración NGINX.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;div style="margin-top: 3rem;">&lt;/div>
-&lt;h2 id="por-qué-dejamos-ec2--nginx-y-cuánto-nos-ahorramos">Por qué dejamos EC2 + NGINX (y cuánto nos ahorramos)&lt;/h2>
-&lt;p>&lt;div style="margin-top: 1rem;">&lt;/div>
-Teníamos un objetivo simple: redirigir tráfico de más de 70 dominios diferentes.Primero lo resolvimos con lo que conocíamos — una instancia EC2 corriendo NGINX con reglas 301 y 302 hardcodeadas. Funcionó… hasta que dejó de funcionar.&lt;/p></description></item><item><title>Resultados de Búsqueda</title><link>https://nserbin.github.io/es/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://nserbin.github.io/es/search/</guid><description>&lt;p>Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño &lt;code>search&lt;/code> relacionada.&lt;/p>
-&lt;p>No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html&lt;/p>
-&lt;p>Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.&lt;/p>
-&lt;p>Esta implementación utiliza Fusejs, jquery y mark.js&lt;/p>
-&lt;h2 id="configuración-inicial">Configuración inicial&lt;/h2>
-&lt;p>La búsqueda depende del tipo de contenido de salida adicional de JSON en config.toml&lt;/p></description></item><item><title>Resultados de Búsqueda</title><link>https://nserbin.github.io/es/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://nserbin.github.io/es/search/</guid><description>&lt;p>Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño &lt;code>search&lt;/code> relacionada.&lt;/p>
-&lt;p>No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html&lt;/p>
-&lt;p>Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.&lt;/p>
-&lt;p>Esta implementación utiliza Fusejs, jquery y mark.js&lt;/p>
-&lt;h2 id="configuración-inicial">Configuración inicial&lt;/h2>
-&lt;p>La búsqueda depende del tipo de contenido de salida adicional de JSON en config.toml&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicolas Serbin's</title><link>https://nserbin.github.io/es/</link><description>Recent content on Nicolas Serbin's</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Wed, 27 Aug 2025 07:00:00 +0100</lastBuildDate><atom:link href="https://nserbin.github.io/es/index.xml" rel="self" type="application/rss+xml"/><item><title>RDS Snapshot → S3: Diagnosticar y resolver un Export deshabilitado</title><link>https://nserbin.github.io/es/posts/aws/aws-rds/export-to-s3/</link><pubDate>Wed, 27 Aug 2025 07:00:00 +0100</pubDate><guid>https://nserbin.github.io/es/posts/aws/aws-rds/export-to-s3/</guid><description>&lt;p&gt;Antes de entrar en el por qué y el cómo, esto es lo que entregamos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;⏱️ Diagnóstico claro en menos de un minuto (sin adivinar en la consola)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🫥 Camino no intrusivo: solo instancia &lt;strong&gt;temporal&lt;/strong&gt; (no tocamos tu RDS actual)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔐 Export que funciona, con la forma correcta de &lt;strong&gt;IAM/KMS&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🧩 Comandos copy-paste para tu runbook o CI&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style="margin-top: 2rem;"&gt;&lt;/div&gt;
+&lt;div class="alert success"&gt;
+&lt;span&gt;&lt;i data-feather="check-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;Todo esto sin modificar tu instancia actual: restaurás el Snapshot en una instancia &lt;strong&gt;gp3&lt;/strong&gt; temporal 🚀, creás un Snapshot nuevo 📸 y exportás ese 📦.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style="margin-top: 4rem;"&gt;&lt;/div&gt;
+&lt;h2 id="por-qué-el-export-está-deshabilitado-"&gt;Por qué el Export está deshabilitado 🔒&lt;/h2&gt;
+&lt;p&gt;&lt;div style="margin-top: 1rem;"&gt;&lt;/div&gt;
+El bloqueo más frecuente es simple: el Snapshot fue tomado desde una instancia con almacenamiento &lt;strong&gt;magnético (&lt;code&gt;standard&lt;/code&gt;)&lt;/strong&gt; 🧲. Los Snapshots con ese linaje &lt;strong&gt;no&lt;/strong&gt; son elegibles para Export. La consola es ambigua; el &lt;strong&gt;CLI&lt;/strong&gt; te muestra exactamente qué pasa 🧪.&lt;/p&gt;</description></item><item><title>NGINX Out, ALB In - Redirects 70% más baratos y SIN servidores !</title><link>https://nserbin.github.io/es/posts/aws/aws-networking/from-nginx-to-alb/</link><pubDate>Mon, 14 Jul 2025 22:00:00 +0100</pubDate><guid>https://nserbin.github.io/es/posts/aws/aws-networking/from-nginx-to-alb/</guid><description>&lt;p&gt;Antes de entrar en el por qué y el cómo, esto es lo que logramos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;✅ Reemplazamos un punto único de falla con componentes nativos de AWS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;💸 Reducimos los costos mensuales en un 70%&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🧑‍💻 No más SSH, servidores ni reinicios de NGINX&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔐 SSL totalmente gestionado con ACM&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🛠️ Todo codificado y versionado con Terraform&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="alert success"&gt;
+&lt;span&gt;&lt;i data-feather="check-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;Todo esto — sin un solo servidor EC2 ni archivo de configuración NGINX.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style="margin-top: 3rem;"&gt;&lt;/div&gt;
+&lt;h2 id="por-qué-dejamos-ec2--nginx-y-cuánto-nos-ahorramos"&gt;Por qué dejamos EC2 + NGINX (y cuánto nos ahorramos)&lt;/h2&gt;
+&lt;p&gt;&lt;div style="margin-top: 1rem;"&gt;&lt;/div&gt;
+Teníamos un objetivo simple: redirigir tráfico de más de 70 dominios diferentes.Primero lo resolvimos con lo que conocíamos — una instancia EC2 corriendo NGINX con reglas 301 y 302 hardcodeadas. Funcionó… hasta que dejó de funcionar.&lt;/p&gt;</description></item><item><title>Resultados de Búsqueda</title><link>https://nserbin.github.io/es/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://nserbin.github.io/es/search/</guid><description>&lt;p&gt;Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño &lt;code&gt;search&lt;/code&gt; relacionada.&lt;/p&gt;
+&lt;p&gt;No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html&lt;/p&gt;
+&lt;p&gt;Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.&lt;/p&gt;
+&lt;p&gt;Esta implementación utiliza Fusejs, jquery y mark.js&lt;/p&gt;
+&lt;h2 id="configuración-inicial"&gt;Configuración inicial&lt;/h2&gt;
+&lt;p&gt;La búsqueda depende del tipo de contenido de salida adicional de JSON en config.toml&lt;/p&gt;</description></item><item><title>Resultados de Búsqueda</title><link>https://nserbin.github.io/es/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://nserbin.github.io/es/search/</guid><description>&lt;p&gt;Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño &lt;code&gt;search&lt;/code&gt; relacionada.&lt;/p&gt;
+&lt;p&gt;No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html&lt;/p&gt;
+&lt;p&gt;Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.&lt;/p&gt;
+&lt;p&gt;Esta implementación utiliza Fusejs, jquery y mark.js&lt;/p&gt;
+&lt;h2 id="configuración-inicial"&gt;Configuración inicial&lt;/h2&gt;
+&lt;p&gt;La búsqueda depende del tipo de contenido de salida adicional de JSON en config.toml&lt;/p&gt;</description></item></channel></rss>

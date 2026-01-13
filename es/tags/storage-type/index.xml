@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Storage Type on Nicolas Serbin's</title><link>https://nserbin.github.io/es/tags/storage-type/</link><description>Recent content in Storage Type on Nicolas Serbin's</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Wed, 27 Aug 2025 07:00:00 +0100</lastBuildDate><atom:link href="https://nserbin.github.io/es/tags/storage-type/index.xml" rel="self" type="application/rss+xml"/><item><title>RDS Snapshot → S3: Diagnosticar y resolver un Export deshabilitado</title><link>https://nserbin.github.io/es/posts/aws/aws-rds/export-to-s3/</link><pubDate>Wed, 27 Aug 2025 07:00:00 +0100</pubDate><guid>https://nserbin.github.io/es/posts/aws/aws-rds/export-to-s3/</guid><description>&lt;p>Antes de entrar en el por qué y el cómo, esto es lo que entregamos:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>⏱️ Diagnóstico claro en menos de un minuto (sin adivinar en la consola)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🫥 Camino no intrusivo: solo instancia &lt;strong>temporal&lt;/strong> (no tocamos tu RDS actual)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🔐 Export que funciona, con la forma correcta de &lt;strong>IAM/KMS&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>🧩 Comandos copy-paste para tu runbook o CI&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;div style="margin-top: 2rem;">&lt;/div>
-&lt;div class="alert success">
-&lt;span>&lt;i data-feather="check-circle">&lt;/i>&lt;/span>
-&lt;span>&lt;strong>Todo esto sin modificar tu instancia actual: restaurás el Snapshot en una instancia &lt;strong>gp3&lt;/strong> temporal 🚀, creás un Snapshot nuevo 📸 y exportás ese 📦.&lt;/strong>&lt;/span>
-&lt;/div>
-&lt;div style="margin-top: 4rem;">&lt;/div>
-&lt;h2 id="por-qué-el-export-está-deshabilitado-">Por qué el Export está deshabilitado 🔒&lt;/h2>
-&lt;p>&lt;div style="margin-top: 1rem;">&lt;/div>
-El bloqueo más frecuente es simple: el Snapshot fue tomado desde una instancia con almacenamiento &lt;strong>magnético (&lt;code>standard&lt;/code>)&lt;/strong> 🧲. Los Snapshots con ese linaje &lt;strong>no&lt;/strong> son elegibles para Export. La consola es ambigua; el &lt;strong>CLI&lt;/strong> te muestra exactamente qué pasa 🧪.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Storage Type on Nicolas Serbin's</title><link>https://nserbin.github.io/es/tags/storage-type/</link><description>Recent content in Storage Type on Nicolas Serbin's</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Wed, 27 Aug 2025 07:00:00 +0100</lastBuildDate><atom:link href="https://nserbin.github.io/es/tags/storage-type/index.xml" rel="self" type="application/rss+xml"/><item><title>RDS Snapshot → S3: Diagnosticar y resolver un Export deshabilitado</title><link>https://nserbin.github.io/es/posts/aws/aws-rds/export-to-s3/</link><pubDate>Wed, 27 Aug 2025 07:00:00 +0100</pubDate><guid>https://nserbin.github.io/es/posts/aws/aws-rds/export-to-s3/</guid><description>&lt;p&gt;Antes de entrar en el por qué y el cómo, esto es lo que entregamos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;⏱️ Diagnóstico claro en menos de un minuto (sin adivinar en la consola)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🫥 Camino no intrusivo: solo instancia &lt;strong&gt;temporal&lt;/strong&gt; (no tocamos tu RDS actual)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔐 Export que funciona, con la forma correcta de &lt;strong&gt;IAM/KMS&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🧩 Comandos copy-paste para tu runbook o CI&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style="margin-top: 2rem;"&gt;&lt;/div&gt;
+&lt;div class="alert success"&gt;
+&lt;span&gt;&lt;i data-feather="check-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;Todo esto sin modificar tu instancia actual: restaurás el Snapshot en una instancia &lt;strong&gt;gp3&lt;/strong&gt; temporal 🚀, creás un Snapshot nuevo 📸 y exportás ese 📦.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style="margin-top: 4rem;"&gt;&lt;/div&gt;
+&lt;h2 id="por-qué-el-export-está-deshabilitado-"&gt;Por qué el Export está deshabilitado 🔒&lt;/h2&gt;
+&lt;p&gt;&lt;div style="margin-top: 1rem;"&gt;&lt;/div&gt;
+El bloqueo más frecuente es simple: el Snapshot fue tomado desde una instancia con almacenamiento &lt;strong&gt;magnético (&lt;code&gt;standard&lt;/code&gt;)&lt;/strong&gt; 🧲. Los Snapshots con ese linaje &lt;strong&gt;no&lt;/strong&gt; son elegibles para Export. La consola es ambigua; el &lt;strong&gt;CLI&lt;/strong&gt; te muestra exactamente qué pasa 🧪.&lt;/p&gt;</description></item></channel></rss>
