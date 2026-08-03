@@ -46,14 +46,4 @@ El bloqueo más frecuente es simple: el Snapshot fue tomado desde una instancia 
 &lt;div style="margin-top: 3rem;"&gt;&lt;/div&gt;
 &lt;h2 id="por-qué-dejamos-ec2--nginx-y-cuánto-nos-ahorramos"&gt;Por qué dejamos EC2 + NGINX (y cuánto nos ahorramos)&lt;/h2&gt;
 &lt;p&gt;&lt;div style="margin-top: 1rem;"&gt;&lt;/div&gt;
-Teníamos un objetivo simple: redirigir tráfico de más de 70 dominios diferentes.Primero lo resolvimos con lo que conocíamos — una instancia EC2 corriendo NGINX con reglas 301 y 302 hardcodeadas. Funcionó… hasta que dejó de funcionar.&lt;/p&gt;</description></item><item><title>Resultados de Búsqueda</title><link>https://nserbin.github.io/es/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://nserbin.github.io/es/search/</guid><description>&lt;p&gt;Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño &lt;code&gt;search&lt;/code&gt; relacionada.&lt;/p&gt;
-&lt;p&gt;No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html&lt;/p&gt;
-&lt;p&gt;Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.&lt;/p&gt;
-&lt;p&gt;Esta implementación utiliza Fusejs, jquery y mark.js&lt;/p&gt;
-&lt;h2 id="configuración-inicial"&gt;Configuración inicial&lt;/h2&gt;
-&lt;p&gt;La búsqueda depende del tipo de contenido de salida adicional de JSON en config.toml&lt;/p&gt;</description></item><item><title>Resultados de Búsqueda</title><link>https://nserbin.github.io/es/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://nserbin.github.io/es/search/</guid><description>&lt;p&gt;Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño &lt;code&gt;search&lt;/code&gt; relacionada.&lt;/p&gt;
-&lt;p&gt;No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html&lt;/p&gt;
-&lt;p&gt;Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.&lt;/p&gt;
-&lt;p&gt;Esta implementación utiliza Fusejs, jquery y mark.js&lt;/p&gt;
-&lt;h2 id="configuración-inicial"&gt;Configuración inicial&lt;/h2&gt;
-&lt;p&gt;La búsqueda depende del tipo de contenido de salida adicional de JSON en config.toml&lt;/p&gt;</description></item></channel></rss>
+Teníamos un objetivo simple: redirigir tráfico de más de 70 dominios diferentes.Primero lo resolvimos con lo que conocíamos — una instancia EC2 corriendo NGINX con reglas 301 y 302 hardcodeadas. Funcionó… hasta que dejó de funcionar.&lt;/p&gt;</description></item></channel></rss>
