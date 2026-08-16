@@ -18,8 +18,18 @@ experiences:
     # company overview
     overview: OLX operates as a sophisticated global digital marketplace, specializing in localized trading of a diverse array of products and services, ranging from electronics to real estate, empowering millions to buy, sell, and connect within their communities effortlessly. As part of the Business IT team, I manage critical infrastructure components such as SAP, Boomi, and GitLab.
   positions:
+  - designation: Senior Cloud Engineer
+    start: April 2026
+    responsibilities:
+      - Automated operational tasks using AWS Lambda and Python (e.g., DNS checks, GitLab user management).
+      - Provisioned and administered SAP instances and self-hosted infrastructure.
+      - Refactored Terraform codebase to improve stability, security, and cost efficiency (FinOps).
+      - Authored technical documentation to support knowledge sharing and process consistency.
+      - Directed a comprehensive SAP audit, assessing infrastructure resilience and recovery readiness.
+
   - designation: Mid-Senior Cloud Engineer
     start: April 2024
+    end: April 2026    
     responsibilities:
       - Automated operational tasks using AWS Lambda and Python (e.g., DNS checks, GitLab user management).
       - Provisioned and administered SAP instances and self-hosted infrastructure.
