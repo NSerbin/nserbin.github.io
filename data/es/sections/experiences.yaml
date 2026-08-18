@@ -30,8 +30,19 @@ experiences:
     # company overview
     overview: OLX opera como un sofisticado mercado digital global, especializado en el comercio localizado de una amplia variedad de productos y servicios, desde electrónica hasta bienes raíces, empoderando a millones para comprar, vender y conectar dentro de sus comunidades de manera fácil.
   positions:
+  - designation: Senior Cloud Engineer
+    start: Abril 2026
+    responsibilities:
+      - Lidero auditorías de infraestructura SAP y transformo sus hallazgos en planes de remediación concretos que fortalecen la seguridad, el cumplimiento y la resiliencia operativa.
+      - Gestiono las operaciones de DNS y desarrollo soluciones confiables y escalables que acompañan la evolución del negocio y la infraestructura.
+      - Impulso iniciativas de infraestructura como código con Terraform, creando bases reutilizables y fáciles de mantener para los servicios cloud.
+      - Diseño e implemento automatizaciones serverless con AWS Lambda y Python, reduciendo tareas manuales y creando soluciones capaces de escalar en el tiempo.
+      - Automatizo y estandarizo la recolección y el monitoreo de logs en CloudWatch mediante Ansible, mejorando la observabilidad y la respuesta ante incidentes.
+      - Planifico y ejecuto upgrades de la plataforma GitLab self-hosted, fortaleciendo su seguridad, confiabilidad y mantenibilidad a largo plazo.
+
   - designation: Mid-Senior Cloud Engineer
     start: Abril 2024
+    end: Abril 2026
     responsibilities:
     - Automatización de tareas operativas usando AWS Lambda y Python (por ejemplo, chequeo de DNS y gestión de usuarios en GitLab).
     - Aprovisionamiento y administración de instancias SAP e infraestructura autogestionada.

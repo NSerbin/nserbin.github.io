@@ -33,11 +33,12 @@ experiences:
   - designation: Senior Cloud Engineer
     start: April 2026
     responsibilities:
-      - Automated operational tasks using AWS Lambda and Python (e.g., DNS checks, GitLab user management).
-      - Provisioned and administered SAP instances and self-hosted infrastructure.
-      - Refactored Terraform codebase to improve stability, security, and cost efficiency (FinOps).
-      - Authored technical documentation to support knowledge sharing and process consistency.
-      - Directed a comprehensive SAP audit, assessing infrastructure resilience and recovery readiness.
+      - Lead SAP infrastructure audits, translating findings into actionable remediation plans that strengthen security, compliance, and operational resilience.
+      - Own DNS operations and deliver reliable, scalable solutions that support evolving business and infrastructure requirements.
+      - Drive Infrastructure as Code initiatives with Terraform, building reusable and maintainable foundations for cloud services.
+      - Design and implement serverless automation with AWS Lambda and Python, reducing manual effort and enabling solutions that scale over time.
+      - Automate and standardize CloudWatch log collection and monitoring with Ansible, improving observability and incident response capabilities.
+      - Plan and execute upgrades for the self-hosted GitLab platform, enhancing its security, reliability, and long-term maintainability.
 
   - designation: Mid-Senior Cloud Engineer
     start: April 2024
