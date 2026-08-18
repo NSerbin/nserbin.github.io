@@ -76,7 +76,8 @@ experiences:
 - company:
     name: Digital House
     url: "https://www.digitalhouse.com"
-    logo: /images/sections/experiences/dh.png    
+    logo: /images/sections/experiences/dh-light.png
+    darkLogo: /images/sections/experiences/dh-dark.png
     location: Buenos Aires, Argentina
     # company overview
     overview: Digital House es una reconocida empresa de educación, que ofrece Carreras Premium de IT.
