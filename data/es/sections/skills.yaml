@@ -67,6 +67,7 @@ skills:
 
   - name: GitHub
     logo: "/images/sections/skills/github.svg"
+    darkLogo: "/images/sections/skills/github-dark.png"
     summary: "Automatización CI/CD e integraciones usando GitHub Actions."
     categories: ["ci-cd"]
 
