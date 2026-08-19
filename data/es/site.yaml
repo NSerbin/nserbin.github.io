@@ -9,11 +9,11 @@ However, the theme author does not provide any warranty or takes any liability f
 # Meta description for your site.  This will help the search engines to find your site.
 description: Portfolio y blog personal de Nicolás Serbin, Senior Cloud Engineer especializado en AWS, DevOps, automatización e infraestructura escalable.
 
-# specify the list of custom menus that you want to show in the top navbar.
-# they will be separated by a divider from the main menus.
-#customMenus:
-#- name: Docs
-#  url: https://toha-guides.netlify.app/posts/
+# Enlaces adicionales de navegación.
+customMenus:
+- name: Buscar
+  url: /es/search/
+  showOnFooter: false
 
 # Specify OpenGraph Headers
 openGraph:
