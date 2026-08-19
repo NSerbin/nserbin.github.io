@@ -8,6 +8,12 @@ body.kind-404 {
   }
 }
 
+// Toha only provides a switch for the entire credentials row.
+// Hide the Hugo attribution while preserving the copyright and theme link.
+#footer #hugo {
+  display: none;
+}
+
 .custom-404 {
   display: flex;
   align-items: center;
