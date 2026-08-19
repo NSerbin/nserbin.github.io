@@ -63,7 +63,7 @@ experiences:
     # company overview
     overview: Naranja X is a recognized fintech company, that offers financial inclusion to many people within the Argentine territory. I am involved in the "WIRU Pipeline" project. It's hosted on Gitlab and predominantly written in Bash and Python.
   positions:
-  - designation: SR. CloudOps Engineer
+  - designation: Senior CloudOps Engineer
     start: February 2023
     end: January 2024
     responsibilities:
@@ -102,7 +102,7 @@ experiences:
     - Automated DevOps onboarding by scripting the installation of all required tooling.
     - Mentored and trained 2 junior team members, helping them onboard into DevOps best practices.
 
-  - designation: Jr. DevOps Engineer
+  - designation: Junior DevOps Engineer
     start: September 2021
     end: January 2022
     responsibilities:
