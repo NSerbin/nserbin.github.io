@@ -61,10 +61,11 @@ params:
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
-  # logo:
-  #   main: /images/site/main-logo.png
-  #   inverted: /images/site/inverted-logo.png
-  #   favicon: /images/site/favicon.png
+  logo:
+    main: /images/site/nicolas-logo.png
+    inverted: /images/site/nicolas-logo.png
+    dark: /images/site/nicolas-logo.png
+    favicon: /images/site/nicolas-favicon.png
 
   # GitHub repo of your site
   gitRepo: https://github.com/NSerbin/nserbin.github.io
@@ -79,12 +80,13 @@ params:
 
     theme:
       enable: true
-      # enable light theme. default "true"
-      light: true
-      # enable dark theme. default "true"
-      dark: true
-      # can be either light, dark or system. default "system"
-      defaultTheme: dark
+      services:
+        # enable light theme. default "true"
+        light: true
+        # enable dark theme. default "true"
+        dark: true
+        # can be either light, dark or system. default "system"
+        default: dark
 
     # Enable and configure portfolio
     portfolio:

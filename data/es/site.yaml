@@ -7,7 +7,7 @@ You can modify or distribute the theme without requiring any permission from the
 However, the theme author does not provide any warranty or takes any liability for any issue with the theme."
 
 # Meta description for your site.  This will help the search engines to find your site.
-description: Portfolio and personal blog of Nicolas Serbin.
+description: Portfolio y blog personal de Nicolás Serbin, Senior Cloud Engineer especializado en AWS, DevOps, automatización e infraestructura escalable.
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
@@ -17,8 +17,8 @@ description: Portfolio and personal blog of Nicolas Serbin.
 
 # Specify OpenGraph Headers
 openGraph:
-  title: Nicolas Serbin Blog
+  title: Blog de Nicolás Serbin
   type: website
-  description: Portfolio y blog personal de Nicolas Serbin.
+  description: Portfolio y blog personal de Nicolás Serbin, Senior Cloud Engineer.
   image: images/author/profile.png
-  url: https://nserbin.github.io/
+  url: https://nserbin.com/
