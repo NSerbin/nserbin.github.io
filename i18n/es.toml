@@ -5,7 +5,7 @@ other = "Nivel"
 other = "HTTP 404 · RESOURCE_NOT_FOUND"
 
 [not_found_title]
-other = "Este recurso no pudo ser aprovisionado"
+other = "Ups... esta página se perdió en la nube."
 
 [not_found_description]
 other = "El recurso solicitado no está disponible, cambió de ubicación o nunca fue desplegado."

@@ -5,7 +5,7 @@ other = "Level"
 other = "HTTP 404 · RESOURCE_NOT_FOUND"
 
 [not_found_title]
-other = "This resource could not be provisioned"
+other = "Oops... this page got lost in the cloud."
 
 [not_found_description]
 other = "The requested resource is unavailable, may have moved, or was never deployed."
