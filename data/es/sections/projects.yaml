@@ -11,9 +11,9 @@ section:
 # filter buttons
 buttons:
 - name: Todos
-  filter: "todos"
+  filter: "all"
 - name: Profesional
-  filter: "profesional"
+  filter: "professional"
 - name: Hobby
   filter: "hobby"
 
@@ -82,4 +82,4 @@ projects:
   timeline: "August 2023"
   repo: https://github.com/NSerbin/aws-scripts
   summary: Scripts i made with Shell to perform s3 api calls in AWS.
-  tags: ["Professional", "Shell", "API", "AWS"] 
+  tags: ["Professional", "Shell", "API", "AWS"]
