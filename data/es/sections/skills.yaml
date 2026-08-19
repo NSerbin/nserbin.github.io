@@ -30,76 +30,224 @@ skills:
     summary: "Automatización de tareas de aprovisionamiento y configuración mediante playbooks."
     categories: ["iac"]
     details:
-      - title: Automatización de configuración
-        items:
-          - Playbooks idempotentes y roles reutilizables para configurar sistemas de forma consistente.
-          - Variables por entorno, templates, handlers y despliegues controlados.
-      - title: Operaciones y observabilidad
-        items:
-          - Despliegue y configuración estandarizada de componentes de logging en múltiples hosts.
-          - Automatización de la recolección de logs en CloudWatch para mejorar la visibilidad operativa.
+      - name: Playbooks y roles
+        summary: Configuración repetible pensada para ejecuciones seguras y controladas.
+        expanded: true
+        subskills:
+          - name: Playbooks idempotentes
+            summary: Aprovisionamiento y configuración consistente incluso al repetir ejecuciones.
+          - name: Roles reutilizables
+            summary: Tareas, defaults, handlers, templates y variables bien estructurados.
+          - name: Gestión de entornos
+            summary: Inventarios y configuración por entorno para despliegues controlados.
+      - name: Operaciones y observabilidad
+        summary: Automatizaciones que mejoran la visibilidad y reducen el mantenimiento manual.
+        subskills:
+          - name: Logging en CloudWatch
+            summary: Instalación y configuración estandarizada de componentes de recolección de logs.
+          - name: Automatización operativa
+            summary: Flujos repetibles de mantenimiento, validación y troubleshooting.
 
   - name: ArgoCD
     logo: "/images/sections/skills/argo-color.svg"
     summary: "Herramienta GitOps declarativa para entrega continua en Kubernetes."
     categories: ["ci-cd"]
+    details:
+      - name: Entrega GitOps
+        summary: Despliegues declarativos impulsados por el estado deseado versionado en Git.
+        expanded: true
+        subskills:
+          - name: Sincronización de aplicaciones
+            summary: Reconciliación automática entre repositorios Git y clústers Kubernetes.
+          - name: Promoción entre entornos
+            summary: Cambios de configuración trazables a través de diferentes entornos.
+      - name: Operaciones
+        summary: Visibilidad y control sobre la salud y el estado de los deployments.
+        subskills:
+          - name: Estado de salud y sincronización
+            summary: Detección de drift, recursos fallidos y aplicaciones desincronizadas.
+          - name: Flujos de rollback
+            summary: Recuperación de estados estables conocidos desde el control de versiones.
 
   - name: AWS
     logo: "/images/sections/skills/aws.png"
     summary: "Aprovisionamiento, escalado y gestión de infraestructura en la nube (EC2, S3, Lambda, etc.)."
     categories: ["cloud"]
     details:
-      - title: Arquitectura cloud
-        items:
-          - Experiencia práctica con EC2, S3, Lambda, IAM, networking y CloudWatch.
-          - Diseño de soluciones seguras y escalables alineadas con necesidades operativas.
-      - title: Automatización y confiabilidad
-        items:
-          - Aprovisionamiento mediante Terraform, Python y automatizaciones serverless.
-          - Estrategias de backup, monitoreo, troubleshooting y mejoras con foco en costos.
+      - name: Cómputo y serverless
+        summary: Bases de cómputo escalables y automatización orientada a eventos.
+        expanded: true
+        subskills:
+          - name: EC2
+            summary: Aprovisionamiento, ciclo de vida, escalado y troubleshooting de workloads.
+            subskills:
+              - name: Launch Templates
+                summary: Configuración repetible de instancias y definiciones versionadas.
+              - name: Auto Scaling
+                summary: Políticas de capacidad, health checks y escalado resiliente.
+          - name: Lambda
+            summary: Soluciones serverless para flujos operativos e integraciones entre servicios.
+            subskills:
+              - name: Automatización por eventos
+                summary: Funciones disparadas por eventos cloud y cambios operativos.
+              - name: Roles de ejecución
+                summary: Permisos de mínimo privilegio adaptados a cada función.
+      - name: Almacenamiento y datos
+        summary: Almacenamiento durable, políticas de ciclo de vida y operaciones automatizadas.
+        subskills:
+          - name: S3
+            summary: Políticas de buckets, versionado, lifecycle y flujos de backup.
+            subskills:
+              - name: Operaciones batch con boto3
+                summary: Automatización en Python para descubrir y procesar grandes volúmenes de objetos.
+              - name: Ciclo de vida y retención
+                summary: Políticas alineadas con necesidades operativas y de costos.
+          - name: RDS
+            summary: Operaciones de bases de datos, backups y exportaciones hacia S3.
+      - name: Networking y DNS
+        summary: Conectividad segura y resolución confiable de servicios.
+        subskills:
+          - name: Redes VPC
+            summary: Subnets, routing, security groups y troubleshooting de conectividad.
+          - name: Gestión de DNS
+            summary: Responsabilidad operativa y automatización de cambios de DNS cloud.
+      - name: Seguridad y gobernanza
+        summary: Control de acceso e infraestructura preparada para entornos auditables.
+        subskills:
+          - name: IAM
+            summary: Roles, políticas, permisos de servicios y acceso de mínimo privilegio.
+          - name: Auditorías de infraestructura
+            summary: Recolección de evidencia, remediaciones y liderazgo técnico en auditorías SAP.
+      - name: Observabilidad y confiabilidad
+        summary: Monitoreo y prácticas operativas para mantener plataformas saludables.
+        subskills:
+          - name: CloudWatch
+            summary: Logs, métricas, dashboards, alarmas, retención y troubleshooting de incidentes.
+          - name: Backup y recuperación
+            summary: Estrategias y controles operativos orientados a la recuperabilidad.
 
   - name: Cloudflare
     logo: "/images/sections/skills/cloudflare-color.svg"
     summary: "DNS, CDN, ruteo de correo, Zero Trust, túneles y automatización vía APIs."
     categories: ["others"]
     details:
-      - title: Edge y conectividad
-        items:
-          - Zonas DNS, CDN, ruteo de correo, acceso Zero Trust y túneles seguros.
-          - Gestión operativa de cambios DNS y conectividad de servicios.
-      - title: Automatización de infraestructura
-        items:
-          - Configuración repetible mediante Terraform y APIs de Cloudflare.
-          - Cambios automatizados diseñados para ser trazables y fáciles de mantener.
+      - name: Edge y DNS
+        summary: Servicios expuestos a Internet gestionados con confiabilidad y trazabilidad.
+        expanded: true
+        subskills:
+          - name: Zonas DNS
+            summary: Registros, cambios de ruteo, validación y responsabilidad operativa.
+          - name: CDN y proxy
+            summary: Entrega desde el edge, caché y conectividad protegida hacia los orígenes.
+          - name: Ruteo de correo
+            summary: Configuración y mantenimiento de ruteo a nivel de dominio.
+      - name: Conectividad segura
+        summary: Acceso controlado a servicios internos sin exponer directamente la infraestructura.
+        subskills:
+          - name: Zero Trust
+            summary: Políticas de acceso basadas en identidad para recursos protegidos.
+          - name: Cloudflare Tunnels
+            summary: Conectividad saliente segura entre servicios y el edge de Cloudflare.
+      - name: Automatización
+        summary: Cambios repetibles entregados como código.
+        subskills:
+          - name: Provider de Terraform
+            summary: Configuración de Cloudflare versionada y revisable.
+          - name: APIs de Cloudflare
+            summary: Flujos automatizados para cambios operativos e integraciones.
 
   - name: Confluence
     logo: "/images/sections/skills/confluence-color.svg"
     summary: "Documentación colaborativa, decisiones de arquitectura y base de conocimiento."
     categories: ["others"]
+    details:
+      - name: Documentación técnica
+        summary: Documentación clara para operar y evolucionar plataformas.
+        expanded: true
+        subskills:
+          - name: Registros de arquitectura
+            summary: Decisiones, contexto, trade-offs y guías de implementación.
+          - name: Runbooks
+            summary: Procedimientos repetibles de operación y troubleshooting.
+      - name: Transferencia de conocimiento
+        summary: Información organizada para facilitar su búsqueda y mantenimiento.
+        subskills:
+          - name: Base de conocimiento del equipo
+            summary: Páginas estructuradas para estándares, procesos y conocimiento reutilizable.
+          - name: Colaboración entre equipos
+            summary: Contexto técnico compartido entre ingeniería y stakeholders de negocio.
 
   - name: Datadog
     logo: "/images/sections/skills/datadog-color.svg"
     summary: "Observabilidad y monitoreo cloud-native de entornos serverless y contenerizados."
     categories: ["observability"]
+    details:
+      - name: Observabilidad cloud
+        summary: Visibilidad integral sobre señales de aplicaciones e infraestructura.
+        expanded: true
+        subskills:
+          - name: Métricas y dashboards
+            summary: Visualizaciones de salud, capacidad y tendencias de los servicios.
+          - name: Logs
+            summary: Análisis y filtrado centralizado para troubleshooting operativo.
+      - name: Flujos de monitoreo
+        summary: Señales accionables orientadas a la confiabilidad de los servicios.
+        subskills:
+          - name: Alertas y monitores
+            summary: Condiciones y notificaciones alineadas con el impacto operativo.
+          - name: Monitoreo de containers y serverless
+            summary: Visibilidad sobre workloads distribuidos y efímeros.
 
   - name: Docker
     logo: "/images/sections/skills/docker-color.svg"
     summary: "Construcción y gestión de aplicaciones contenerizadas con multi-stage builds."
     categories: ["containers"]
     details:
-      - title: Construcción de imágenes
-        items:
-          - Multi-stage builds y configuración de contenedores específica por entorno.
-          - Imágenes reproducibles, mantenibles y optimizadas.
-      - title: Flujos de entrega
-        items:
-          - Uso de contenedores en desarrollo local, pipelines CI/CD y Kubernetes.
-          - Troubleshooting de runtime, logs, networking y dependencias.
+      - name: Construcción de imágenes
+        summary: Imágenes reproducibles optimizadas para mantenimiento y velocidad de entrega.
+        expanded: true
+        subskills:
+          - name: Dockerfiles
+            summary: Builds claros, configuración por entorno y comportamiento predecible en runtime.
+          - name: Multi-stage builds
+            summary: Imágenes productivas más pequeñas separando dependencias de build y runtime.
+          - name: Optimización de layers
+            summary: Caché eficiente y dependencias organizadas para acelerar los builds.
+      - name: Operaciones de runtime
+        summary: Operación práctica de containers en desarrollo y producción.
+        subskills:
+          - name: Networking y volúmenes
+            summary: Conectividad entre servicios y gestión de datos persistentes.
+          - name: Logs y troubleshooting
+            summary: Inspección de runtime, dependencias y diagnóstico de fallas.
+      - name: Entrega
+        summary: Containers integrados en flujos automatizados de plataforma.
+        subskills:
+          - name: Pipelines CI/CD
+            summary: Build, validación y publicación automatizada de imágenes.
+          - name: Workloads en Kubernetes
+            summary: Empaquetado de aplicaciones para entornos orquestados.
 
   - name: Git
     logo: "/images/sections/skills/git-color.png"
     summary: "Control de versiones, estrategias de ramas y flujos de trabajo colaborativos."
     categories: ["others"]
+    details:
+      - name: Control de versiones
+        summary: Historial confiable y gestión de cambios para código e infraestructura.
+        expanded: true
+        subskills:
+          - name: Estrategias de ramas
+            summary: Flujos de desarrollo estructurados según las necesidades del equipo y releases.
+          - name: Gestión del historial
+            summary: Rebase, merge, resolución de conflictos y recuperación selectiva.
+      - name: Colaboración
+        summary: Cambios revisables y flujos predecibles para el equipo.
+        subskills:
+          - name: Pull y merge requests
+            summary: Cambios pequeños, trazables y con contexto técnico útil.
+          - name: Flujos de release
+            summary: Tags e historial de versiones alineados con la entrega.
 
   - name: GitHub
     logo: "/images/sections/skills/github.svg"
@@ -107,115 +255,274 @@ skills:
     summary: "Automatización CI/CD e integraciones usando GitHub Actions."
     categories: ["ci-cd"]
     details:
-      - title: GitHub Actions
-        items:
-          - Workflows automatizados de build, validación, artefactos y deployment.
-          - Pipelines reproducibles con versiones fijadas y caché de dependencias.
-      - title: Flujos de repositorio
-        items:
-          - Estrategias de ramas, colaboración mediante pull requests y automatización de releases.
-          - Uso seguro de secrets, permisos y environments de deployment.
+      - name: GitHub Actions
+        summary: Automatización reproducible desde la validación hasta el deployment.
+        expanded: true
+        subskills:
+          - name: Build y validación
+            summary: Checks, instalación de dependencias y generación de artefactos automatizados.
+          - name: Workflows de deployment
+            summary: Entrega controlada con environments, artefactos y permisos explícitos.
+          - name: Performance y estabilidad
+            summary: Caché de dependencias, herramientas con versiones fijadas y jobs deterministas.
+      - name: Gobernanza de repositorios
+        summary: Patrones de colaboración que protegen la calidad y seguridad de entrega.
+        subskills:
+          - name: Pull requests
+            summary: Ramas revisables, contexto claro y validaciones obligatorias.
+          - name: Secrets y permisos
+            summary: Credenciales acotadas y permisos de mínimo privilegio en workflows.
+          - name: Automatización de releases
+            summary: Flujos repetibles de versionado y publicación.
 
   - name: GitLab
     logo: "/images/sections/skills/gitlab-color.svg"
     summary: "Pipelines CI/CD, configuración de entornos y runners autogestionados."
     categories: ["ci-cd"]
     details:
-      - title: Plataforma self-hosted
-        items:
-          - Planificación y ejecución de upgrades de GitLab contemplando validaciones y rollback.
-          - Administración y mantenimiento con foco en seguridad, confiabilidad y evolución futura.
-      - title: Entrega continua
-        items:
-          - Pipelines CI/CD, runners, artefactos, variables y configuración de entornos.
-          - Flujos estandarizados para deployments repetibles de aplicaciones.
+      - name: Plataforma self-hosted
+        summary: Gestión del ciclo de vida de GitLab enfocada en seguridad y confiabilidad.
+        expanded: true
+        subskills:
+          - name: Upgrades de versión
+            summary: Planificación del upgrade path, ejecución, validación y preparación de rollback.
+          - name: Mantenimiento de plataforma
+            summary: Cuidado operativo para una instalación estable y soportable.
+          - name: Runners self-hosted
+            summary: Configuración y mantenimiento de runners para workloads controlados.
+      - name: CI/CD
+        summary: Flujos estandarizados para una entrega de aplicaciones repetible.
+        subskills:
+          - name: Pipelines y jobs
+            summary: Stages, rules, dependencias y patrones de ejecución reutilizables.
+          - name: Artefactos y variables
+            summary: Outputs de build y configuración de pipelines por entorno.
+          - name: Entornos de deployment
+            summary: Entrega y configuración controlada a través de distintos entornos.
 
   - name: Grafana
     logo: "/images/sections/skills/grafana-color.svg"  
     summary: "Dashboards de métricas y logs con Prometheus, Loki y CloudWatch."
     categories: ["observability"]
     details:
-      - title: Visualización
-        items:
-          - Dashboards operativos utilizando Prometheus, Loki y CloudWatch como fuentes de datos.
-          - Paneles claros orientados a la salud de servicios y el troubleshooting.
-      - title: Flujos de observabilidad
-        items:
-          - Correlación de métricas y logs para acelerar la investigación de incidentes.
-          - Alertas accionables y mejora continua de la cobertura de monitoreo.
+      - name: Dashboards
+        summary: Vistas operativas orientadas a salud, capacidad y troubleshooting.
+        expanded: true
+        subskills:
+          - name: Métricas de Prometheus
+            summary: Visualización de series temporales del comportamiento de plataformas y workloads.
+          - name: Logs de Loki
+            summary: Vistas de logs consultables y correlacionadas con el contexto del servicio.
+          - name: Datos de CloudWatch
+            summary: Métricas y logs de AWS integrados en dashboards operativos compartidos.
+      - name: Flujos de incidentes
+        summary: Investigación más rápida mediante señales correlacionadas y accionables.
+        subskills:
+          - name: Correlación de métricas y logs
+            summary: Navegación eficiente desde los síntomas hacia la evidencia relevante.
+          - name: Alertas
+            summary: Umbrales y notificaciones vinculados con el impacto operativo.
 
   - name: Helm
     logo: "/images/sections/skills/helm-color.svg"
     summary: "Creación de Helm Charts personalizados para estandarizar despliegues en Kubernetes."
     categories: ["containers"]
+    details:
+      - name: Desarrollo de charts
+        summary: Empaquetado reutilizable de Kubernetes para múltiples entornos.
+        expanded: true
+        subskills:
+          - name: Templates y values
+            summary: Recursos configurables con defaults claros y overrides por entorno.
+          - name: Estructura de charts
+            summary: Helpers, metadatos, dependencias y convenciones mantenibles.
+      - name: Operación de releases
+        summary: Entrega y evolución predecible de aplicaciones.
+        subskills:
+          - name: Upgrades y rollbacks
+            summary: Cambios controlados de release con caminos de recuperación.
+          - name: Integración CI/CD
+            summary: Validación y deployment automatizados de releases basadas en Helm.
 
   - name: Jira
     logo: "/images/sections/skills/jira-color.svg"
     summary: "Gestión ágil de proyectos mediante tableros Scrum y Service Desk."
     categories: ["others"]
+    details:
+      - name: Entrega ágil
+        summary: Planificación y ejecución transparente del trabajo de ingeniería.
+        expanded: true
+        subskills:
+          - name: Tableros Scrum
+            summary: Organización del backlog, priorización y visibilidad del progreso.
+          - name: Tareas técnicas
+            summary: Alcance claro, contexto de aceptación y entrega trazable.
+      - name: Gestión de servicios
+        summary: Solicitudes e incidentes operativos gestionados mediante flujos compartidos.
+        subskills:
+          - name: Service Desk
+            summary: Triage, ownership, comunicación y seguimiento de resoluciones.
+          - name: Coordinación entre equipos
+            summary: Estado y dependencias compartidas entre stakeholders.
 
   - name: Kubernetes
     logo: "/images/sections/skills/kubernetes-color.png"
     summary: "Despliegue, escalado y resolución de problemas en clústers productivos."
     categories: ["containers"]
     details:
-      - title: Entrega de workloads
-        items:
-          - Deployments, services, configuración, secrets y releases mediante Helm.
-          - Entrega estandarizada de aplicaciones en diferentes entornos.
-      - title: Operación de clústers
-        items:
-          - Escalado, debugging, análisis de recursos y troubleshooting productivo.
-          - Experimentación continua mediante un clúster Kubernetes self-hosted.
+      - name: Entrega de workloads
+        summary: Deployment estandarizado de aplicaciones en múltiples entornos.
+        expanded: true
+        subskills:
+          - name: Deployments y Services
+            summary: Ciclo de vida, disponibilidad y conectividad interna o externa de workloads.
+          - name: ConfigMaps y Secrets
+            summary: Configuración por entorno y valores sensibles de runtime.
+          - name: Releases con Helm
+            summary: Empaquetado reutilizable y upgrades controlados de aplicaciones.
+      - name: Operación de clústers
+        summary: Confiabilidad, capacidad y troubleshooting cotidiano.
+        subskills:
+          - name: Escalado y recursos
+            summary: Ajustes de capacidad y análisis de requests y limits de los workloads.
+          - name: Debugging
+            summary: Eventos, logs, health checks y troubleshooting de dependencias.
+          - name: Clúster self-hosted
+            summary: Experimentación continua, upgrades y aprendizaje práctico de plataforma.
 
   - name: Linux
     logo: "/images/sections/skills/linux-color.png"
     summary: "Uso previo de Manjaro, SUSE y Ubuntu. Actualmente trabajando en macOS con uso intensivo de CLI."
     categories: ["others"]
+    details:
+      - name: Administración de sistemas
+        summary: Operación práctica mediante línea de comandos en entornos Linux.
+        expanded: true
+        subskills:
+          - name: Ubuntu, SUSE y Manjaro
+            summary: Gestión de paquetes, configuración, servicios y administración cotidiana.
+          - name: Procesos y servicios
+            summary: Inspección, ciclo de vida, logs y troubleshooting de recursos.
+      - name: Herramientas de plataforma
+        summary: Fundamentos Linux aplicados a automatización y cloud engineering.
+        subskills:
+          - name: Filesystems y permisos
+            summary: Ownership, controles de acceso, inspección de storage y operaciones de archivos.
+          - name: Networking y CLI
+            summary: Diagnóstico de conectividad y automatización con herramientas estándar.
 
   - name: Postman
     logo: "/images/sections/skills/postman-color.svg"
     summary: "Testing de APIs y automatización de flujos para integración backend."
     categories: ["others"]
+    details:
+      - name: Validación de APIs
+        summary: Testing repetible de integraciones backend y de plataforma.
+        expanded: true
+        subskills:
+          - name: Requests y colecciones
+            summary: Llamadas, headers, payloads y flujos de prueba reutilizables.
+          - name: Entornos
+            summary: Variables y configuración para distintos destinos y credenciales.
+      - name: Automatización de flujos
+        summary: Feedback más rápido para integraciones y APIs operativas.
+        subskills:
+          - name: Assertions
+            summary: Validación de status, payload y comportamiento esperado.
+          - name: Troubleshooting de integraciones
+            summary: Aislamiento de problemas de autenticación, networking y contratos.
 
   - name: Python
     logo: "/images/sections/skills/python-color.png"
     summary: "Lenguaje principal. Usado para automatización, integraciones y herramientas internas."
     categories: ["coding"]
     details:
-      - title: Automatización cloud
-        items:
-          - Automatización de AWS y operaciones batch utilizando boto3 y APIs de servicios.
-          - Scripts para infraestructura, integraciones y operaciones repetitivas.
-      - title: Herramientas internas
-        items:
-          - Utilidades CLI, procesamiento de datos, expresiones regulares y validaciones.
-          - Scripts mantenibles con logging estructurado y manejo defensivo de errores.
+      - name: Automatización cloud
+        summary: Herramientas en Python para operaciones repetibles de AWS e infraestructura.
+        expanded: true
+        subskills:
+          - name: boto3
+            summary: Integraciones con servicios y operaciones automatizadas en AWS.
+            subskills:
+              - name: Procesamiento batch en S3
+                summary: Descubrimiento y procesamiento selectivo de grandes volúmenes de objetos.
+              - name: Flujos de infraestructura
+                summary: Scripts que conectan servicios cloud y procesos operativos.
+          - name: Integraciones vía API
+            summary: Automatización sobre APIs de plataforma y servicios externos.
+      - name: Herramientas y datos
+        summary: Utilidades mantenibles para el trabajo cotidiano de ingeniería.
+        subskills:
+          - name: Herramientas CLI
+            summary: Comandos enfocados en tareas operativas repetibles.
+          - name: Procesamiento de datos y regex
+            summary: Validación, transformación y extracción selectiva de datos.
+      - name: Confiabilidad
+        summary: Código preparado para ser útil en entornos operativos reales.
+        subskills:
+          - name: Logging y diagnóstico
+            summary: Contexto de ejecución claro e información accionable ante fallas.
+          - name: Manejo defensivo de errores
+            summary: Validación y comportamiento predecible frente a dependencias externas.
 
   - name: Shell Scripting
     logo: "/images/sections/skills/shell-color.png"
     summary: "Experiencia avanzada en Bash para automatización, logging, provisión y tareas de integración."
     categories: ["coding"]
     details:
-      - title: Automatización de sistemas
-        items:
-          - Herramientas Bash para aprovisionamiento, configuración, logging y tareas operativas.
-          - Integraciones con utilidades Linux, AWS CLI y APIs externas.
-      - title: Ejecución en CI/CD
-        items:
-          - Jobs de pipeline, helpers de deployment y preparación de entornos.
-          - Scripting defensivo con validaciones, errores claros y diagnósticos útiles.
+      - name: Automatización de sistemas
+        summary: Herramientas Bash para aprovisionamiento y operaciones confiables.
+        expanded: true
+        subskills:
+          - name: Aprovisionamiento y configuración
+            summary: Setup repetible de hosts y preparación de entornos.
+          - name: Logging y mantenimiento
+            summary: Helpers operativos para recolección, rotación, validaciones y limpieza.
+          - name: Utilidades Linux
+            summary: Herramientas CLI componibles para inspeccionar y transformar datos del sistema.
+      - name: Ejecución en CI/CD
+        summary: Scripts diseñados para ejecutarse de forma predecible en pipelines.
+        subskills:
+          - name: Jobs de pipeline
+            summary: Pasos de build, validación y entrega con códigos de salida claros.
+          - name: Helpers de deployment
+            summary: Preparación de entornos y operaciones repetibles de release.
+          - name: Scripting defensivo
+            summary: Validación de inputs, fallas explícitas y diagnósticos útiles.
+      - name: Integraciones
+        summary: Automatización que conecta herramientas de sistema y cloud.
+        subskills:
+          - name: AWS CLI
+            summary: Operaciones cloud y consultas de servicios mediante scripts.
+          - name: APIs externas
+            summary: Requests autenticados y flujos automatizados entre servicios.
 
   - name: Terraform
     logo: "/images/sections/skills/terraform-color.svg"
     summary: "Infraestructura como código en AWS, Cloudflare entre otros, mediante módulos reutilizables y orientados a entornos."
     categories: ["iac"]
     details:
-      - title: Diseño de infraestructura
-        items:
-          - Código modular y reutilizable con límites claros entre entornos.
-          - Cambios de infraestructura mantenibles, revisables y preparados para evolucionar.
-      - title: Automatización multi-provider
-        items:
-          - Aprovisionamiento en AWS y Cloudflare, incluyendo DNS y componentes serverless.
-          - Refactors enfocados en estabilidad, seguridad, reutilización y eficiencia de costos.
+      - name: Arquitectura de código
+        summary: Código de infraestructura preparado para revisión, reutilización y evolución.
+        expanded: true
+        subskills:
+          - name: Módulos reutilizables
+            summary: Interfaces consistentes y patrones compartidos para infraestructura repetible.
+          - name: Separación de entornos
+            summary: Límites claros de configuración y estado entre entornos.
+          - name: Flujos de plan y revisión
+            summary: Previsualización de cambios y decisiones de infraestructura trazables.
+      - name: Providers y plataformas
+        summary: Automatización multi-provider para infraestructura cloud y edge.
+        subskills:
+          - name: AWS
+            summary: Cómputo, storage, IAM, networking, DNS y componentes serverless.
+          - name: Cloudflare
+            summary: DNS, conectividad edge y configuración de seguridad como código.
+      - name: Ciclo de vida y calidad
+        summary: Cambios optimizados para estabilidad y mantenimiento.
+        subskills:
+          - name: Refactoring
+            summary: Estructuras más seguras, menor duplicación y componentes reutilizables.
+          - name: Seguridad y costos
+            summary: Decisiones revisadas según acceso, eficiencia e impacto operativo.

@@ -1,0 +1,34 @@
+{{- $level := .level | default 0 -}}
+{{- range .nodes -}}
+  {{- $nodeName := .name | default .title -}}
+  {{- $children := .subskills -}}
+  {{- if $children -}}
+    <details class="skill-tree-node skill-tree-node--level-{{ $level }}"{{ if .expanded }} open{{ end }}>
+      <summary>
+        <span class="skill-tree-node__copy">
+          <span class="skill-tree-node__name">{{ $nodeName }}</span>
+          {{ with .summary }}
+            <span class="skill-tree-node__summary">{{ . | markdownify }}</span>
+          {{ end }}
+        </span>
+        <span class="skill-tree-node__meta">
+          <span class="skill-tree-node__count">{{ len $children }} {{ i18n "skill_subskills" }}</span>
+          <span class="skill-tree-node__chevron" aria-hidden="true"></span>
+        </span>
+      </summary>
+      <div class="skill-tree-children">
+        {{ partial "misc/skill-tree.html" (dict "nodes" $children "level" (add $level 1)) }}
+      </div>
+    </details>
+  {{- else -}}
+    <article class="skill-tree-leaf skill-tree-leaf--level-{{ $level }}">
+      <span class="skill-tree-leaf__marker" aria-hidden="true"></span>
+      <div>
+        <h5>{{ $nodeName }}</h5>
+        {{ with .summary }}
+          <p>{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+    </article>
+  {{- end -}}
+{{- end -}}

@@ -33,19 +33,8 @@
 
       <div class="modal-body skill-detail-modal__body">
         <p class="skill-detail-modal__summary">{{ .summary | markdownify }}</p>
-        <div class="skill-detail-modal__grid">
-          {{ range .details }}
-            <section class="skill-detail-group">
-              <h4>{{ .title }}</h4>
-              {{ with .items }}
-                <ul>
-                  {{ range . }}
-                    <li>{{ . | markdownify }}</li>
-                  {{ end }}
-                </ul>
-              {{ end }}
-            </section>
-          {{ end }}
+        <div class="skill-detail-tree">
+          {{ partial "misc/skill-tree.html" (dict "nodes" .details "level" 0) }}
         </div>
       </div>
 

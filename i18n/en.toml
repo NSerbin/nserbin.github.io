@@ -7,6 +7,9 @@ other = "Technical breakdown"
 [view_skill_details]
 other = "View details"
 
+[skill_subskills]
+other = "sub-skills"
+
 [close]
 other = "Close"
 
