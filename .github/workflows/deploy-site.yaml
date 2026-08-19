@@ -85,3 +85,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5.0.0
+        env:
+          # deploy-pages v5 runs on Node 24 but still imports the deprecated
+          # built-in punycode module. Suppress only that upstream warning.
+          NODE_OPTIONS: --disable-warning=DEP0040
