@@ -50,33 +50,3 @@ badges:
   name: AWS Certified Developer – Associate
   url: "https://www.credly.com/badges/dfdd54fc-8848-4a15-b03f-5e3cad1068e1/public_url"
   badge: "https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png"
-
-- type: soft-skill-indicator
-  name: Leadership
-  percentage: 85
-  color: "#10FFCB"
-
-- type: soft-skill-indicator
-  name: Team Worker
-  percentage: 95
-  color: "#08B2E3"
-
-- type: soft-skill-indicator
-  name: Hard Working
-  percentage: 90
-  color: "#EE6352"
-
-- type: soft-skill-indicator
-  name: Proactivity
-  percentage: 75
-  color: "#F75590"
-
-- type: soft-skill-indicator
-  name: Creativity
-  percentage: 75
-  color: "#FBD87F"
-# you can also provide color code instead of the color name
-# - type: soft-skill-indicator
-#   name: Example 1
-#   percentage: 75
-#   color: "#00adb5"
