@@ -8,10 +8,57 @@ body.kind-404 {
   }
 }
 
-// Toha only provides a switch for the entire credentials row.
-// Hide the Hugo attribution while preserving the copyright and theme link.
-#footer #hugo {
-  display: none;
+.personal-footer {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(130, 150, 180, 0.22);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__copyright {
+    margin: 0;
+    font-size: 0.92rem;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 0.55rem;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 1px solid rgba(130, 150, 180, 0.28);
+    border-radius: 0.65rem;
+    background: rgba(130, 150, 180, 0.06);
+    text-decoration: none;
+    transition: border-color 160ms ease, color 160ms ease, transform 160ms ease;
+
+    &:hover,
+    &:focus-visible {
+      margin-left: 0;
+      border-color: #079bc7;
+      color: #079bc7;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .personal-footer {
+    &__inner {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 }
 
 .custom-404 {

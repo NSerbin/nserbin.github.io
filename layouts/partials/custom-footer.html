@@ -1,0 +1,27 @@
+{{- if site.Params.footer.enable -}}
+  {{- $author := (index hugo.Data site.Language.Lang).author -}}
+  {{- $socialLabel := cond (eq site.Language.Lang "es") "Enlaces de contacto" "Contact links" -}}
+  <footer id="footer" class="container-fluid footer personal-footer">
+    <div class="container personal-footer__inner">
+      <p class="personal-footer__copyright">© {{ now.Format "2006" }} {{ $author.name }}</p>
+
+      <nav class="personal-footer__socials" aria-label="{{ $socialLabel }}">
+        {{- with $author.contactInfo.email }}
+          <a class="personal-footer__link" href="mailto:{{ . }}" aria-label="Email" title="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        {{- end }}
+        {{- with $author.contactInfo.github }}
+          <a class="personal-footer__link" href="https://github.com/{{ . }}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+        {{- end }}
+        {{- with $author.contactInfo.linkedin }}
+          <a class="personal-footer__link" href="https://www.linkedin.com/in/{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        {{- end }}
+      </nav>
+    </div>
+  </footer>
+{{- end -}}
