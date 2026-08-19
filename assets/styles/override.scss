@@ -64,6 +64,7 @@ body.kind-404 {
 .experiences-section {
   .positions {
     margin-top: 1.35rem;
+    margin-bottom: 1.75rem;
 
     > .company-heading {
       margin-bottom: 0.7rem;
@@ -98,6 +99,8 @@ body.kind-404 {
 @media (max-width: 767px) {
   .experiences-section {
     .positions {
+      margin-bottom: 1.5rem;
+
       > .company-heading:not(:first-child) {
         margin-top: 1.8rem;
       }
