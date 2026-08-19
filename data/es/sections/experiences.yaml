@@ -43,10 +43,12 @@ experiences:
 
 - company:
     name: Freelance
+    logo: /images/sections/experiences/freelance-instructor-light.png
+    darkLogo: /images/sections/experiences/freelance-instructor-dark.png
     location: Remoto
     overview: Ofrezco formación personalizada de DevOps y Cloud Engineering a estudiantes particulares, adaptando cada curso a sus objetivos, experiencia y ritmo de aprendizaje.
   positions:
-  - designation: Instructor freelance de DevOps y Cloud Engineering
+  - designation: Instructor de DevOps y Cloud Engineering
     start: Agosto 2026
     responsibilities:
       - Diseño itinerarios de aprendizaje personalizados según las necesidades y los objetivos profesionales de cada estudiante.
