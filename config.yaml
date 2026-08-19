@@ -1,4 +1,4 @@
-baseURL: https://nserbin.github.io
+baseURL: https://nserbin.com/
 
 locale: en-us
 
@@ -54,10 +54,6 @@ outputs:
 # Enable global emoji support
 enableEmoji: true
 
-services:
-  googleAnalytics:
-    id: G-KKTMP7TCHN
-
 # Site parameters
 params:
   # Background image of the landing page
@@ -112,11 +108,13 @@ params:
       enable: false
 
     analytics:
-      enabled: false
+      enable: true
       services:
+        enable: true
         # Google Analytics
         google:
           id: G-KKTMP7TCHN
+          respectDoNotTrack: true
 
     # Enables copy code button
     copyCodeButton:
