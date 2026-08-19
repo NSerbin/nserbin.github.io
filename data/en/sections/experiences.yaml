@@ -11,18 +11,6 @@ section:
 # Your experiences
 experiences:
 - company:
-    name: Freelance
-    location: Remote
-    overview: I provide one-on-one DevOps and Cloud Engineering training for private students, tailoring each course to their goals, experience, and learning pace.
-  positions:
-  - designation: Freelance DevOps & Cloud Engineering Instructor
-    start: August 2026
-    responsibilities:
-      - Design personalized learning paths based on each student's needs and professional goals.
-      - Teach Linux, Python, AWS, CI/CD, GitHub, GitLab, observability, Docker, and other DevOps and cloud engineering topics.
-      - Deliver hands-on lessons and practical exercises focused on real-world scenarios.
-
-- company:
     name: OLX
     url: "https://www.olx.com.pt/"
     logo: /images/sections/experiences/olx.png    
@@ -52,6 +40,18 @@ experiences:
       - Guided a colleague as a buddy throughout 2024, supporting onboarding, growth, goals and project delivery.
       - Led the upgrade of the entire SAP infrastructure landscape during 2024.
       - Directed a comprehensive ransomware audit, assessing infrastructure resilience and recovery readiness.
+
+- company:
+    name: Freelance
+    location: Remote
+    overview: I provide one-on-one DevOps and Cloud Engineering training for private students, tailoring each course to their goals, experience, and learning pace.
+  positions:
+  - designation: Freelance DevOps & Cloud Engineering Instructor
+    start: August 2026
+    responsibilities:
+      - Design personalized learning paths based on each student's needs and professional goals.
+      - Teach Linux, Python, AWS, CI/CD, GitHub, GitLab, observability, Docker, and other DevOps and cloud engineering topics.
+      - Deliver hands-on lessons and practical exercises focused on real-world scenarios.
 
 - company:
     name: Naranja X
