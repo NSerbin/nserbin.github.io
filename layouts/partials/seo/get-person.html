@@ -2,6 +2,13 @@
 {{- $author := $languageData.author -}}
 {{- $about := $languageData.sections.about -}}
 {{- $sameAs := slice -}}
+{{- $authorImageURL := $author.image | absURL -}}
+
+{{/* Assets are not published unless a resource permalink is requested. */}}
+{{- with resources.Get $author.image -}}
+  {{- $authorImage := .Fit "1024x1024 webp q88" -}}
+  {{- $authorImageURL = $authorImage.Permalink -}}
+{{- end -}}
 
 {{- range $about.socialLinks -}}
   {{- if and .url (hasPrefix .url "http") -}}
@@ -14,7 +21,7 @@
   "@id" (printf "%s#person" site.BaseURL)
   "name" $author.name
   "url" site.BaseURL
-  "image" ($author.image | absURL)
+  "image" $authorImageURL
   "jobTitle" $about.designation
   "description" $about.summary
   "sameAs" $sameAs

@@ -43,11 +43,22 @@
   {{/* Preserve externally hosted images that Hugo cannot process. */}}
   {{- $url = $source | absURL -}}
 {{- else -}}
-  {{/* Site-wide avatar remains the fallback for pages without a hero. */}}
+  {{/* Publish and optimize the site-wide card instead of returning an assets-only URL. */}}
   {{- $siteData := (index hugo.Data site.Language.Lang).site -}}
   {{- $fallback := $siteData.openGraph.image | default (index hugo.Data site.Language.Lang).author.image -}}
   {{- with $fallback -}}
-    {{- $url = . | absURL -}}
+    {{- $fallbackImage := resources.Get . -}}
+    {{- if $fallbackImage -}}
+      {{- if ne $fallbackImage.MediaType.SubType "svg" -}}
+        {{- $fallbackImage = $fallbackImage.Fill "1200x630 Center jpg q88" -}}
+      {{- end -}}
+      {{- $url = $fallbackImage.Permalink -}}
+      {{- $width = $fallbackImage.Width -}}
+      {{- $height = $fallbackImage.Height -}}
+      {{- $mediaType = $fallbackImage.MediaType.Type -}}
+    {{- else -}}
+      {{- $url = . | absURL -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 
