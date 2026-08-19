@@ -61,6 +61,227 @@ body.kind-404 {
   }
 }
 
+.skills-section {
+  .skill-card-link-with-details {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+
+    .card {
+      transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+    }
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+
+      .card {
+        border-color: rgba(get-light-color('accent-color'), 0.72);
+        box-shadow: 0 0.75rem 1.8rem rgba(25, 50, 75, 0.14);
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-card-details-hint {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    color: get-light-color('accent-color');
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+
+    i {
+      font-size: 0.68rem;
+      transition: transform 160ms ease;
+    }
+  }
+
+  .skill-card-link-with-details:hover .skill-card-details-hint i {
+    transform: translateX(3px);
+  }
+}
+
+.skill-detail-modal {
+  z-index: 100050;
+  color: get-light-color('text-color');
+  text-align: left;
+
+  .modal-content {
+    overflow: hidden;
+    border: 1px solid rgba(get-light-color('accent-color'), 0.28);
+    border-radius: 1rem;
+    background: get-light-color('bg-card');
+    box-shadow: 0 1.5rem 4rem rgba(25, 50, 75, 0.2);
+  }
+
+  .modal-header,
+  .modal-footer {
+    border-color: rgba(130, 150, 180, 0.22);
+  }
+
+  &__header {
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+  }
+
+  &__identity {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  &__logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+  }
+
+  &__eyebrow {
+    display: block;
+    margin-bottom: 0.1rem;
+    color: get-light-color('accent-color');
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .modal-title {
+    margin: 0;
+    color: get-light-color('heading-color');
+    font-size: 1.45rem;
+    font-weight: 700;
+  }
+
+  &__body {
+    padding: 1.5rem;
+  }
+
+  &__summary {
+    margin-bottom: 1.35rem;
+    color: get-light-color('muted-text-color');
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-detail-group {
+    padding: 1.1rem 1.15rem;
+    border: 1px solid rgba(130, 150, 180, 0.22);
+    border-radius: 0.8rem;
+    background: rgba(130, 150, 180, 0.05);
+
+    h4 {
+      margin-bottom: 0.75rem;
+      color: get-light-color('heading-color');
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.15rem;
+    }
+
+    li {
+      margin-top: 0.45rem;
+      color: get-light-color('muted-text-color');
+      line-height: 1.45;
+
+      &::marker {
+        color: get-light-color('accent-color');
+      }
+    }
+  }
+}
+
+.modal-backdrop {
+  z-index: 100040;
+}
+
+html[data-theme='dark'] {
+  .skills-section {
+    .skill-card-link-with-details {
+      &:hover,
+      &:focus-visible {
+        .card {
+          border-color: rgba(get-dark-color('accent-color'), 0.72);
+          box-shadow: 0 0.85rem 2rem rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+
+    .skill-card-details-hint {
+      color: get-dark-color('accent-color');
+    }
+  }
+
+  .skill-detail-modal {
+    color: get-dark-color('text-color');
+
+    .modal-content {
+      border-color: rgba(get-dark-color('accent-color'), 0.3);
+      background: get-dark-color('bg-card');
+      box-shadow: 0 1.5rem 4.5rem rgba(0, 0, 0, 0.48);
+    }
+
+    .btn-close {
+      filter: invert(1) grayscale(100%) brightness(180%);
+    }
+
+    &__eyebrow {
+      color: get-dark-color('accent-color');
+    }
+
+    .modal-title,
+    .skill-detail-group h4 {
+      color: get-dark-color('heading-color');
+    }
+
+    &__summary,
+    .skill-detail-group li {
+      color: get-dark-color('muted-text-color');
+    }
+
+    .skill-detail-group {
+      border-color: rgba(130, 150, 180, 0.2);
+      background: rgba(8, 18, 33, 0.28);
+
+      li::marker {
+        color: get-dark-color('accent-color');
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .skill-detail-modal {
+    &__header,
+    &__body {
+      padding: 1.1rem;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
 .custom-404 {
   display: flex;
   align-items: center;

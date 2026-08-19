@@ -1,6 +1,15 @@
 [level]
 other = "Nivel"
 
+[skill_details]
+other = "Detalle técnico"
+
+[view_skill_details]
+other = "Ver detalles"
+
+[close]
+other = "Cerrar"
+
 [not_found_status]
 other = "HTTP 404 · RESOURCE_NOT_FOUND"
 

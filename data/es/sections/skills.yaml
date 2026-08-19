@@ -29,6 +29,15 @@ skills:
     logo: "/images/sections/skills/ansible.png"
     summary: "Automatización de tareas de aprovisionamiento y configuración mediante playbooks."
     categories: ["iac"]
+    details:
+      - title: Automatización de configuración
+        items:
+          - Playbooks idempotentes y roles reutilizables para configurar sistemas de forma consistente.
+          - Variables por entorno, templates, handlers y despliegues controlados.
+      - title: Operaciones y observabilidad
+        items:
+          - Despliegue y configuración estandarizada de componentes de logging en múltiples hosts.
+          - Automatización de la recolección de logs en CloudWatch para mejorar la visibilidad operativa.
 
   - name: ArgoCD
     logo: "/images/sections/skills/argo-color.svg"
@@ -39,11 +48,29 @@ skills:
     logo: "/images/sections/skills/aws.png"
     summary: "Aprovisionamiento, escalado y gestión de infraestructura en la nube (EC2, S3, Lambda, etc.)."
     categories: ["cloud"]
+    details:
+      - title: Arquitectura cloud
+        items:
+          - Experiencia práctica con EC2, S3, Lambda, IAM, networking y CloudWatch.
+          - Diseño de soluciones seguras y escalables alineadas con necesidades operativas.
+      - title: Automatización y confiabilidad
+        items:
+          - Aprovisionamiento mediante Terraform, Python y automatizaciones serverless.
+          - Estrategias de backup, monitoreo, troubleshooting y mejoras con foco en costos.
 
   - name: Cloudflare
     logo: "/images/sections/skills/cloudflare-color.svg"
     summary: "DNS, CDN, ruteo de correo, Zero Trust, túneles y automatización vía APIs."
     categories: ["others"]
+    details:
+      - title: Edge y conectividad
+        items:
+          - Zonas DNS, CDN, ruteo de correo, acceso Zero Trust y túneles seguros.
+          - Gestión operativa de cambios DNS y conectividad de servicios.
+      - title: Automatización de infraestructura
+        items:
+          - Configuración repetible mediante Terraform y APIs de Cloudflare.
+          - Cambios automatizados diseñados para ser trazables y fáciles de mantener.
 
   - name: Confluence
     logo: "/images/sections/skills/confluence-color.svg"
@@ -59,6 +86,15 @@ skills:
     logo: "/images/sections/skills/docker-color.svg"
     summary: "Construcción y gestión de aplicaciones contenerizadas con multi-stage builds."
     categories: ["containers"]
+    details:
+      - title: Construcción de imágenes
+        items:
+          - Multi-stage builds y configuración de contenedores específica por entorno.
+          - Imágenes reproducibles, mantenibles y optimizadas.
+      - title: Flujos de entrega
+        items:
+          - Uso de contenedores en desarrollo local, pipelines CI/CD y Kubernetes.
+          - Troubleshooting de runtime, logs, networking y dependencias.
 
   - name: Git
     logo: "/images/sections/skills/git-color.png"
@@ -70,16 +106,43 @@ skills:
     darkLogo: "/images/sections/skills/github-dark.png"
     summary: "Automatización CI/CD e integraciones usando GitHub Actions."
     categories: ["ci-cd"]
+    details:
+      - title: GitHub Actions
+        items:
+          - Workflows automatizados de build, validación, artefactos y deployment.
+          - Pipelines reproducibles con versiones fijadas y caché de dependencias.
+      - title: Flujos de repositorio
+        items:
+          - Estrategias de ramas, colaboración mediante pull requests y automatización de releases.
+          - Uso seguro de secrets, permisos y environments de deployment.
 
   - name: GitLab
     logo: "/images/sections/skills/gitlab-color.svg"
     summary: "Pipelines CI/CD, configuración de entornos y runners autogestionados."
     categories: ["ci-cd"]
+    details:
+      - title: Plataforma self-hosted
+        items:
+          - Planificación y ejecución de upgrades de GitLab contemplando validaciones y rollback.
+          - Administración y mantenimiento con foco en seguridad, confiabilidad y evolución futura.
+      - title: Entrega continua
+        items:
+          - Pipelines CI/CD, runners, artefactos, variables y configuración de entornos.
+          - Flujos estandarizados para deployments repetibles de aplicaciones.
 
   - name: Grafana
     logo: "/images/sections/skills/grafana-color.svg"  
     summary: "Dashboards de métricas y logs con Prometheus, Loki y CloudWatch."
     categories: ["observability"]
+    details:
+      - title: Visualización
+        items:
+          - Dashboards operativos utilizando Prometheus, Loki y CloudWatch como fuentes de datos.
+          - Paneles claros orientados a la salud de servicios y el troubleshooting.
+      - title: Flujos de observabilidad
+        items:
+          - Correlación de métricas y logs para acelerar la investigación de incidentes.
+          - Alertas accionables y mejora continua de la cobertura de monitoreo.
 
   - name: Helm
     logo: "/images/sections/skills/helm-color.svg"
@@ -95,6 +158,15 @@ skills:
     logo: "/images/sections/skills/kubernetes-color.png"
     summary: "Despliegue, escalado y resolución de problemas en clústers productivos."
     categories: ["containers"]
+    details:
+      - title: Entrega de workloads
+        items:
+          - Deployments, services, configuración, secrets y releases mediante Helm.
+          - Entrega estandarizada de aplicaciones en diferentes entornos.
+      - title: Operación de clústers
+        items:
+          - Escalado, debugging, análisis de recursos y troubleshooting productivo.
+          - Experimentación continua mediante un clúster Kubernetes self-hosted.
 
   - name: Linux
     logo: "/images/sections/skills/linux-color.png"
@@ -110,13 +182,40 @@ skills:
     logo: "/images/sections/skills/python-color.png"
     summary: "Lenguaje principal. Usado para automatización, integraciones y herramientas internas."
     categories: ["coding"]
+    details:
+      - title: Automatización cloud
+        items:
+          - Automatización de AWS y operaciones batch utilizando boto3 y APIs de servicios.
+          - Scripts para infraestructura, integraciones y operaciones repetitivas.
+      - title: Herramientas internas
+        items:
+          - Utilidades CLI, procesamiento de datos, expresiones regulares y validaciones.
+          - Scripts mantenibles con logging estructurado y manejo defensivo de errores.
 
   - name: Shell Scripting
     logo: "/images/sections/skills/shell-color.png"
     summary: "Experiencia avanzada en Bash para automatización, logging, provisión y tareas de integración."
     categories: ["coding"]
+    details:
+      - title: Automatización de sistemas
+        items:
+          - Herramientas Bash para aprovisionamiento, configuración, logging y tareas operativas.
+          - Integraciones con utilidades Linux, AWS CLI y APIs externas.
+      - title: Ejecución en CI/CD
+        items:
+          - Jobs de pipeline, helpers de deployment y preparación de entornos.
+          - Scripting defensivo con validaciones, errores claros y diagnósticos útiles.
 
   - name: Terraform
     logo: "/images/sections/skills/terraform-color.svg"
     summary: "Infraestructura como código en AWS, Cloudflare entre otros, mediante módulos reutilizables y orientados a entornos."
     categories: ["iac"]
+    details:
+      - title: Diseño de infraestructura
+        items:
+          - Código modular y reutilizable con límites claros entre entornos.
+          - Cambios de infraestructura mantenibles, revisables y preparados para evolucionar.
+      - title: Automatización multi-provider
+        items:
+          - Aprovisionamiento en AWS y Cloudflare, incluyendo DNS y componentes serverless.
+          - Refactors enfocados en estabilidad, seguridad, reutilización y eficiencia de costos.

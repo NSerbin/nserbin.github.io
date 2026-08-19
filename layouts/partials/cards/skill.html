@@ -1,7 +1,25 @@
+{{- $skillID := printf "skill-%s" (urlize .name) -}}
+{{- $modalID := printf "%s-modal" $skillID -}}
+{{- $hasDetails := and (isset . "details") .details -}}
 <div class="col-xs-12 col-sm-6 col-lg-4 pt-2 filtr-item"
   data-category='all, {{ with .categories }}{{ delimit . ","}}{{ end }}'
 >
-  <a class="text-decoration-none" {{ if .url }}href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"{{ end }}>
+  <a
+    class="text-decoration-none{{ if $hasDetails }} skill-card-link-with-details{{ end }}"
+    {{ if $hasDetails }}
+      href="#{{ $modalID }}"
+      role="button"
+      data-bs-toggle="modal"
+      data-bs-target="#{{ $modalID }}"
+      aria-controls="{{ $modalID }}"
+      aria-label="{{ i18n "view_skill_details" }}: {{ .name }}"
+    {{ else if .url }}
+      href="{{ .url }}"
+      title="{{ .name }}"
+      target="_blank"
+      rel="noopener"
+    {{ end }}
+  >
     <div class="card">
       <div class="card-head d-flex">
         {{ if .logo }}
@@ -31,6 +49,12 @@
       </div>
       <div class="card-body text-justify pt-1 pb-1">
         <p class="card-text">{{ .summary | markdownify }}</p>
+        {{ if $hasDetails }}
+          <span class="skill-card-details-hint" aria-hidden="true">
+            {{ i18n "view_skill_details" }}
+            <i class="fas fa-arrow-right"></i>
+          </span>
+        {{ end }}
       </div>
     </div>
   </a>

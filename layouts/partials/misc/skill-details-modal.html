@@ -1,0 +1,57 @@
+{{- $skillID := printf "skill-%s" (urlize .name) -}}
+{{- $modalID := printf "%s-modal" $skillID -}}
+{{- $modalLabelID := printf "%s-label" $modalID -}}
+{{- $logoImage := resources.Get .logo -}}
+{{- $darkLogoImage := resources.Get .darkLogo -}}
+{{- if and $logoImage (ne $logoImage.MediaType.SubType "svg") -}}
+  {{- $logoImage = $logoImage.Fit "40x40" -}}
+{{- end -}}
+{{- if and $darkLogoImage (ne $darkLogoImage.MediaType.SubType "svg") -}}
+  {{- $darkLogoImage = $darkLogoImage.Fit "40x40" -}}
+{{- end -}}
+
+<div class="modal fade skill-detail-modal" id="{{ $modalID }}" tabindex="-1" aria-labelledby="{{ $modalLabelID }}" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-header skill-detail-modal__header">
+        <div class="skill-detail-modal__identity">
+          {{ if $logoImage }}
+            {{ if $darkLogoImage }}
+              <img class="skill-detail-modal__logo light-logo" src="{{ $logoImage.RelPermalink }}" alt="">
+              <img class="skill-detail-modal__logo dark-logo" src="{{ $darkLogoImage.RelPermalink }}" alt="">
+            {{ else }}
+              <img class="skill-detail-modal__logo" src="{{ $logoImage.RelPermalink }}" alt="">
+            {{ end }}
+          {{ end }}
+          <div>
+            <span class="skill-detail-modal__eyebrow">{{ i18n "skill_details" }}</span>
+            <h3 class="modal-title" id="{{ $modalLabelID }}">{{ .name }}</h3>
+          </div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ i18n "close" }}"></button>
+      </div>
+
+      <div class="modal-body skill-detail-modal__body">
+        <p class="skill-detail-modal__summary">{{ .summary | markdownify }}</p>
+        <div class="skill-detail-modal__grid">
+          {{ range .details }}
+            <section class="skill-detail-group">
+              <h4>{{ .title }}</h4>
+              {{ with .items }}
+                <ul>
+                  {{ range . }}
+                    <li>{{ . | markdownify }}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </section>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">{{ i18n "close" }}</button>
+      </div>
+    </div>
+  </div>
+</div>
