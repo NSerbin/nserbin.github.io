@@ -9,12 +9,6 @@ However, the theme author does not provide any warranty or takes any liability f
 # Meta description for your site.  This will help the search engines to find your site.
 description: Portfolio and personal blog of Nicolás Serbin, Senior Cloud Engineer specializing in AWS, DevOps, automation, and scalable infrastructure.
 
-# Additional navigation links.
-customMenus:
-- name: Search
-  url: /search/
-  showOnFooter: false
-
 # Specify OpenGraph Headers
 openGraph:
   title: Nicolás Serbin Blog
