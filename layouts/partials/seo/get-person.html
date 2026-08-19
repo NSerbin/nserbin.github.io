@@ -1,0 +1,41 @@
+{{- $languageData := index hugo.Data site.Language.Lang -}}
+{{- $author := $languageData.author -}}
+{{- $about := $languageData.sections.about -}}
+{{- $sameAs := slice -}}
+
+{{- range $about.socialLinks -}}
+  {{- if and .url (hasPrefix .url "http") -}}
+    {{- $sameAs = $sameAs | append .url -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $person := dict
+  "@type" "Person"
+  "@id" (printf "%s#person" site.BaseURL)
+  "name" $author.name
+  "url" site.BaseURL
+  "image" ($author.image | absURL)
+  "jobTitle" $about.designation
+  "description" $about.summary
+  "sameAs" $sameAs
+  "knowsAbout" (slice
+    "AWS"
+    "Cloud Engineering"
+    "DevOps"
+    "Infrastructure as Code"
+    "Terraform"
+    "Kubernetes"
+    "CI/CD"
+    "Observability"
+  )
+-}}
+
+{{- with $about.company -}}
+  {{- $person = merge $person (dict "worksFor" (dict
+    "@type" "Organization"
+    "name" .name
+    "url" .url
+  )) -}}
+{{- end -}}
+
+{{- return $person -}}

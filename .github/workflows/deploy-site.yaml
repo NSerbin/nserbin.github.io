@@ -1,44 +1,53 @@
-name: Deploy to Github Pages
+name: Deploy to GitHub Pages
 
-# run when a commit is pushed to "source" branch
 on:
   push:
     branches:
-    - source
+      - source
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-pages-deploy
+  cancel-in-progress: true
+
+env:
+  HUGO_VERSION: 0.165.0
+  NODE_VERSION: 24.11.1
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6.0.1
+      - name: Checkout source
+        uses: actions/checkout@v7.0.1
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v3.0.0
-      with:
-        hugo-version: 'latest'
-        extended: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3.2.1
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
 
-    - name: Update Hugo Modules
-      run: hugo mod tidy
+      - name: Setup Node.js
+        uses: actions/setup-node@v7.0.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
 
-    - name: Setup Node
-      uses: actions/setup-node@v6.1.0
-      with:
-        node-version: 22
+      - name: Generate Hugo module dependencies
+        run: hugo mod npm pack
 
-    - name: Install node modules
-      run: |
-        hugo mod npm pack
-        npm install
+      - name: Install locked npm dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
 
-    - name: Build
-      run: hugo --minify
+      - name: Build production site
+        run: hugo --environment production --gc --minify
 
-    # push the generated content into the `gh-pages` branch.
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v4.0.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: main
-        publish_dir: ./public
-        cname: nserbin.com
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: main
+          publish_dir: ./public
+          cname: nserbin.com

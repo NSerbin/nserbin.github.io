@@ -1,0 +1,5 @@
+{{ partial "helpers/script-bundle.html" }}
+
+{{- with resources.Get "scripts/analytics-events.js" | js.Build (dict "minify" hugo.IsProduction) | fingerprint -}}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{- end -}}

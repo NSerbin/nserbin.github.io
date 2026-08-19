@@ -1,0 +1,44 @@
+{{- $person := partial "seo/get-person.html" . -}}
+
+{{- if .IsHome -}}
+  {{- $profilePage := dict
+    "@context" "https://schema.org"
+    "@type" "ProfilePage"
+    "@id" (printf "%s#profile-page" .Permalink)
+    "url" .Permalink
+    "name" (index $person "name")
+    "description" (index $person "description")
+    "inLanguage" .Language.Lang
+    "mainEntity" $person
+  -}}
+<script type="application/ld+json">{{ $profilePage | jsonify | safeJS }}</script>
+{{- else if and .IsPage (eq .Section "posts") -}}
+  {{- $socialImage := partial "helpers/get-social-image.html" . -}}
+  {{- $description := .Description | default (.Summary | plainify) -}}
+  {{- $author := dict
+    "@type" "Person"
+    "@id" (index $person "@id")
+    "name" (index $person "name")
+    "url" (index $person "url")
+    "sameAs" (index $person "sameAs")
+  -}}
+  {{- $blogPosting := dict
+    "@context" "https://schema.org"
+    "@type" "BlogPosting"
+    "@id" (printf "%s#blog-posting" .Permalink)
+    "url" .Permalink
+    "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+    "headline" .Title
+    "description" $description
+    "image" $socialImage.url
+    "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+    "author" $author
+    "publisher" $author
+    "inLanguage" .Language.Lang
+    "wordCount" .WordCount
+    "keywords" .Params.tags
+    "articleSection" .Params.categories
+  -}}
+<script type="application/ld+json">{{ $blogPosting | jsonify | safeJS }}</script>
+{{- end -}}

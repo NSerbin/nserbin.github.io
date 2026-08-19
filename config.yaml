@@ -54,6 +54,9 @@ outputs:
 # Enable global emoji support
 enableEmoji: true
 
+# Generate a root robots.txt with the sitemap location.
+enableRobotsTXT: true
+
 # Site parameters
 params:
   # Background image of the landing page
@@ -144,7 +147,7 @@ params:
 
     # Enable this to use `embed-pdf` shortcode.
     embedpdf:
-      enable: true
+      enable: false
 
   # Provide footer configuration.
   footer:
