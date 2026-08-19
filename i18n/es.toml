@@ -1,2 +1,26 @@
 [level]
 other = "Nivel"
+
+[not_found_status]
+other = "HTTP 404 · RESOURCE_NOT_FOUND"
+
+[not_found_title]
+other = "Este recurso no pudo ser aprovisionado"
+
+[not_found_description]
+other = "El recurso solicitado no está disponible, cambió de ubicación o nunca fue desplegado."
+
+[not_found_home]
+other = "Volver al inicio"
+
+[not_found_posts]
+other = "Ver publicaciones"
+
+[not_found_image_alt]
+other = "Nicolas confundido junto a un recurso cloud no disponible"
+
+[not_found_terminal_label]
+other = "Resultado de la búsqueda del recurso"
+
+[not_found_terminal_result]
+other = "Error del servidor (NotFound): configmap \"requested-page\" no encontrado"

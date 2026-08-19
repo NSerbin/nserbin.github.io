@@ -1,2 +1,26 @@
 [level]
 other = "Level"
+
+[not_found_status]
+other = "HTTP 404 · RESOURCE_NOT_FOUND"
+
+[not_found_title]
+other = "This resource could not be provisioned"
+
+[not_found_description]
+other = "The requested resource is unavailable, may have moved, or was never deployed."
+
+[not_found_home]
+other = "Back to home"
+
+[not_found_posts]
+other = "Browse posts"
+
+[not_found_image_alt]
+other = "Nicolas looking puzzled beside an unavailable cloud resource"
+
+[not_found_terminal_label]
+other = "Resource lookup result"
+
+[not_found_terminal_result]
+other = "Error from server (NotFound): configmaps \"requested-page\" not found"

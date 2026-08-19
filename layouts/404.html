@@ -1,0 +1,59 @@
+{{ define "navbar" }}
+  {{ partial "navigators/navbar.html" . }}
+{{ end }}
+
+{{ define "content" }}
+  {{ $lightImage := resources.Get "/images/site/404-resource-not-found-light.png" }}
+  {{ $darkImage := resources.Get "/images/site/404-resource-not-found-dark.png" }}
+  {{ if $lightImage }}
+    {{ $lightImage = $lightImage.Resize "1100x webp q90" }}
+  {{ end }}
+  {{ if $darkImage }}
+    {{ $darkImage = $darkImage.Resize "1100x webp q90" }}
+  {{ end }}
+
+  <main class="custom-404">
+    <section class="custom-404__panel" aria-labelledby="not-found-title">
+      <div class="custom-404__visual">
+        {{ if $lightImage }}
+          <img
+            class="custom-404__image custom-404__image--light"
+            src="{{ $lightImage.RelPermalink }}"
+            width="{{ $lightImage.Width }}"
+            height="{{ $lightImage.Height }}"
+            alt="{{ i18n "not_found_image_alt" }}"
+          >
+        {{ end }}
+        {{ if $darkImage }}
+          <img
+            class="custom-404__image custom-404__image--dark"
+            src="{{ $darkImage.RelPermalink }}"
+            width="{{ $darkImage.Width }}"
+            height="{{ $darkImage.Height }}"
+            alt="{{ i18n "not_found_image_alt" }}"
+          >
+        {{ end }}
+      </div>
+
+      <div class="custom-404__content">
+        <p class="custom-404__status">{{ i18n "not_found_status" }}</p>
+        <h1 id="not-found-title">{{ i18n "not_found_title" }}</h1>
+        <p class="custom-404__description">{{ i18n "not_found_description" }}</p>
+
+        <div class="custom-404__actions">
+          <a class="custom-404__button custom-404__button--primary" href="{{ site.Home.RelPermalink }}">
+            {{ i18n "not_found_home" }}
+          </a>
+          <a class="custom-404__button custom-404__button--secondary" href="{{ "posts/" | relLangURL }}">
+            {{ i18n "not_found_posts" }}
+          </a>
+        </div>
+
+        <div class="custom-404__terminal" aria-label="{{ i18n "not_found_terminal_label" }}">
+          <span><strong>$</strong> kubectl get configmap requested-page</span>
+          <span>{{ i18n "not_found_terminal_result" }}</span>
+        </div>
+      </div>
+    </section>
+  </main>
+{{ end }}
