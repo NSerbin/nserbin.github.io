@@ -1,0 +1,14 @@
+{{- $siteData := (index hugo.Data site.Language.Lang).site -}}
+{{- $title := .Params.title | default $siteData.openGraph.title | default site.Title -}}
+{{- $description := .Params.description | default $siteData.openGraph.description | default $siteData.description -}}
+{{- $socialImage := partial "helpers/get-social-image.html" . -}}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{- with $socialImage.url }}
+<meta name="twitter:image" content="{{ . }}">
+{{- end }}
+{{- with $socialImage.alt }}
+<meta name="twitter:image:alt" content="{{ . }}">
+{{- end }}

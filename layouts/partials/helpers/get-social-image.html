@@ -1,0 +1,54 @@
+{{- $page := . -}}
+{{- $source := "" -}}
+{{- $image := false -}}
+{{- $url := "" -}}
+{{- $width := 0 -}}
+{{- $height := 0 -}}
+{{- $mediaType := "" -}}
+{{- $alt := $page.Title | default site.Title -}}
+
+{{/* An explicit social image always takes precedence. */}}
+{{- with $page.Params.images -}}
+  {{- $source = index . 0 -}}
+{{- end -}}
+
+{{/* Posts use their visible hero image when no social override was provided. */}}
+{{- if and (not $source) $page.IsPage $page.Params.hero -}}
+  {{- $source = $page.Params.hero -}}
+{{- end -}}
+
+{{/* Also support a hero image stored inside a page bundle. */}}
+{{- if and (not $source) $page.IsPage -}}
+  {{- $image = $page.Resources.GetMatch "hero.{jpg,jpeg,png,webp,avif}" -}}
+{{- end -}}
+
+{{- if $source -}}
+  {{/* Resolve page-bundle images first, then global assets. */}}
+  {{- $image = $page.Resources.Get $source -}}
+  {{- if not $image -}}
+    {{- $image = resources.Get $source -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $image -}}
+  {{/* 1200x630 JPEG is broadly supported by LinkedIn, WhatsApp, Facebook and X. */}}
+  {{- if ne $image.MediaType.SubType "svg" -}}
+    {{- $image = $image.Fill "1200x630 Center jpg q88" -}}
+  {{- end -}}
+  {{- $url = $image.Permalink -}}
+  {{- $width = $image.Width -}}
+  {{- $height = $image.Height -}}
+  {{- $mediaType = $image.MediaType.Type -}}
+{{- else if $source -}}
+  {{/* Preserve externally hosted images that Hugo cannot process. */}}
+  {{- $url = $source | absURL -}}
+{{- else -}}
+  {{/* Site-wide avatar remains the fallback for pages without a hero. */}}
+  {{- $siteData := (index hugo.Data site.Language.Lang).site -}}
+  {{- $fallback := $siteData.openGraph.image | default (index hugo.Data site.Language.Lang).author.image -}}
+  {{- with $fallback -}}
+    {{- $url = . | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return dict "url" $url "width" $width "height" $height "mediaType" $mediaType "alt" $alt -}}
