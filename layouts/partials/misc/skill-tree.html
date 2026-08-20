@@ -2,33 +2,55 @@
 {{- range .nodes -}}
   {{- $nodeName := .name | default .title -}}
   {{- $children := .subskills -}}
+  {{- $icon := .icon | default (partial "misc/skill-resource-icon.html" $nodeName) -}}
   {{- if $children -}}
-    <details class="skill-tree-node skill-tree-node--level-{{ $level }}"{{ if .expanded }} open{{ end }}>
-      <summary>
-        <span class="skill-tree-node__copy">
-          <span class="skill-tree-node__name">{{ $nodeName }}</span>
+    {{- if eq $level 0 -}}
+      <details class="skill-tree-node skill-tree-node--level-{{ $level }}"{{ if .expanded }} open{{ end }}>
+        <summary>
+          <span class="skill-tree-node__copy">
+            <span class="skill-tree-node__name">{{ $nodeName }}</span>
+            {{ with .summary }}
+              <span class="skill-tree-node__summary">{{ . | markdownify }}</span>
+            {{ end }}
+          </span>
+          <span class="skill-tree-node__meta">
+            <span class="skill-tree-node__count">{{ len $children }} {{ i18n "skill_subskills" }}</span>
+            <span class="skill-tree-node__chevron" aria-hidden="true"></span>
+          </span>
+        </summary>
+        <div class="skill-tree-children skill-tree-children--level-{{ add $level 1 }}">
+          {{ partial "misc/skill-tree.html" (dict "nodes" $children "level" (add $level 1)) }}
+        </div>
+      </details>
+    {{- else -}}
+      <details class="skill-resource-group skill-resource-group--level-{{ $level }}">
+        <summary>
+          <span class="skill-resource-card__icon" aria-hidden="true"><i class="{{ $icon }}"></i></span>
+          <span class="skill-resource-card__name">{{ $nodeName }}</span>
+          <span class="skill-resource-card__chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="skill-resource-group__body">
           {{ with .summary }}
-            <span class="skill-tree-node__summary">{{ . | markdownify }}</span>
+            <p>{{ . | markdownify }}</p>
           {{ end }}
-        </span>
-        <span class="skill-tree-node__meta">
-          <span class="skill-tree-node__count">{{ len $children }} {{ i18n "skill_subskills" }}</span>
-          <span class="skill-tree-node__chevron" aria-hidden="true"></span>
-        </span>
-      </summary>
-      <div class="skill-tree-children">
-        {{ partial "misc/skill-tree.html" (dict "nodes" $children "level" (add $level 1)) }}
-      </div>
-    </details>
+          <div class="skill-tree-children skill-tree-children--level-{{ add $level 1 }}">
+            {{ partial "misc/skill-tree.html" (dict "nodes" $children "level" (add $level 1)) }}
+          </div>
+        </div>
+      </details>
+    {{- end -}}
   {{- else -}}
-    <article class="skill-tree-leaf skill-tree-leaf--level-{{ $level }}">
-      <span class="skill-tree-leaf__marker" aria-hidden="true"></span>
-      <div>
-        <h5>{{ $nodeName }}</h5>
-        {{ with .summary }}
+    <details class="skill-resource-card skill-resource-card--level-{{ $level }}">
+      <summary>
+        <span class="skill-resource-card__icon" aria-hidden="true"><i class="{{ $icon }}"></i></span>
+        <span class="skill-resource-card__name">{{ $nodeName }}</span>
+        <span class="skill-resource-card__chevron" aria-hidden="true"></span>
+      </summary>
+      {{ with .summary }}
+        <div class="skill-resource-card__body">
           <p>{{ . | markdownify }}</p>
-        {{ end }}
-      </div>
-    </article>
+        </div>
+      {{ end }}
+    </details>
   {{- end -}}
 {{- end -}}

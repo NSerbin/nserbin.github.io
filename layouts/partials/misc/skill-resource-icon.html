@@ -1,0 +1,30 @@
+{{- $name := lower . -}}
+{{- $icon := "fa-solid fa-cube" -}}
+{{- if findRE `(ec2|instance|server|host|cluster)` $name -}}
+  {{- $icon = "fa-solid fa-server" -}}
+{{- else if findRE `(lambda|serverless|event|function)` $name -}}
+  {{- $icon = "fa-solid fa-bolt" -}}
+{{- else if findRE `(s3|storage|bucket|database|rds|data|backup|retention)` $name -}}
+  {{- $icon = "fa-solid fa-database" -}}
+{{- else if findRE `(vpc|network|dns|tunnel|connectivity|cdn|proxy|routing)` $name -}}
+  {{- $icon = "fa-solid fa-network-wired" -}}
+{{- else if findRE `(iam|permission|role|secret|security|zero trust|access|credential)` $name -}}
+  {{- $icon = "fa-solid fa-shield-halved" -}}
+{{- else if findRE `(cloudwatch|metric|log|monitor|alert|observability|health)` $name -}}
+  {{- $icon = "fa-solid fa-chart-line" -}}
+{{- else if findRE `(git|branch|repository|pull|merge|version|release)` $name -}}
+  {{- $icon = "fa-solid fa-code-branch" -}}
+{{- else if findRE `(pipeline|ci/cd|build|job|action|automation|sync)` $name -}}
+  {{- $icon = "fa-solid fa-gears" -}}
+{{- else if findRE `(documentation|runbook|knowledge|architecture record)` $name -}}
+  {{- $icon = "fa-solid fa-book-open" -}}
+{{- else if findRE `(debug|troubleshoot|validation|assertion|audit|incident)` $name -}}
+  {{- $icon = "fa-solid fa-magnifying-glass" -}}
+{{- else if findRE `(python|boto|api|script|cli|bash|terminal|regex)` $name -}}
+  {{- $icon = "fa-solid fa-terminal" -}}
+{{- else if findRE `(deployment|workload|delivery|promotion|rollout)` $name -}}
+  {{- $icon = "fa-solid fa-rocket" -}}
+{{- else if findRE `(template|config|environment|module|provider|terraform|playbook)` $name -}}
+  {{- $icon = "fa-solid fa-layer-group" -}}
+{{- end -}}
+{{- return $icon -}}
