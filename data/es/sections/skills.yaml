@@ -29,6 +29,7 @@ skills:
     logo: "/images/sections/skills/ansible.png"
     summary: "Automatización de tareas de aprovisionamiento y configuración mediante playbooks."
     categories: ["iac"]
+    level: advanced
     details:
       - name: Playbooks y roles
         summary: Configuración repetible pensada para ejecuciones seguras y controladas.
@@ -52,6 +53,7 @@ skills:
     logo: "/images/sections/skills/argo-color.svg"
     summary: "Herramienta GitOps declarativa para entrega continua en Kubernetes."
     categories: ["ci-cd"]
+    level: intermediate
     details:
       - name: Entrega GitOps
         summary: Despliegues declarativos impulsados por el estado deseado versionado en Git.
@@ -73,6 +75,7 @@ skills:
     logo: "/images/sections/skills/aws.png"
     summary: "Aprovisionamiento, escalado y gestión de infraestructura en la nube (EC2, S3, Lambda, etc.)."
     categories: ["cloud"]
+    level: advanced
     details:
       - name: Cómputo y serverless
         summary: Bases de cómputo escalables y automatización orientada a eventos.
@@ -103,6 +106,7 @@ skills:
               - name: Ciclo de vida y retención
                 summary: Políticas alineadas con necesidades operativas y de costos.
           - name: RDS
+            level: intermediate
             summary: Operaciones de bases de datos, backups y exportaciones hacia S3.
       - name: Networking y DNS
         summary: Conectividad segura y resolución confiable de servicios.
@@ -130,6 +134,7 @@ skills:
     logo: "/images/sections/skills/cloudflare-color.svg"
     summary: "DNS, CDN, ruteo de correo, Zero Trust, túneles y automatización vía APIs."
     categories: ["others"]
+    level: advanced
     details:
       - name: Edge y DNS
         summary: Servicios expuestos a Internet gestionados con confiabilidad y trazabilidad.
@@ -140,6 +145,7 @@ skills:
           - name: CDN y proxy
             summary: Entrega desde el edge, caché y conectividad protegida hacia los orígenes.
           - name: Ruteo de correo
+            level: intermediate
             summary: Configuración y mantenimiento de ruteo a nivel de dominio.
       - name: Conectividad segura
         summary: Acceso controlado a servicios internos sin exponer directamente la infraestructura.
@@ -160,6 +166,7 @@ skills:
     logo: "/images/sections/skills/confluence-color.svg"
     summary: "Documentación colaborativa, decisiones de arquitectura y base de conocimiento."
     categories: ["others"]
+    level: advanced
     details:
       - name: Documentación técnica
         summary: Documentación clara para operar y evolucionar plataformas.
@@ -181,6 +188,7 @@ skills:
     logo: "/images/sections/skills/datadog-color.svg"
     summary: "Observabilidad y monitoreo cloud-native de entornos serverless y contenerizados."
     categories: ["observability"]
+    level: intermediate
     details:
       - name: Observabilidad cloud
         summary: Visibilidad integral sobre señales de aplicaciones e infraestructura.
@@ -202,6 +210,7 @@ skills:
     logo: "/images/sections/skills/docker-color.svg"
     summary: "Construcción y gestión de aplicaciones contenerizadas con multi-stage builds."
     categories: ["containers"]
+    level: advanced
     details:
       - name: Construcción de imágenes
         summary: Imágenes reproducibles optimizadas para mantenimiento y velocidad de entrega.
@@ -232,6 +241,7 @@ skills:
     logo: "/images/sections/skills/git-color.png"
     summary: "Control de versiones, estrategias de ramas y flujos de trabajo colaborativos."
     categories: ["others"]
+    level: advanced
     details:
       - name: Control de versiones
         summary: Historial confiable y gestión de cambios para código e infraestructura.
@@ -254,6 +264,7 @@ skills:
     darkLogo: "/images/sections/skills/github-dark.png"
     summary: "Automatización CI/CD e integraciones usando GitHub Actions."
     categories: ["ci-cd"]
+    level: advanced
     details:
       - name: GitHub Actions
         summary: Automatización reproducible desde la validación hasta el deployment.
@@ -279,6 +290,7 @@ skills:
     logo: "/images/sections/skills/gitlab-color.svg"
     summary: "Pipelines CI/CD, configuración de entornos y runners autogestionados."
     categories: ["ci-cd"]
+    level: advanced
     details:
       - name: Plataforma self-hosted
         summary: Gestión del ciclo de vida de GitLab enfocada en seguridad y confiabilidad.
@@ -304,6 +316,7 @@ skills:
     logo: "/images/sections/skills/grafana-color.svg"  
     summary: "Dashboards de métricas y logs con Prometheus, Loki y CloudWatch."
     categories: ["observability"]
+    level: advanced
     details:
       - name: Dashboards
         summary: Vistas operativas orientadas a salud, capacidad y troubleshooting.
@@ -327,6 +340,7 @@ skills:
     logo: "/images/sections/skills/helm-color.svg"
     summary: "Creación de Helm Charts personalizados para estandarizar despliegues en Kubernetes."
     categories: ["containers"]
+    level: advanced
     details:
       - name: Desarrollo de charts
         summary: Empaquetado reutilizable de Kubernetes para múltiples entornos.
@@ -348,6 +362,7 @@ skills:
     logo: "/images/sections/skills/jira-color.svg"
     summary: "Gestión ágil de proyectos mediante tableros Scrum y Service Desk."
     categories: ["others"]
+    level: advanced
     details:
       - name: Entrega ágil
         summary: Planificación y ejecución transparente del trabajo de ingeniería.
@@ -369,6 +384,7 @@ skills:
     logo: "/images/sections/skills/kubernetes-color.png"
     summary: "Despliegue, escalado y resolución de problemas en clústers productivos."
     categories: ["containers"]
+    level: advanced
     details:
       - name: Entrega de workloads
         summary: Deployment estandarizado de aplicaciones en múltiples entornos.
@@ -394,6 +410,7 @@ skills:
     logo: "/images/sections/skills/linux-color.png"
     summary: "Uso previo de Manjaro, SUSE y Ubuntu. Actualmente trabajando en macOS con uso intensivo de CLI."
     categories: ["others"]
+    level: advanced
     details:
       - name: Administración de sistemas
         summary: Operación práctica mediante línea de comandos en entornos Linux.
@@ -415,6 +432,7 @@ skills:
     logo: "/images/sections/skills/postman-color.svg"
     summary: "Testing de APIs y automatización de flujos para integración backend."
     categories: ["others"]
+    level: intermediate
     details:
       - name: Validación de APIs
         summary: Testing repetible de integraciones backend y de plataforma.
@@ -436,6 +454,7 @@ skills:
     logo: "/images/sections/skills/python-color.png"
     summary: "Lenguaje principal. Usado para automatización, integraciones y herramientas internas."
     categories: ["coding"]
+    level: advanced
     details:
       - name: Automatización cloud
         summary: Herramientas en Python para operaciones repetibles de AWS e infraestructura.
@@ -469,6 +488,7 @@ skills:
     logo: "/images/sections/skills/shell-color.png"
     summary: "Experiencia avanzada en Bash para automatización, logging, provisión y tareas de integración."
     categories: ["coding"]
+    level: expert
     details:
       - name: Automatización de sistemas
         summary: Herramientas Bash para aprovisionamiento y operaciones confiables.
@@ -501,6 +521,7 @@ skills:
     logo: "/images/sections/skills/terraform-color.svg"
     summary: "Infraestructura como código en AWS, Cloudflare entre otros, mediante módulos reutilizables y orientados a entornos."
     categories: ["iac"]
+    level: advanced
     details:
       - name: Arquitectura de código
         summary: Código de infraestructura preparado para revisión, reutilización y evolución.

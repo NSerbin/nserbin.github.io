@@ -34,7 +34,7 @@
       <div class="modal-body skill-detail-modal__body">
         <p class="skill-detail-modal__summary">{{ .summary | markdownify }}</p>
         <div class="skill-detail-tree">
-          {{ partial "misc/skill-tree.html" (dict "nodes" .details "level" 0) }}
+          {{ partial "misc/skill-tree.html" (dict "nodes" .details "level" 0 "inheritedLevel" (.level | default "intermediate")) }}
         </div>
       </div>
 

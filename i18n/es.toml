@@ -10,6 +10,18 @@ other = "Ver detalles"
 [skill_subskills]
 other = "subhabilidades"
 
+[skill_level_basic]
+other = "Básico"
+
+[skill_level_intermediate]
+other = "Intermedio"
+
+[skill_level_advanced]
+other = "Avanzado"
+
+[skill_level_expert]
+other = "Experto"
+
 [close]
 other = "Cerrar"
 

@@ -1,0 +1,8 @@
+{{- $level := lower . -}}
+{{- $labelKey := printf "skill_level_%s" $level -}}
+<span class="skill-level skill-level--{{ $level }}" aria-label="{{ i18n $labelKey }}">
+  <span class="skill-level__label">{{ i18n $labelKey }}</span>
+  <span class="skill-level__bar" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+  </span>
+</span>

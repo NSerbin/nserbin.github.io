@@ -384,6 +384,12 @@ body.kind-404 {
       }
     }
 
+    &__copy {
+      display: grid;
+      min-width: 0;
+      gap: 0.38rem;
+    }
+
     &__name {
       color: get-light-color('heading-color');
       font-size: 0.88rem;
@@ -411,6 +417,56 @@ body.kind-404 {
         font-size: 0.8rem;
         line-height: 1.45;
       }
+    }
+  }
+
+  .skill-level {
+    --skill-level-color: #94a3b8;
+
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+
+    &--intermediate {
+      --skill-level-color: #3b82f6;
+    }
+
+    &--advanced {
+      --skill-level-color: #06b6d4;
+    }
+
+    &--expert {
+      --skill-level-color: #8b5cf6;
+    }
+
+    &__label {
+      color: var(--skill-level-color);
+      font-size: 0.62rem;
+      font-weight: 800;
+      letter-spacing: 0.045em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    &__bar {
+      display: inline-grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: 3.6rem;
+      gap: 0.18rem;
+
+      > span {
+        height: 0.25rem;
+        border-radius: 999px;
+        background: rgba(130, 150, 180, 0.2);
+      }
+    }
+
+    &--basic .skill-level__bar > span:nth-child(-n + 1),
+    &--intermediate .skill-level__bar > span:nth-child(-n + 2),
+    &--advanced .skill-level__bar > span:nth-child(-n + 3),
+    &--expert .skill-level__bar > span:nth-child(-n + 4) {
+      background: var(--skill-level-color);
+      box-shadow: 0 0 0.35rem rgba(6, 182, 212, 0.18);
     }
   }
 
