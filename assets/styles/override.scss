@@ -62,6 +62,29 @@ body.kind-404 {
 }
 
 .projects-section {
+  .project-card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+  }
+
+  .project-tags-holder {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.3rem;
+
+    .badge {
+      margin: 0;
+    }
+  }
+
+  .project-btn-holder {
+    width: 100%;
+    align-items: flex-end;
+  }
+
   .project-star-button {
     display: inline-flex;
     align-items: center;
