@@ -62,17 +62,37 @@ body.kind-404 {
 }
 
 .projects-section {
-  .project-card-footer {
+  .filtr-item > .card > .card {
     display: flex;
+    min-height: 13.25rem;
     flex-direction: column;
-    align-items: stretch;
-    gap: 0.7rem;
+  }
+
+  .card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    > p {
+      min-height: 3rem;
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  .project-card-footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 0.55rem;
+    margin-top: auto;
   }
 
   .project-tags-holder {
     display: flex;
+    align-items: flex-end;
     flex-wrap: wrap;
-    width: 100%;
+    width: auto;
+    min-width: 0;
     gap: 0.3rem;
 
     .badge {
@@ -81,8 +101,9 @@ body.kind-404 {
   }
 
   .project-btn-holder {
-    width: 100%;
+    width: auto;
     align-items: flex-end;
+    justify-content: flex-end;
   }
 
   .project-star-button {
@@ -143,6 +164,18 @@ body.kind-404 {
         border-left-color: rgba(255, 255, 255, 0.28);
         background: rgba(0, 0, 0, 0.1);
       }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .projects-section {
+    .filtr-item > .card > .card {
+      min-height: 0;
+    }
+
+    .card-body > p {
+      min-height: 0;
     }
   }
 }
