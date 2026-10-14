@@ -1,5 +1,5 @@
 {
-  "sum": "1016bbee7f7c3a54",
+  "sum": "1051c32f5e8ed320",
   "dependencySources": {
     "dependencies": {},
     "devDependencies": {
@@ -20,7 +20,6 @@
       "highlight.js": "github.com/hugo-toha/toha/v4",
       "imagesloaded": "github.com/hugo-toha/toha/v4",
       "include-media": "github.com/hugo-toha/toha/v4",
-      "katex": "github.com/hugo-toha/toha/v4",
       "mark.js": "github.com/hugo-toha/toha/v4",
       "mermaid": "github.com/hugo-toha/toha/v4",
       "plyr": "github.com/hugo-toha/toha/v4",
